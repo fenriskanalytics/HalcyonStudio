@@ -221,7 +221,20 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                   sty.scheduleLink
                 )}
                 component={Link}
-                href={`/schedule`}
+                href={(() => {
+                  try {
+                    return ($state.variable =
+                      "/schedule/daily/48541?locations=48717&_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717");
+                  } catch (e) {
+                    if (
+                      e instanceof TypeError ||
+                      e?.plasmicType === "PlasmicUndefinedDataError"
+                    ) {
+                      return `/schedule`;
+                    }
+                    throw e;
+                  }
+                })()}
                 platform={"nextjs"}
               >
                 <div
