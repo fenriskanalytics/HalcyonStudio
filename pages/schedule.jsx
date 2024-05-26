@@ -27,7 +27,13 @@ function Schedule() {
     `;
     const scriptElement = document.createElement('script');
     scriptElement.innerHTML = scriptContent;
-    document.head.appendChild(scriptElement);
+    document.body.appendChild(scriptElement);
+
+    return () => {
+      if (scriptElement.parentNode) {
+        scriptElement.parentNode.removeChild(scriptElement);
+      }
+    };
   };
 
   useEffect(() => {
@@ -54,44 +60,41 @@ function Schedule() {
         >
           <PlasmicSchedule
             marianaScheduleCode={{
-              wrap: (content) => (
-                <div data-mariana-integrations="/account">
-                  {content}
-                </div>
-              ),
-            }}
-            halcyonFooterBottom={{
-              wrap: (content) => (
-                <>
-                  {content}
-                  <script>
-                    {`
-                      (function () {
-                        var TENANT_NAME = 'halcyonstudio';
-                        var d = document;
-                        var sA = ['polyfills', 'js'];
-
-                        for (var i = 0; i < sA.length; i++) {
-                          var s = d.createElement('script');
-                          s.src = 'https://' + TENANT_NAME + '.marianaiframes.com/' + sA[i];
-                          s.setAttribute('data-timestamp', +new Date());
-                          (d.head || d.body).appendChild(s);
-                        }
-                      })();
-                    `}
-                  </script>
-                  <noscript>
-                    Please enable JavaScript to view the
-                    <a href="https://marianatek.com/?ref_noscript" rel="nofollow">
-                      Web Integrations by Mariana Tek.
-                    </a>
-                  </noscript>
-                </>
-              ),
+              props: {
+                children: (
+                  <div data-mariana-integrations="/schedule/daily">
+                    {props.children}
+                  </div>
+                ),
+              },
             }}
           />
         </PageParamsProvider__>
       </GlobalContextsProvider>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function () {
+              var TENANT_NAME = 'halcyonstudio';
+              var d = document;
+              var sA = ['polyfills', 'js'];
+
+              for (var i = 0; i < sA.length; i++) {
+                var s = d.createElement('script');
+                s.src = 'https://' + TENANT_NAME + '.marianaiframes.com/' + sA[i];
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+              }
+            })();
+          `,
+        }}
+      ></script>
+      <noscript>
+        Please enable JavaScript to view the
+        <a href="https://marianatek.com/?ref_noscript" rel="nofollow">
+          Web Integrations by Mariana Tek.
+        </a>
+      </noscript>
     </UnnamedGlobalGroupOfVariantsContext.Provider>
   );
 }
