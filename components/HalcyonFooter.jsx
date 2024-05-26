@@ -18,6 +18,7 @@ function HalcyonFooter_(props, ref) {
   //
   // By default, we are just piping all HalcyonFooterProps here, but feel free
   // to do whatever works for you.
+  
   return <PlasmicHalcyonFooter footerTop={{ ref }} {...props} />;
 }
 
