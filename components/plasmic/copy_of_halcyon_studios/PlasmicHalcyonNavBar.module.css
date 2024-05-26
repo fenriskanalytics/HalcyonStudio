@@ -240,7 +240,7 @@
     font-size: 14px;
   }
 }
-.eventsLink {
+.scheduleLink {
   position: relative;
   transition-property: all;
   transition-duration: 0.5s;
@@ -253,27 +253,27 @@
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 0.5s;
   border-radius: 6px;
-  padding: 10px 16px;
+  padding: 10px 12px;
   border: 1px solid transparent;
 }
-.eventsLink > :global(.__wab_flex-container) {
+.scheduleLink > :global(.__wab_flex-container) {
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
 }
-.eventsLink > :global(.__wab_flex-container) > *,
-.eventsLink > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.eventsLink > :global(.__wab_flex-container) > picture > img,
-.eventsLink
+.scheduleLink > :global(.__wab_flex-container) > *,
+.scheduleLink > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.scheduleLink > :global(.__wab_flex-container) > picture > img,
+.scheduleLink
   > :global(.__wab_flex-container)
   > :global(.__wab_slot)
   > picture
   > img {
   margin-left: 8px;
 }
-.eventsText {
+.scheduleText {
   font-weight: 400;
   color: var(--token-FLc3Q0URvh0f);
   font-size: 16px;
@@ -289,7 +289,7 @@
   text-overflow: clip;
 }
 @media (max-width: 834px) {
-  .eventsText {
+  .scheduleText {
     font-size: 14px;
   }
 }
@@ -307,7 +307,7 @@
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 0.5s;
   border-radius: 6px;
-  padding: 10px 16px;
+  padding: 10px 12px;
   border: 1px solid transparent;
 }
 .aboutUsLink > :global(.__wab_flex-container) {
@@ -355,14 +355,13 @@
   display: flex;
   flex-direction: row;
   cursor: pointer;
-  padding-right: 16px;
-  padding-bottom: 0px;
-  padding-left: 0px;
   color: var(--token-smWFv2ThVX1L);
+  text-align: center;
   -webkit-transition-property: all;
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 0.5s;
   border-radius: 6px;
+  padding: 10px 12px;
   border: 1px solid transparent;
 }
 .contactLink > :global(.__wab_flex-container) {

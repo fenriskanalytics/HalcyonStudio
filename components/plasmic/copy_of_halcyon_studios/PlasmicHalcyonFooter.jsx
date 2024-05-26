@@ -550,47 +550,9 @@ function PlasmicHalcyonFooter__RenderFunc(props) {
                   }}
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.column__wox6R)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__c8OCv)}
-                  displayHeight={"80px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"108px"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/copy_of_halcyon_studios/images/b9D34595E59F96D1Dcea5Ca92Caca8D9Jpg.jpg",
-                    fullWidth: 563,
-                    fullHeight: 708,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
             </div>
             <div className={classNames(projectcss.all, sty.columns__bOaH)}>
               <div className={classNames(projectcss.all, sty.column__m8FH5)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__sMpsW)}
-                  displayHeight={"80px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"108px"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/copy_of_halcyon_studios/images/wellnessWebTakeoverPageTabsAmenities460X510Px07Jpg.jpg",
-                    fullWidth: 461,
-                    fullHeight: 511,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-              <div className={classNames(projectcss.all, sty.column__umbAg)}>
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__aeOs1)}
@@ -599,7 +561,7 @@ function PlasmicHalcyonFooter__RenderFunc(props) {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"108px"}
+                  displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/copy_of_halcyon_studios/images/_28Jpg.jpg",
@@ -609,7 +571,7 @@ function PlasmicHalcyonFooter__RenderFunc(props) {
                   }}
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.column__wE8CO)}>
+              <div className={classNames(projectcss.all, sty.column__umbAg)}>
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__epAXh)}
@@ -618,7 +580,7 @@ function PlasmicHalcyonFooter__RenderFunc(props) {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"108px"}
+                  displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/copy_of_halcyon_studios/images/_24Jpg.jpg",

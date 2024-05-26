@@ -638,14 +638,11 @@
   --plsmc-rc-col-gap: 0px;
   border-style: solid;
 }
-.columns__nyU4Q > :nth-child(3n + 1) {
-  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
+.columns__nyU4Q > :nth-child(2n + 1) {
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
-.columns__nyU4Q > :nth-child(3n + 2) {
-  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
-}
-.columns__nyU4Q > :nth-child(3n + 3) {
-  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
+.columns__nyU4Q > :nth-child(2n + 2) {
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
 @media (max-width: 414px) {
   .columns__nyU4Q {
@@ -657,18 +654,13 @@
   }
 }
 @media (max-width: 414px) {
-  .columns__nyU4Q > :nth-child(3n + 1) {
-    width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
+  .columns__nyU4Q > :nth-child(2n + 1) {
+    width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
   }
 }
 @media (max-width: 414px) {
-  .columns__nyU4Q > :nth-child(3n + 2) {
-    width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
-  }
-}
-@media (max-width: 414px) {
-  .columns__nyU4Q > :nth-child(3n + 3) {
-    width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
+  .columns__nyU4Q > :nth-child(2n + 2) {
+    width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
   }
 }
 .column__gdLm0 {
@@ -715,29 +707,6 @@
 .img__dCvo6 > picture > img {
   object-fit: cover;
 }
-.column__wox6R {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  min-width: 0;
-  padding: 8px;
-}
-.img__c8OCv {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  width: 108px;
-  height: 80px;
-  flex-shrink: 0;
-}
-.img__c8OCv > picture > img {
-  object-fit: cover;
-}
 .columns__bOaH {
   display: flex;
   position: relative;
@@ -752,14 +721,11 @@
   --plsmc-rc-col-gap: 0px;
   border-style: solid;
 }
-.columns__bOaH > :nth-child(3n + 1) {
-  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
+.columns__bOaH > :nth-child(2n + 1) {
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
-.columns__bOaH > :nth-child(3n + 2) {
-  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
-}
-.columns__bOaH > :nth-child(3n + 3) {
-  width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
+.columns__bOaH > :nth-child(2n + 2) {
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
 @media (max-width: 414px) {
   .columns__bOaH {
@@ -771,44 +737,16 @@
   }
 }
 @media (max-width: 414px) {
-  .columns__bOaH > :nth-child(3n + 1) {
-    width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
+  .columns__bOaH > :nth-child(2n + 1) {
+    width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
   }
 }
 @media (max-width: 414px) {
-  .columns__bOaH > :nth-child(3n + 2) {
-    width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
-  }
-}
-@media (max-width: 414px) {
-  .columns__bOaH > :nth-child(3n + 3) {
-    width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
+  .columns__bOaH > :nth-child(2n + 2) {
+    width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
   }
 }
 .column__m8FH5 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  min-width: 0;
-  padding: 8px;
-}
-.img__sMpsW {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  width: 108px;
-  height: 80px;
-  flex-shrink: 0;
-}
-.img__sMpsW > picture > img {
-  object-fit: cover;
-}
-.column__umbAg {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -824,14 +762,13 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 108px;
   height: 80px;
   flex-shrink: 0;
 }
 .img__aeOs1 > picture > img {
   object-fit: cover;
 }
-.column__wE8CO {
+.column__umbAg {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -847,7 +784,6 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 108px;
   height: 80px;
   flex-shrink: 0;
 }

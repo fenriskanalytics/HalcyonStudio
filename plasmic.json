@@ -1267,7 +1267,7 @@
           "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
           "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicBuy.jsx",
           "importSpec": {
-            "modulePath": "../pages/buy.jsx"
+            "modulePath": "../pages/memberships/buy.jsx"
           },
           "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicBuy.module.css",
           "scheme": "blackbox",

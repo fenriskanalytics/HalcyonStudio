@@ -155,7 +155,7 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                   sty.membershipsLink
                 )}
                 component={Link}
-                href={`/Announcements`}
+                href={`/memberships/buy`}
                 platform={"nextjs"}
               >
                 <div
@@ -170,27 +170,28 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
               </Stack__>
               <Stack__
                 as={PlasmicLink__}
-                data-plasmic-name={"eventsLink"}
-                data-plasmic-override={overrides.eventsLink}
+                data-plasmic-name={"scheduleLink"}
+                data-plasmic-override={overrides.scheduleLink}
                 hasGap={true}
                 className={classNames(
                   projectcss.all,
                   projectcss.a,
-                  sty.eventsLink
+                  sty.scheduleLink
                 )}
                 component={Link}
+                href={`/schedule`}
                 platform={"nextjs"}
               >
                 <div
-                  data-plasmic-name={"eventsText"}
-                  data-plasmic-override={overrides.eventsText}
+                  data-plasmic-name={"scheduleText"}
+                  data-plasmic-override={overrides.scheduleText}
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.eventsText
+                    sty.scheduleText
                   )}
                 >
-                  <Trans__>{"Events"}</Trans__>
+                  <Trans__>{"Schedule"}</Trans__>
                 </div>
               </Stack__>
               <Stack__
@@ -288,8 +289,8 @@ const PlasmicDescendants = {
     "home",
     "img",
     "membershipsLink",
-    "eventsLink",
-    "eventsText",
+    "scheduleLink",
+    "scheduleText",
     "aboutUsLink",
     "contactLink"
   ],
@@ -297,8 +298,8 @@ const PlasmicDescendants = {
   home: ["home", "img"],
   img: ["img"],
   membershipsLink: ["membershipsLink"],
-  eventsLink: ["eventsLink", "eventsText"],
-  eventsText: ["eventsText"],
+  scheduleLink: ["scheduleLink", "scheduleText"],
+  scheduleText: ["scheduleText"],
   aboutUsLink: ["aboutUsLink"],
   contactLink: ["contactLink"]
 };
@@ -338,8 +339,8 @@ export const PlasmicHalcyonNavBar = Object.assign(
     home: makeNodeComponent("home"),
     img: makeNodeComponent("img"),
     membershipsLink: makeNodeComponent("membershipsLink"),
-    eventsLink: makeNodeComponent("eventsLink"),
-    eventsText: makeNodeComponent("eventsText"),
+    scheduleLink: makeNodeComponent("scheduleLink"),
+    scheduleText: makeNodeComponent("scheduleText"),
     aboutUsLink: makeNodeComponent("aboutUsLink"),
     contactLink: makeNodeComponent("contactLink"),
     // Metadata about props expected for PlasmicHalcyonNavBar
