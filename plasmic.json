@@ -1326,6 +1326,19 @@
           "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicLoginButton.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "B45lS1hhx1Vs",
+          "name": "MarianaScheduleCode",
+          "type": "managed",
+          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
+          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicMarianaScheduleCode.jsx",
+          "importSpec": {
+            "modulePath": "MarianaScheduleCode.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicMarianaScheduleCode.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
