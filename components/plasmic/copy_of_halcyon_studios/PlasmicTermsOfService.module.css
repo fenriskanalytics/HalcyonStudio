@@ -27,7 +27,7 @@
 .halcyonNavBar:global(.__wab_instance) {
   position: relative;
 }
-.link__hn1Gf {
+.link__ftbRj {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -39,22 +39,22 @@
   min-width: 0;
   padding: 0px;
 }
-.button__aPhv6:global(.__wab_instance) {
+.button__f8TQo:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   width: 100%;
   min-width: 0;
 }
-.svg___9EGkT {
+.svg__zng4 {
   position: relative;
   object-fit: cover;
   width: auto;
   height: 1em;
 }
-.text__z7Yct {
+.text__zBnnn {
   font-size: 18px;
 }
-.svg__uxHa {
+.svg__ngD2T {
   position: relative;
   object-fit: cover;
   width: auto;

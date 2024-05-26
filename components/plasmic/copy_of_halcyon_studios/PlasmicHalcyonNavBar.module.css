@@ -401,6 +401,68 @@
     font-size: 14px;
   }
 }
+.loginLink {
+  position: relative;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  color: var(--token-smWFv2ThVX1L);
+  text-align: center;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.5s;
+  border-radius: 6px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+}
+.loginLink > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.loginLink > :global(.__wab_flex-container) > *,
+.loginLink > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.loginLink > :global(.__wab_flex-container) > picture > img,
+.loginLink
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.root .loginLink:hover {
+  background: var(--token-x1IPxq1ymELr);
+}
+@media (max-width: 834px) {
+  .root .loginLink:hover {
+    background: var(--token-x1IPxq1ymELr);
+  }
+}
+.loginText {
+  font-weight: 400;
+  color: var(--token-FLc3Q0URvh0f);
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+}
+@media (max-width: 834px) {
+  .loginText {
+    font-size: 14px;
+  }
+}
 .link__arKQw {
   display: flex;
   position: relative;

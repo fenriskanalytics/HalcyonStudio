@@ -23,6 +23,7 @@ import {
   hasVariant,
   renderPlasmicSlot,
   useCurrentUser,
+  useDollarState,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
@@ -72,6 +73,24 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = useCurrentUser?.() || {};
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "variable",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+      }
+    ],
+
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_0QmF6MtAnaU(),
     unnamedGlobalGroupOfVariants: useUnnamedGlobalGroupOfVariants()
@@ -191,7 +210,7 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                     sty.scheduleText
                   )}
                 >
-                  <Trans__>{"Schedule"}</Trans__>
+                  <Trans__>{"Class Schedule"}</Trans__>
                 </div>
               </Stack__>
               <Stack__
@@ -241,40 +260,72 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                   <Trans__>{"Contact"}</Trans__>
                 </div>
               </Stack__>
-              {renderPlasmicSlot({
-                defaultContents: (
-                  <PlasmicLink__
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__arKQw
-                    )}
-                    component={Link}
-                    href={`/account`}
-                    platform={"nextjs"}
-                  >
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__wf6JF
-                      )}
-                      color={"unnamedVariant"}
-                    >
-                      <div
+              <Stack__
+                as={PlasmicLink__}
+                data-plasmic-name={"loginLink"}
+                data-plasmic-override={overrides.loginLink}
+                hasGap={true}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.loginLink
+                )}
+                component={Link}
+                href={
+                  hasVariant(globalVariants, "screen", "tablet")
+                    ? `/account`
+                    : `/contact`
+                }
+                platform={"nextjs"}
+              >
+                <div
+                  data-plasmic-name={"loginText"}
+                  data-plasmic-override={overrides.loginText}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.loginText
+                  )}
+                >
+                  <Trans__>{"Login"}</Trans__>
+                </div>
+              </Stack__>
+              {false
+                ? renderPlasmicSlot({
+                    defaultContents: (
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___6O6Zp
+                          projectcss.a,
+                          sty.link__arKQw
                         )}
+                        component={Link}
+                        href={`/account`}
+                        platform={"nextjs"}
                       >
-                        <Trans__>{"Login"}</Trans__>
-                      </div>
-                    </Button>
-                  </PlasmicLink__>
-                ),
+                        <Button
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button__wf6JF
+                          )}
+                          color={"unnamedVariant"}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___6O6Zp
+                            )}
+                          >
+                            <Trans__>{"Login"}</Trans__>
+                          </div>
+                        </Button>
+                      </PlasmicLink__>
+                    ),
 
-                value: args.authLink
-              })}
+                    value: args.authLink
+                  })
+                : null}
             </Stack__>
           </Stack__>
         </Stack__>
@@ -292,7 +343,9 @@ const PlasmicDescendants = {
     "scheduleLink",
     "scheduleText",
     "aboutUsLink",
-    "contactLink"
+    "contactLink",
+    "loginLink",
+    "loginText"
   ],
 
   home: ["home", "img"],
@@ -301,7 +354,9 @@ const PlasmicDescendants = {
   scheduleLink: ["scheduleLink", "scheduleText"],
   scheduleText: ["scheduleText"],
   aboutUsLink: ["aboutUsLink"],
-  contactLink: ["contactLink"]
+  contactLink: ["contactLink"],
+  loginLink: ["loginLink", "loginText"],
+  loginText: ["loginText"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -343,6 +398,8 @@ export const PlasmicHalcyonNavBar = Object.assign(
     scheduleText: makeNodeComponent("scheduleText"),
     aboutUsLink: makeNodeComponent("aboutUsLink"),
     contactLink: makeNodeComponent("contactLink"),
+    loginLink: makeNodeComponent("loginLink"),
+    loginText: makeNodeComponent("loginText"),
     // Metadata about props expected for PlasmicHalcyonNavBar
     internalVariantProps: PlasmicHalcyonNavBar__VariantProps,
     internalArgProps: PlasmicHalcyonNavBar__ArgProps
