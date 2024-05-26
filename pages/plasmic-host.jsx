@@ -1,14 +1,33 @@
 import * as React from 'react';
 import { PlasmicCanvasHost, registerComponent } from '@plasmicapp/react-web/lib/host';
+import MarianaIntegration from '../components/MarianaIntegration'; // Adjust the path as necessary
+import AuthButton from '../components/AuthButton'; // Adjust the path as necessary
 
-// You can register any code components that you want to use here; see
-// https://docs.plasmic.app/learn/code-components-ref/
-// And configure your Plasmic project to use the host url pointing at
-// the /plasmic-host page of your nextjs app (for example,
-// http://localhost:3000/plasmic-host).  See
-// https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
+// Register the MarianaIntegration component
+registerComponent(MarianaIntegration, {
+  name: 'MarianaIntegration',
+  props: {
+    path: 'string',
+    login: 'boolean',
+    logout: 'boolean',
+    hasBreadcrumbs: 'boolean',
+    sections: 'string',
+    activeProduct: 'string',
+    activeSection: 'string',
+    classroom: 'string',
+    classType: 'string',
+    instructors: 'string',
+    locations: 'string',
+    loggedInText: 'string',
+    loggedOutText: 'string'
+  },
+});
 
-// registerComponent(...)
+// Register the AuthButton component
+registerComponent(AuthButton, {
+  name: 'AuthButton',
+  props: {}
+});
 
 export default function PlasmicHost() {
   return <PlasmicCanvasHost />;
