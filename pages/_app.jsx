@@ -14,7 +14,7 @@ class MyApp extends App {
               __html: `
                 (function () {
                   // Set tenant name here
-                  var TENANT_NAME = 'your-tenant-name'; // Replace 'your-tenant-name' with your actual tenant name
+                  var TENANT_NAME = 'halcyonstudio'; // Replace 'your-tenant-name' with your actual tenant name
 
                   var d = document;
                   var sA = ['polyfills', 'js'];
