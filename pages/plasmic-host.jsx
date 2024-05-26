@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { PlasmicCanvasHost, registerComponent } from '@plasmicapp/react-web/lib/host';
-import MarianaIntegration from '../components/MarianaIntegration'; // Adjust the path as necessary
-import AuthButton from '../components/AuthButton'; // Adjust the path as necessary
+import MarianaIntegration from '../components/marianaIntegration'; // Adjust the path as necessary
+import AuthButton from '../components/authButton'; // Adjust the path as necessary
 
 // Register the MarianaIntegration component
 registerComponent(MarianaIntegration, {
