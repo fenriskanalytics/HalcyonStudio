@@ -2,9 +2,9 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import { PageParamsProvider as PageParamsProvider__ } from "@plasmicapp/react-web/lib/host";
-import GlobalContextsProvider from "../components/plasmic/copy_of_halcyon_studios/PlasmicGlobalContextsProvider";
-import { UnnamedGlobalGroupOfVariantsContext } from "../components/plasmic/copy_of_halcyon_studios/PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants";
-import { PlasmicBuy } from "../components/plasmic/copy_of_halcyon_studios/PlasmicBuy";
+import GlobalContextsProvider from "@/components/plasmic/copy_of_halcyon_studios/PlasmicGlobalContextsProvider";
+import { UnnamedGlobalGroupOfVariantsContext } from "@/components/plasmic/copy_of_halcyon_studios/PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants";
+import { PlasmicBuy } from "@/components/plasmic/copy_of_halcyon_studios/PlasmicBuy";
 import { useRouter } from "next/router";
 
 function Buy() {
