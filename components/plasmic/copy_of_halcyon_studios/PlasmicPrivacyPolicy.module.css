@@ -27,32 +27,34 @@
 .halcyonNavBar:global(.__wab_instance) {
   position: relative;
 }
-.button__iXy56:global(.__wab_instance) {
+.link__horjJ {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.button__ty82Y:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  width: 100%;
+  min-width: 0;
 }
-.svg__wvOVb {
+.svg__pbo8V {
   position: relative;
   object-fit: cover;
   width: auto;
   height: 1em;
 }
-.text__a3Hjp {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  color: var(--token-FLc3Q0URvh0f);
-  text-align: left;
-  text-transform: none;
-  line-height: 1.5;
-  letter-spacing: normal;
-  white-space: pre-wrap;
-  user-select: text;
-  text-decoration-line: none !important;
-  text-overflow: clip !important;
+.text__faIko {
+  font-size: 18px;
 }
-.svg__rlKvt {
+.svg__w5A6S {
   position: relative;
   object-fit: cover;
   width: auto;

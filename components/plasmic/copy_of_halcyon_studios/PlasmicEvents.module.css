@@ -29,32 +29,34 @@
   width: 100%;
   min-width: 0;
 }
-.button__cTjlN:global(.__wab_instance) {
+.link__uOhCc {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.button__wifj7:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  width: 100%;
+  min-width: 0;
 }
-.svg__rchof {
+.svg__r2EXi {
   position: relative;
   object-fit: cover;
   width: auto;
   height: 1em;
 }
-.text___6GuKk {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  color: var(--token-FLc3Q0URvh0f);
-  text-align: left;
-  text-transform: none;
-  line-height: 1.5;
-  letter-spacing: normal;
-  white-space: pre-wrap;
-  user-select: text;
-  text-decoration-line: none !important;
-  text-overflow: clip !important;
+.text__uFrAo {
+  font-size: 18px;
 }
-.svg__rTxrg {
+.svg__phWip {
   position: relative;
   object-fit: cover;
   width: auto;

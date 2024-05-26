@@ -140,11 +140,12 @@
   display: flex;
   position: relative;
   flex-direction: row;
+  width: auto;
 }
 .freeBox__bCdB > :global(.__wab_flex-container) {
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
 }
@@ -296,6 +297,7 @@
   flex-direction: row;
   cursor: pointer;
   color: var(--token-smWFv2ThVX1L);
+  white-space: pre;
   -webkit-transition-property: all;
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 0.5s;
@@ -330,7 +332,7 @@
   text-align: left;
   text-transform: none;
   letter-spacing: normal;
-  white-space: pre-wrap;
+  white-space: pre;
   user-select: text;
   text-decoration-line: none;
   text-overflow: clip;
@@ -395,32 +397,34 @@
     font-size: 14px;
   }
 }
-.button__ffA1E:global(.__wab_instance) {
+.link__arKQw {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.button__wf6JF:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  width: 100%;
+  min-width: 0;
 }
-.svg__mrWuh {
+.svg__uoScn {
   position: relative;
   object-fit: cover;
   width: auto;
   height: 1em;
 }
-.text___7Uhgs {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  color: var(--token-FLc3Q0URvh0f);
-  text-align: left;
-  text-transform: none;
-  line-height: 1.5;
-  letter-spacing: normal;
-  white-space: pre-wrap;
-  user-select: text;
-  text-decoration-line: none !important;
-  text-overflow: clip !important;
+.text___6O6Zp {
+  font-size: 18px;
 }
-.svg__sIemq {
+.svg__g5Wb {
   position: relative;
   object-fit: cover;
   width: auto;

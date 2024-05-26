@@ -1341,6 +1341,19 @@
           "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicWrapper.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "FqTR-H4DBY2f",
+          "name": "LoginButton",
+          "type": "managed",
+          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
+          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicLoginButton.jsx",
+          "importSpec": {
+            "modulePath": "LoginButton.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicLoginButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

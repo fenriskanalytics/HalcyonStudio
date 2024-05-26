@@ -16,12 +16,12 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  renderPlasmicSlot,
   useCurrentUser,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HalcyonNavBar from "../../HalcyonNavBar"; // plasmic-import: yxQmGgAy9hde/component
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import HalcyonFooter from "../../HalcyonFooter"; // plasmic-import: 7Ks2sCBPZV9k/component
 import HalcyonFooterBottom from "../../HalcyonFooterBottom"; // plasmic-import: Mjl6P60oGLT_/component
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -34,7 +34,7 @@ createPlasmicElementProxy;
 
 export const PlasmicAccount__VariantProps = new Array();
 
-export const PlasmicAccount__ArgProps = new Array("accountslot");
+export const PlasmicAccount__ArgProps = new Array();
 
 const $$ = {};
 
@@ -93,21 +93,18 @@ function PlasmicAccount__RenderFunc(props) {
             className={classNames("__wab_instance", sty.halcyonNavBar)}
           />
 
+          <Embed
+            data-plasmic-name={"marianaAccountCode"}
+            data-plasmic-override={overrides.marianaAccountCode}
+            className={classNames("__wab_instance", sty.marianaAccountCode)}
+            code={'<div data-mariana-integrations="/account"></div>'}
+          />
+
           <div
             data-plasmic-name={"freeBox"}
             data-plasmic-override={overrides.freeBox}
             className={classNames(projectcss.all, sty.freeBox)}
           >
-            <section
-              data-plasmic-name={"section"}
-              data-plasmic-override={overrides.section}
-              className={classNames(projectcss.all, sty.section)}
-            >
-              {renderPlasmicSlot({
-                defaultContents: null,
-                value: args.accountslot
-              })}
-            </section>
             <HalcyonFooter
               data-plasmic-name={"halcyonFooter"}
               data-plasmic-override={overrides.halcyonFooter}
@@ -130,15 +127,15 @@ const PlasmicDescendants = {
   root: [
     "root",
     "halcyonNavBar",
+    "marianaAccountCode",
     "freeBox",
-    "section",
     "halcyonFooter",
     "halcyonFooterBottom"
   ],
 
   halcyonNavBar: ["halcyonNavBar"],
-  freeBox: ["freeBox", "section", "halcyonFooter", "halcyonFooterBottom"],
-  section: ["section"],
+  marianaAccountCode: ["marianaAccountCode"],
+  freeBox: ["freeBox", "halcyonFooter", "halcyonFooterBottom"],
   halcyonFooter: ["halcyonFooter"],
   halcyonFooterBottom: ["halcyonFooterBottom"]
 };
@@ -176,8 +173,8 @@ export const PlasmicAccount = Object.assign(
   {
     // Helper components rendering sub-elements
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
+    marianaAccountCode: makeNodeComponent("marianaAccountCode"),
     freeBox: makeNodeComponent("freeBox"),
-    section: makeNodeComponent("section"),
     halcyonFooter: makeNodeComponent("halcyonFooter"),
     halcyonFooterBottom: makeNodeComponent("halcyonFooterBottom"),
     // Metadata about props expected for PlasmicAccount

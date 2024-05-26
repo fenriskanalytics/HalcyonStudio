@@ -32,13 +32,12 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css";
 import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: 2p9VhVhxAWhB5Nusx9QUQ2/projectcss
 import sty from "./PlasmicHalcyonNavBar.module.css"; // plasmic-import: yxQmGgAy9hde/css
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: j3whR53MQDz4/icon
 
 createPlasmicElementProxy;
 
 export const PlasmicHalcyonNavBar__VariantProps = new Array();
 
-export const PlasmicHalcyonNavBar__ArgProps = new Array("authLink");
+export const PlasmicHalcyonNavBar__ArgProps = new Array("authLink", "account");
 
 const $$ = {};
 
@@ -52,7 +51,16 @@ function useNextRouter() {
 function PlasmicHalcyonNavBar__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $translator = usePlasmicTranslator?.();
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          account: `/account`
+        },
+        props.args
+      ),
+    [props.args]
+  );
   const $props = {
     ...args,
     ...variants
@@ -223,63 +231,34 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
               </Stack__>
               {renderPlasmicSlot({
                 defaultContents: (
-                  <Button
-                    className={classNames("__wab_instance", sty.button__ffA1E)}
-                    color={"unnamedVariant"}
-                    endIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__sIemq)}
-                        role={"img"}
-                      />
-                    }
-                    onClick={async event => {
-                      const $steps = {};
-                      $steps["goToRegistrationPage"] = true
-                        ? (() => {
-                            const actionArgs = { destination: `/new-page` };
-                            return (({ destination }) => {
-                              if (
-                                typeof destination === "string" &&
-                                destination.startsWith("#")
-                              ) {
-                                document
-                                  .getElementById(destination.substr(1))
-                                  .scrollIntoView({ behavior: "smooth" });
-                              } else {
-                                __nextRouter?.push(destination);
-                              }
-                            })?.apply(null, [actionArgs]);
-                          })()
-                        : undefined;
-                      if (
-                        $steps["goToRegistrationPage"] != null &&
-                        typeof $steps["goToRegistrationPage"] === "object" &&
-                        typeof $steps["goToRegistrationPage"].then ===
-                          "function"
-                      ) {
-                        $steps["goToRegistrationPage"] = await $steps[
-                          "goToRegistrationPage"
-                        ];
-                      }
-                    }}
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__mrWuh)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__arKQw
+                    )}
+                    component={Link}
+                    href={`/account`}
+                    platform={"nextjs"}
                   >
-                    <div
+                    <Button
                       className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___7Uhgs
+                        "__wab_instance",
+                        sty.button__wf6JF
                       )}
+                      color={"unnamedVariant"}
                     >
-                      <Trans__>{"Login"}</Trans__>
-                    </div>
-                  </Button>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___6O6Zp
+                        )}
+                      >
+                        <Trans__>{"Login"}</Trans__>
+                      </div>
+                    </Button>
+                  </PlasmicLink__>
                 ),
 
                 value: args.authLink
