@@ -347,42 +347,66 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                   <Trans__>{"Login"}</Trans__>
                 </div>
               </Stack__>
-              {false
-                ? renderPlasmicSlot({
-                    defaultContents: (
-                      <PlasmicLink__
+              {renderPlasmicSlot({
+                defaultContents: (
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__arKQw
+                    )}
+                    component={Link}
+                    onClick={async event => {
+                      const $steps = {};
+                      $steps["goToAccount"] = true
+                        ? (() => {
+                            const actionArgs = { destination: `/account` };
+                            return (({ destination }) => {
+                              if (
+                                typeof destination === "string" &&
+                                destination.startsWith("#")
+                              ) {
+                                document
+                                  .getElementById(destination.substr(1))
+                                  .scrollIntoView({ behavior: "smooth" });
+                              } else {
+                                __nextRouter?.push(destination);
+                              }
+                            })?.apply(null, [actionArgs]);
+                          })()
+                        : undefined;
+                      if (
+                        $steps["goToAccount"] != null &&
+                        typeof $steps["goToAccount"] === "object" &&
+                        typeof $steps["goToAccount"].then === "function"
+                      ) {
+                        $steps["goToAccount"] = await $steps["goToAccount"];
+                      }
+                    }}
+                    platform={"nextjs"}
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__wf6JF
+                      )}
+                      color={"unnamedVariant"}
+                    >
+                      <div
                         className={classNames(
                           projectcss.all,
-                          projectcss.a,
-                          sty.link__arKQw
+                          projectcss.__wab_text,
+                          sty.text___6O6Zp
                         )}
-                        component={Link}
-                        href={`/account`}
-                        platform={"nextjs"}
                       >
-                        <Button
-                          className={classNames(
-                            "__wab_instance",
-                            sty.button__wf6JF
-                          )}
-                          color={"unnamedVariant"}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___6O6Zp
-                            )}
-                          >
-                            <Trans__>{"Login"}</Trans__>
-                          </div>
-                        </Button>
-                      </PlasmicLink__>
-                    ),
+                        <Trans__>{"Login"}</Trans__>
+                      </div>
+                    </Button>
+                  </PlasmicLink__>
+                ),
 
-                    value: args.authLink
-                  })
-                : null}
+                value: args.authLink
+              })}
             </Stack__>
           </Stack__>
         </Stack__>
