@@ -22,6 +22,7 @@ import {
   ensureGlobalVariants,
   hasVariant,
   renderPlasmicSlot,
+  set as $stateSet,
   useCurrentUser,
   useDollarState,
   usePlasmicTranslator
@@ -175,6 +176,28 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                 )}
                 component={Link}
                 href={`/memberships/buy`}
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["runCode"] = true
+                    ? (() => {
+                        const actionArgs = {
+                          customFunction: async () => {
+                            return undefined;
+                          }
+                        };
+                        return (({ customFunction }) => {
+                          return customFunction();
+                        })?.apply(null, [actionArgs]);
+                      })()
+                    : undefined;
+                  if (
+                    $steps["runCode"] != null &&
+                    typeof $steps["runCode"] === "object" &&
+                    typeof $steps["runCode"].then === "function"
+                  ) {
+                    $steps["runCode"] = await $steps["runCode"];
+                  }
+                }}
                 platform={"nextjs"}
               >
                 <div
@@ -274,8 +297,42 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                 href={
                   hasVariant(globalVariants, "screen", "tablet")
                     ? `/account`
-                    : `/contact`
+                    : `/account`
                 }
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["updateVariable"] = true
+                    ? (() => {
+                        const actionArgs = {
+                          variable: {
+                            objRoot: $state,
+                            variablePath: ["variable"]
+                          },
+                          operation: 0
+                        };
+                        return (({
+                          variable,
+                          value,
+                          startIndex,
+                          deleteCount
+                        }) => {
+                          if (!variable) {
+                            return;
+                          }
+                          const { objRoot, variablePath } = variable;
+                          $stateSet(objRoot, variablePath, value);
+                          return value;
+                        })?.apply(null, [actionArgs]);
+                      })()
+                    : undefined;
+                  if (
+                    $steps["updateVariable"] != null &&
+                    typeof $steps["updateVariable"] === "object" &&
+                    typeof $steps["updateVariable"].then === "function"
+                  ) {
+                    $steps["updateVariable"] = await $steps["updateVariable"];
+                  }
+                }}
                 platform={"nextjs"}
               >
                 <div
