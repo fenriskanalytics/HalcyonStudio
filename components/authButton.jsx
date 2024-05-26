@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import MarianaIntegration from './MarianaIntegration'; // Adjust the path as necessary
+import MarianaIntegration from './marianaIntegration'; // Adjust the path as necessary
 
 const AuthButton = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
