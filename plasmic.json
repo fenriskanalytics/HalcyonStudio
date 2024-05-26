@@ -1004,20 +1004,6 @@
           "plumeType": "text-input"
         },
         {
-          "id": "P_VWz6triYTO",
-          "name": "RegistrationPage",
-          "type": "managed",
-          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
-          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicRegistrationPage.jsx",
-          "importSpec": {
-            "modulePath": "../pages/new-page.jsx"
-          },
-          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicRegistrationPage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/new-page"
-        },
-        {
           "id": "D2DzRkcO7hL6",
           "name": "Checkbox",
           "type": "managed",
@@ -1030,20 +1016,6 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "checkbox"
-        },
-        {
-          "id": "BidW3xPGyJ_s",
-          "name": "UserInfoPage",
-          "type": "managed",
-          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
-          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicUserInfoPage.jsx",
-          "importSpec": {
-            "modulePath": "../pages/new-page-2.jsx"
-          },
-          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicUserInfoPage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/new-page-2"
         },
         {
           "id": "RpZs2qfsI2pw",

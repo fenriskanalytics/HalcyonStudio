@@ -20,6 +20,7 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants,
+  hasVariant,
   renderPlasmicSlot,
   useCurrentUser,
   usePlasmicTranslator
@@ -27,6 +28,7 @@ import {
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import Button from "../../Button"; // plasmic-import: EyzplKTGD_DF/component
 import { useScreenVariants as useScreenVariants_0QmF6MtAnaU } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: _0qmF6MTAnaU/globalVariant
+import { useUnnamedGlobalGroupOfVariants } from "./PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants"; // plasmic-import: wyqDOREeKIlt/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
@@ -71,7 +73,8 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants_0QmF6MtAnaU()
+    screen: useScreenVariants_0QmF6MtAnaU(),
+    unnamedGlobalGroupOfVariants: useUnnamedGlobalGroupOfVariants()
   });
   return (
     <div
@@ -102,18 +105,26 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
             className={classNames(projectcss.all, sty.freeBox__ae4H5)}
           >
             <PlasmicLink__
-              data-plasmic-name={"link"}
-              data-plasmic-override={overrides.link}
-              className={classNames(projectcss.all, projectcss.a, sty.link)}
+              data-plasmic-name={"home"}
+              data-plasmic-override={overrides.home}
+              className={classNames(projectcss.all, projectcss.a, sty.home)}
               component={Link}
+              href={`/home`}
               platform={"nextjs"}
             >
               <PlasmicImg__
                 data-plasmic-name={"img"}
                 data-plasmic-override={overrides.img}
                 alt={""}
-                className={classNames(sty.img)}
-                displayHeight={"auto"}
+                className={classNames(sty.img, {
+                  [sty.imgglobal_unnamedGlobalGroupOfVariants_unnamedVariant]:
+                    hasVariant(
+                      globalVariants,
+                      "unnamedGlobalGroupOfVariants",
+                      "unnamedVariant"
+                    )
+                })}
+                displayHeight={"100%"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
                 displayMinHeight={"0"}
@@ -274,7 +285,7 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "link",
+    "home",
     "img",
     "membershipsLink",
     "eventsLink",
@@ -283,7 +294,7 @@ const PlasmicDescendants = {
     "contactLink"
   ],
 
-  link: ["link", "img"],
+  home: ["home", "img"],
   img: ["img"],
   membershipsLink: ["membershipsLink"],
   eventsLink: ["eventsLink", "eventsText"],
@@ -324,7 +335,7 @@ export const PlasmicHalcyonNavBar = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    link: makeNodeComponent("link"),
+    home: makeNodeComponent("home"),
     img: makeNodeComponent("img"),
     membershipsLink: makeNodeComponent("membershipsLink"),
     eventsLink: makeNodeComponent("eventsLink"),
