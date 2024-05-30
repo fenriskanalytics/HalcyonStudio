@@ -10,18 +10,15 @@ function Schedule() {
   const router = useRouter();
 
   useEffect(() => {
-    // Page refresh logic
-    const handleRouteChange = () => {
-      window.location.reload();
-    };
+    // Logic to ensure the necessary prop is executed or page is refreshed
+    console.log('Page loaded or navigated to');
 
-    router.events.on('routeChangeComplete', handleRouteChange);
+    // Example action: log to console (replace with actual logic as needed)
+    // For example, you can re-fetch data or trigger a specific action here
 
-    // Cleanup the event listener on component unmount
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router.events]);
+    // Optionally, you can refresh the page programmatically if needed
+    // window.location.reload();
+  }, [router.asPath]); // Dependency array includes `router.asPath` to re-trigger on route change
 
   return (
     <UnnamedGlobalGroupOfVariantsContext.Provider value={undefined}>
@@ -44,12 +41,6 @@ function Schedule() {
           />
         </PageParamsProvider__>
       </GlobalContextsProvider>
-      <noscript>
-        Please enable JavaScript to view the
-        <a href="https://marianatek.com/?ref_noscript" rel="nofollow">
-          Web Integrations by Mariana Tek.
-        </a>
-      </noscript>
     </UnnamedGlobalGroupOfVariantsContext.Provider>
   );
 }

@@ -27,7 +27,7 @@
   max-width: 100%;
   position: relative;
 }
-.link___6Xm4I {
+.link__pGos4 {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -39,49 +39,26 @@
   min-width: 0;
   padding: 0px;
 }
-.button__exgOd:global(.__wab_instance) {
+.button___7VrW9:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   width: 100%;
   min-width: 0;
 }
-.svg___7BblJ {
+.svg__ov2PO {
   position: relative;
   object-fit: cover;
   width: auto;
   height: 1em;
 }
-.text__r8DaW {
+.text__g3VUp {
   font-size: 18px;
 }
-.svg__quZZj {
+.svg__yJjQn {
   position: relative;
   object-fit: cover;
   width: auto;
   height: 1em;
-}
-.scheduleSection {
-  display: grid;
-  position: relative;
-  align-content: flex-start;
-  justify-items: center;
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  background: var(--token-FLc3Q0URvh0f);
-  height: 100%;
-  min-width: 0;
-  min-height: 0;
-  grid-template-columns:
-    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
-    min(
-      var(--plsmc-standard-width),
-      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
-    )
-    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
-}
-.scheduleSection > * {
-  grid-column: 4;
 }
 .marianaScheduleCode:global(.__wab_instance):global(.__wab_instance) {
   position: relative;
