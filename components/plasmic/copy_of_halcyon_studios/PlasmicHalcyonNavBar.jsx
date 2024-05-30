@@ -175,7 +175,20 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                   sty.membershipsLink
                 )}
                 component={Link}
-                href={`/memberships/buy`}
+                href={(() => {
+                  try {
+                    return ($state.variable =
+                      "/memberships/buy/?_mt=%2Fbuy%2F48717");
+                  } catch (e) {
+                    if (
+                      e instanceof TypeError ||
+                      e?.plasmicType === "PlasmicUndefinedDataError"
+                    ) {
+                      return `/memberships/buy`;
+                    }
+                    throw e;
+                  }
+                })()}
                 onClick={async event => {
                   const $steps = {};
                   $steps["runCode"] = true
@@ -404,6 +417,33 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                         sty.button__wf6JF
                       )}
                       color={"unnamedVariant"}
+                      onClick={async event => {
+                        const $steps = {};
+                        $steps["goToPage"] = true
+                          ? (() => {
+                              const actionArgs = {};
+                              return (({ destination }) => {
+                                if (
+                                  typeof destination === "string" &&
+                                  destination.startsWith("#")
+                                ) {
+                                  document
+                                    .getElementById(destination.substr(1))
+                                    .scrollIntoView({ behavior: "smooth" });
+                                } else {
+                                  __nextRouter?.push(destination);
+                                }
+                              })?.apply(null, [actionArgs]);
+                            })()
+                          : undefined;
+                        if (
+                          $steps["goToPage"] != null &&
+                          typeof $steps["goToPage"] === "object" &&
+                          typeof $steps["goToPage"].then === "function"
+                        ) {
+                          $steps["goToPage"] = await $steps["goToPage"];
+                        }
+                      }}
                     >
                       <div
                         className={classNames(

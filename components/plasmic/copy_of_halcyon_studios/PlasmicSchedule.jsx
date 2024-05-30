@@ -112,6 +112,12 @@ function PlasmicSchedule__RenderFunc(props) {
             className={classNames("__wab_instance", sty.halcyonNavBar)}
           />
 
+          <section
+            data-plasmic-name={"scheduleSection"}
+            data-plasmic-override={overrides.scheduleSection}
+            className={classNames(projectcss.all, sty.scheduleSection)}
+          />
+
           <MarianaScheduleCode
             data-plasmic-name={"marianaScheduleCode"}
             data-plasmic-override={overrides.marianaScheduleCode}
@@ -145,6 +151,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "halcyonNavBar",
+    "scheduleSection",
     "marianaScheduleCode",
     "freeBox",
     "halcyonFooter",
@@ -152,6 +159,7 @@ const PlasmicDescendants = {
   ],
 
   halcyonNavBar: ["halcyonNavBar"],
+  scheduleSection: ["scheduleSection"],
   marianaScheduleCode: ["marianaScheduleCode"],
   freeBox: ["freeBox", "halcyonFooter", "halcyonFooterBottom"],
   halcyonFooter: ["halcyonFooter"],
@@ -191,6 +199,7 @@ export const PlasmicSchedule = Object.assign(
   {
     // Helper components rendering sub-elements
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
+    scheduleSection: makeNodeComponent("scheduleSection"),
     marianaScheduleCode: makeNodeComponent("marianaScheduleCode"),
     freeBox: makeNodeComponent("freeBox"),
     halcyonFooter: makeNodeComponent("halcyonFooter"),
