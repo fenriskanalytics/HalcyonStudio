@@ -2,19 +2,20 @@
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
+import { PlasmicRootProvider } from '@plasmicapp/react-web';
 
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <>
+      <PlasmicRootProvider>
         <Head>
           <script
             dangerouslySetInnerHTML={{
               __html: `
                 (function () {
                   // Set tenant name here
-                  var TENANT_NAME = 'halcyonstudio'; // Replace 'your-tenant-name' with your actual tenant name
+                  var TENANT_NAME = 'halcyonstudio';
 
                   var d = document;
                   var sA = ['polyfills', 'js'];
@@ -37,7 +38,7 @@ class MyApp extends App {
             Web Integrations by Mariana Tek.
           </a>
         </noscript>
-      </>
+      </PlasmicRootProvider>
     );
   }
 }
