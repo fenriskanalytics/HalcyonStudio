@@ -1178,20 +1178,6 @@
           "path": "/memberships"
         },
         {
-          "id": "J9z0PWbHq357",
-          "name": "Events",
-          "type": "managed",
-          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
-          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicEvents.jsx",
-          "importSpec": {
-            "modulePath": "../pages/events.jsx"
-          },
-          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicEvents.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/events"
-        },
-        {
           "id": "WHvMDFyr8qi3",
           "name": "AboutUs",
           "type": "managed",
@@ -1313,34 +1299,6 @@
           "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicWrapper.module.css",
           "scheme": "blackbox",
           "componentType": "component"
-        },
-        {
-          "id": "P_VWz6triYTO",
-          "name": "RegistrationPage",
-          "type": "managed",
-          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
-          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicRegistrationPage.jsx",
-          "importSpec": {
-            "modulePath": "../pages/new-page.jsx"
-          },
-          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicRegistrationPage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/new-page"
-        },
-        {
-          "id": "BidW3xPGyJ_s",
-          "name": "UserInfoPage",
-          "type": "managed",
-          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
-          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicUserInfoPage.jsx",
-          "importSpec": {
-            "modulePath": "../pages/new-page-2.jsx"
-          },
-          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicUserInfoPage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/new-page-2"
         },
         {
           "id": "g36MTc5kLKgr",

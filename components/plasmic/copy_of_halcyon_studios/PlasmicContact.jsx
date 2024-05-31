@@ -10,11 +10,8 @@
 // Component: AAAiqfM0zv7D
 import * as React from "react";
 import Head from "next/head";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import {
-  PlasmicImg as PlasmicImg__,
-  PlasmicLink as PlasmicLink__,
   Stack as Stack__,
   Trans as Trans__,
   classNames,
@@ -32,6 +29,8 @@ import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HalcyonNavBar from "../../HalcyonNavBar"; // plasmic-import: yxQmGgAy9hde/component
 import Button from "../../Button"; // plasmic-import: EyzplKTGD_DF/component
 import TextInput from "../../TextInput"; // plasmic-import: 21hHWiV01rOa/component
+import HalcyonFooter from "../../HalcyonFooter"; // plasmic-import: 7Ks2sCBPZV9k/component
+import HalcyonFooterBottom from "../../HalcyonFooterBottom"; // plasmic-import: Mjl6P60oGLT_/component
 import { useScreenVariants as useScreenVariants_0QmF6MtAnaU } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: _0qmF6MTAnaU/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -40,9 +39,6 @@ import projectcss from "./plasmic.module.css"; // plasmic-import: 2p9VhVhxAWhB5N
 import sty from "./PlasmicContact.module.css"; // plasmic-import: AAAiqfM0zv7D/css
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: j3whR53MQDz4/icon
 import Searchsvg2Icon from "./icons/PlasmicIcon__Searchsvg2"; // plasmic-import: OhHbf5je4-iq/icon
-import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: NrV46_Uha6H4/icon
-import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: hcWPVY4v-Rr4/icon
-import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: pQQeSR_6DGYe/icon
 
 createPlasmicElementProxy;
 
@@ -76,12 +72,6 @@ function PlasmicContact__RenderFunc(props) {
     () => [
       {
         path: "textInput.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      },
-      {
-        path: "textInput2.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
@@ -364,411 +354,6 @@ function PlasmicContact__RenderFunc(props) {
               </div>
             </div>
           </section>
-          <section className={classNames(projectcss.all, sty.section__bUGc)}>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__jGlOh)}
-            >
-              <h2
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2__ikrv9
-                )}
-              >
-                <Trans__>
-                  {hasVariant(globalVariants, "screen", "mobile")
-                    ? "Top Collections"
-                    : "Tampa's First Luxury Yoga Studio"}
-                </Trans__>
-              </h2>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__fNcvv
-                )}
-              >
-                <Trans__>
-                  {
-                    "Yoga is a journey of self-discovery, a path to finding your focus, and a means of pushing personal limits. We offer a refined and authentic yoga experience, embracing the purity of its practice. Join us in the pursuit of inner balance, strength, and tranquility, where yoga is about reconnecting with yourself and finding your own path to well-being."
-                  }
-                </Trans__>
-              </div>
-            </Stack__>
-          </section>
-          <section className={classNames(projectcss.all, sty.section__ujZ7S)}>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__mEZ)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__xwyIi)}
-              >
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.__wab_text,
-                    sty.h2___3Qszh
-                  )}
-                >
-                  <Trans__>{"More related products"}</Trans__>
-                </h2>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__doqcV
-                  )}
-                >
-                  <Trans__>
-                    {"Lorem ipsum dolor sit amet, consectetur adipiscing"}
-                  </Trans__>
-                </div>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns__upSdV)}
-              >
-                <div className={classNames(projectcss.all, sty.column__ynbk1)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__ha8EU)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___12OBv)}
-                      displayHeight={"430px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/copy_of_halcyon_studios/images/mohammadMetriE0On3VGrBcUnsplashjpg.jpg",
-                        fullWidth: 640,
-                        fullHeight: 640,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__fZs8)}
-                    >
-                      <h4
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h4,
-                          projectcss.__wab_text,
-                          sty.h4__wsQvk
-                        )}
-                      >
-                        <Trans__>{"Product title"}</Trans__>
-                      </h4>
-                    </Stack__>
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__lPDy)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__s0Rbw)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__tZtBy)}
-                      displayHeight={"430px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/copy_of_halcyon_studios/images/devinAveryBrVqq2Uak4EUnsplashjpg.jpg",
-                        fullWidth: 640,
-                        fullHeight: 427,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___59V5X
-                      )}
-                    >
-                      <h4
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h4,
-                          projectcss.__wab_text,
-                          sty.h4__a08Sb
-                        )}
-                      >
-                        <Trans__>{"Product two"}</Trans__>
-                      </h4>
-                    </Stack__>
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__gClqw)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__he5IL)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___1BvuZ)}
-                      displayHeight={"430px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/copy_of_halcyon_studios/images/fernandoAndradePotCpeCw8AUnsplashjpg.jpg",
-                        fullWidth: 640,
-                        fullHeight: 920,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__uuZi3)}
-                    >
-                      <h4
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h4,
-                          projectcss.__wab_text,
-                          sty.h4__qRqBa
-                        )}
-                      >
-                        <Trans__>{"Product title"}</Trans__>
-                      </h4>
-                    </Stack__>
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__tb8Al)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__gVdn)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__bzhGe)}
-                      displayHeight={"430px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/copy_of_halcyon_studios/images/wristWatch21593511920Jpg.jpg",
-                        fullWidth: 1920,
-                        fullHeight: 1223,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__lZqy1)}
-                    >
-                      <h4
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h4,
-                          projectcss.__wab_text,
-                          sty.h4__ys8XN
-                        )}
-                      >
-                        <Trans__>{"Product title"}</Trans__>
-                      </h4>
-                    </Stack__>
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__z0SLb)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__rWDi)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__nZ3Hm)}
-                      displayHeight={"430px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/copy_of_halcyon_studios/images/giorgioTrovatoK62U25Jk6VoUnsplashjpg.jpg",
-                        fullWidth: 640,
-                        fullHeight: 640,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___3Jg4W
-                      )}
-                    >
-                      <h4
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h4,
-                          projectcss.__wab_text,
-                          sty.h4__b3DaA
-                        )}
-                      >
-                        <Trans__>{"Product title"}</Trans__>
-                      </h4>
-                    </Stack__>
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__uoCz2)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__gfObc)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__qdfgq)}
-                      displayHeight={"430px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/copy_of_halcyon_studios/images/imaniBahatiLxVxPa1LovmUnsplashjpg.jpg",
-                        fullWidth: 640,
-                        fullHeight: 640,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__lw1D)}
-                    >
-                      <h4
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h4,
-                          projectcss.__wab_text,
-                          sty.h4___4Qly9
-                        )}
-                      >
-                        <Trans__>{"Product title"}</Trans__>
-                      </h4>
-                    </Stack__>
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__aUyz)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__pfbm2)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___9Y7Fa)}
-                      displayHeight={"430px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/copy_of_halcyon_studios/images/grantRitchieNWXNttWvGsUnsplash1Jpg.jpg",
-                        fullWidth: 2560,
-                        fullHeight: 3840,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___7HC1C
-                      )}
-                    >
-                      <h4
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h4,
-                          projectcss.__wab_text,
-                          sty.h4__fg6R2
-                        )}
-                      >
-                        <Trans__>{"Product title"}</Trans__>
-                      </h4>
-                    </Stack__>
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__btuBh)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__p99M4)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__t6VqW)}
-                      displayHeight={"430px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"100%"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/copy_of_halcyon_studios/images/charlesDeluvio1Nx1Qr5DTeUnsplashjpg.jpg",
-                        fullWidth: 640,
-                        fullHeight: 640,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__vbG6U)}
-                    >
-                      <h4
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h4,
-                          projectcss.__wab_text,
-                          sty.h4__bkz7E
-                        )}
-                      >
-                        <Trans__>{"Product title"}</Trans__>
-                      </h4>
-                    </Stack__>
-                  </div>
-                </div>
-              </Stack__>
-            </Stack__>
-          </section>
           <section className={classNames(projectcss.all, sty.section__dDvK)}>
             <Stack__
               as={"div"}
@@ -789,15 +374,6 @@ function PlasmicContact__RenderFunc(props) {
                     : "Sign up for the newsletter"}
                 </Trans__>
               </h2>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__qnNqz
-                )}
-              >
-                <Trans__>{"Lorem ipsum dolor sit amet."}</Trans__>
-              </div>
               <div className={classNames(projectcss.all, sty.freeBox__c3A0J)}>
                 <div className={classNames(projectcss.all, sty.freeBox__uSet9)}>
                   <TextInput
@@ -857,363 +433,18 @@ function PlasmicContact__RenderFunc(props) {
                 </div>
               </div>
             </Stack__>
+            <HalcyonFooter
+              data-plasmic-name={"halcyonFooter"}
+              data-plasmic-override={overrides.halcyonFooter}
+              className={classNames("__wab_instance", sty.halcyonFooter)}
+            />
+
+            <HalcyonFooterBottom
+              data-plasmic-name={"halcyonFooterBottom"}
+              data-plasmic-override={overrides.halcyonFooterBottom}
+              className={classNames("__wab_instance", sty.halcyonFooterBottom)}
+            />
           </section>
-          <div className={classNames(projectcss.all, sty.freeBox__hho)}>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__mrGh5)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__x0MhD)}
-              >
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__f7Ack)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"120px"}
-                  src={{
-                    src: "/plasmic/copy_of_halcyon_studios/images/groupLogosvg.svg",
-                    fullWidth: 300,
-                    fullHeight: 105,
-                    aspectRatio: 2.864865
-                  }}
-                />
-
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__gMoLl)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___96Q2C
-                    )}
-                  >
-                    <Trans__>
-                      {
-                        "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Lorem Ipsum Dolor Sit Amet, Consectetur ."
-                      }
-                    </Trans__>
-                  </div>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__xjR)}
-                  >
-                    <Icon3Icon
-                      className={classNames(projectcss.all, sty.svg__ylQid)}
-                      role={"img"}
-                    />
-
-                    <Icon2Icon
-                      className={classNames(projectcss.all, sty.svg__zboD)}
-                      role={"img"}
-                    />
-
-                    <Icon28Icon
-                      className={classNames(projectcss.all, sty.svg__ngFiD)}
-                      role={"img"}
-                    />
-                  </Stack__>
-                </Stack__>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__chKyF)}
-              >
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3___5K2Q
-                  )}
-                >
-                  <Trans__>{"SUPPORT"}</Trans__>
-                </h3>
-                <Stack__
-                  as={PlasmicLink__}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__mGx8B
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__odOOf
-                    )}
-                  >
-                    <Trans__>{"FAQ"}</Trans__>
-                  </div>
-                </Stack__>
-                <Stack__
-                  as={PlasmicLink__}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__tmmmo
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__jcX2F
-                    )}
-                  >
-                    <Trans__>{"Shipping"}</Trans__>
-                  </div>
-                </Stack__>
-                <Stack__
-                  as={PlasmicLink__}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__cWuQu
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___3Z5Q8
-                    )}
-                  >
-                    <Trans__>{"Returns + Exchanges"}</Trans__>
-                  </div>
-                </Stack__>
-                <Stack__
-                  as={PlasmicLink__}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link___2L90S
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__bwRfQ
-                    )}
-                  >
-                    <Trans__>{"Contact Us"}</Trans__>
-                  </div>
-                </Stack__>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__ipcDn)}
-              >
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__vI2Kg
-                  )}
-                >
-                  <Trans__>{"COMPANY"}</Trans__>
-                </h3>
-                <Stack__
-                  as={PlasmicLink__}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__r0RYk
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__qskzS
-                    )}
-                  >
-                    <Trans__>{"Our Mission"}</Trans__>
-                  </div>
-                </Stack__>
-                <Stack__
-                  as={PlasmicLink__}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__y6Zsi
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__f3I
-                    )}
-                  >
-                    <Trans__>{"Sustainability"}</Trans__>
-                  </div>
-                </Stack__>
-                <Stack__
-                  as={PlasmicLink__}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__wOCg2
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__w5M
-                    )}
-                  >
-                    <Trans__>{"Stores"}</Trans__>
-                  </div>
-                </Stack__>
-                <Stack__
-                  as={PlasmicLink__}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__emBxw
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__h3Rr9
-                    )}
-                  >
-                    <Trans__>{"Careers"}</Trans__>
-                  </div>
-                </Stack__>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__iCGbh)}
-              >
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__r82Ym
-                  )}
-                >
-                  <Trans__>{"Newsletter"}</Trans__>
-                </h3>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__znzfo
-                  )}
-                >
-                  <Trans__>{"Lorem ipsum dolor sit amet, "}</Trans__>
-                </div>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox___7IDyc)}
-                >
-                  <TextInput
-                    data-plasmic-name={"textInput2"}
-                    data-plasmic-override={overrides.textInput2}
-                    className={classNames("__wab_instance", sty.textInput2)}
-                    endIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__dzgki)}
-                        role={"img"}
-                      />
-                    }
-                    onChange={(...eventArgs) => {
-                      generateStateOnChangeProp($state, [
-                        "textInput2",
-                        "value"
-                      ])((e => e.target?.value).apply(null, eventArgs));
-                    }}
-                    placeholder={"Enter email  address"}
-                    startIcon={
-                      <Searchsvg2Icon
-                        className={classNames(projectcss.all, sty.svg__wbl6V)}
-                        role={"img"}
-                      />
-                    }
-                    value={
-                      generateStateValueProp($state, ["textInput2", "value"]) ??
-                      ""
-                    }
-                  />
-
-                  <Button
-                    className={classNames("__wab_instance", sty.button__cEBp)}
-                    endIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__mPmBs)}
-                        role={"img"}
-                      />
-                    }
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__hvOq)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__bmWo9
-                      )}
-                    >
-                      <Trans__>{"SUbscribe"}</Trans__>
-                    </div>
-                  </Button>
-                </Stack__>
-              </Stack__>
-            </Stack__>
-          </div>
         </Stack__>
       </div>
     </React.Fragment>
@@ -1221,10 +452,18 @@ function PlasmicContact__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "halcyonNavBar", "textInput", "textInput2"],
+  root: [
+    "root",
+    "halcyonNavBar",
+    "textInput",
+    "halcyonFooter",
+    "halcyonFooterBottom"
+  ],
+
   halcyonNavBar: ["halcyonNavBar"],
   textInput: ["textInput"],
-  textInput2: ["textInput2"]
+  halcyonFooter: ["halcyonFooter"],
+  halcyonFooterBottom: ["halcyonFooterBottom"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -1261,7 +500,8 @@ export const PlasmicContact = Object.assign(
     // Helper components rendering sub-elements
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
     textInput: makeNodeComponent("textInput"),
-    textInput2: makeNodeComponent("textInput2"),
+    halcyonFooter: makeNodeComponent("halcyonFooter"),
+    halcyonFooterBottom: makeNodeComponent("halcyonFooterBottom"),
     // Metadata about props expected for PlasmicContact
     internalVariantProps: PlasmicContact__VariantProps,
     internalArgProps: PlasmicContact__ArgProps,

@@ -32,8 +32,8 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css";
 import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: 2p9VhVhxAWhB5Nusx9QUQ2/projectcss
 import sty from "./PlasmicMemberships.module.css"; // plasmic-import: bILD32tm80zd/css
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: j3whR53MQDz4/icon
 import Icon10Icon from "./icons/PlasmicIcon__Icon10"; // plasmic-import: kMEAFFFW7kqs/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: j3whR53MQDz4/icon
 import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: 519ruFevp7bj/icon
 
 createPlasmicElementProxy;

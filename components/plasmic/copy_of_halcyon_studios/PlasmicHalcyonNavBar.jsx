@@ -20,25 +20,22 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants,
-  renderPlasmicSlot,
   useCurrentUser,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import Button from "../../Button"; // plasmic-import: EyzplKTGD_DF/component
 import { useScreenVariants as useScreenVariants_0QmF6MtAnaU } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: _0qmF6MTAnaU/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: 2p9VhVhxAWhB5Nusx9QUQ2/projectcss
 import sty from "./PlasmicHalcyonNavBar.module.css"; // plasmic-import: yxQmGgAy9hde/css
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: j3whR53MQDz4/icon
 
 createPlasmicElementProxy;
 
 export const PlasmicHalcyonNavBar__VariantProps = new Array();
 
-export const PlasmicHalcyonNavBar__ArgProps = new Array("authLink");
+export const PlasmicHalcyonNavBar__ArgProps = new Array();
 
 const $$ = {};
 
@@ -228,67 +225,31 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                   <Trans__>{"Contact"}</Trans__>
                 </div>
               </Stack__>
-              {renderPlasmicSlot({
-                defaultContents: (
-                  <Button
-                    className={classNames("__wab_instance", sty.button__ffA1E)}
-                    color={"unnamedVariant"}
-                    endIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__sIemq)}
-                        role={"img"}
-                      />
-                    }
-                    link={`/account`}
-                    onClick={async event => {
-                      const $steps = {};
-                      $steps["goToAccount"] = true
-                        ? (() => {
-                            const actionArgs = { destination: `/account` };
-                            return (({ destination }) => {
-                              if (
-                                typeof destination === "string" &&
-                                destination.startsWith("#")
-                              ) {
-                                document
-                                  .getElementById(destination.substr(1))
-                                  .scrollIntoView({ behavior: "smooth" });
-                              } else {
-                                __nextRouter?.push(destination);
-                              }
-                            })?.apply(null, [actionArgs]);
-                          })()
-                        : undefined;
-                      if (
-                        $steps["goToAccount"] != null &&
-                        typeof $steps["goToAccount"] === "object" &&
-                        typeof $steps["goToAccount"].then === "function"
-                      ) {
-                        $steps["goToAccount"] = await $steps["goToAccount"];
-                      }
-                    }}
-                    startIcon={
-                      <ChecksvgIcon
-                        className={classNames(projectcss.all, sty.svg__mrWuh)}
-                        role={"img"}
-                      />
-                    }
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___7Uhgs
-                      )}
-                    >
-                      <Trans__>{"Login"}</Trans__>
-                    </div>
-                  </Button>
-                ),
-
-                value: args.authLink
-              })}
+              <Stack__
+                as={PlasmicLink__}
+                data-plasmic-name={"loginLink"}
+                data-plasmic-override={overrides.loginLink}
+                hasGap={true}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.loginLink
+                )}
+                component={Link}
+                href={`/account`}
+                platform={"nextjs"}
+                tabIndex={4}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__xAoM
+                  )}
+                >
+                  <Trans__>{"Login"}</Trans__>
+                </div>
+              </Stack__>
             </Stack__>
           </Stack__>
         </Stack__>
@@ -306,7 +267,8 @@ const PlasmicDescendants = {
     "eventsLink",
     "eventsText",
     "aboutUsLink",
-    "contactLink"
+    "contactLink",
+    "loginLink"
   ],
 
   homeLink: ["homeLink", "img"],
@@ -315,7 +277,8 @@ const PlasmicDescendants = {
   eventsLink: ["eventsLink", "eventsText"],
   eventsText: ["eventsText"],
   aboutUsLink: ["aboutUsLink"],
-  contactLink: ["contactLink"]
+  contactLink: ["contactLink"],
+  loginLink: ["loginLink"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -357,6 +320,7 @@ export const PlasmicHalcyonNavBar = Object.assign(
     eventsText: makeNodeComponent("eventsText"),
     aboutUsLink: makeNodeComponent("aboutUsLink"),
     contactLink: makeNodeComponent("contactLink"),
+    loginLink: makeNodeComponent("loginLink"),
     // Metadata about props expected for PlasmicHalcyonNavBar
     internalVariantProps: PlasmicHalcyonNavBar__VariantProps,
     internalArgProps: PlasmicHalcyonNavBar__ArgProps

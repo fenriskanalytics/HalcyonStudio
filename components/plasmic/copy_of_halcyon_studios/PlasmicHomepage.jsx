@@ -25,10 +25,8 @@ import {
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HalcyonNavBar from "../../HalcyonNavBar"; // plasmic-import: yxQmGgAy9hde/component
-import Button from "../../Button"; // plasmic-import: EyzplKTGD_DF/component
 import HomeSection from "../../HomeSection"; // plasmic-import: 9rGWqtPg4lLP/component
 import LoginFormPopup from "../../LoginFormPopup"; // plasmic-import: QZYU2P-IDkxx/component
-import TextInput from "../../TextInput"; // plasmic-import: 21hHWiV01rOa/component
 import HalcyonFooter from "../../HalcyonFooter"; // plasmic-import: 7Ks2sCBPZV9k/component
 import HalcyonFooterBottom from "../../HalcyonFooterBottom"; // plasmic-import: Mjl6P60oGLT_/component
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -67,12 +65,6 @@ function PlasmicHomepage__RenderFunc(props) {
   const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
-      {
-        path: "textInput.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      },
       {
         path: "loginFormPopup.plasmicAntd5FormValue",
         type: "private",
@@ -160,11 +152,13 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames(projectcss.all, sty.freeBox__hYleL)}
             >
               <h2
+                data-plasmic-name={"h2"}
+                data-plasmic-override={overrides.h2}
                 className={classNames(
                   projectcss.all,
                   projectcss.h2,
                   projectcss.__wab_text,
-                  sty.h2__roV9D
+                  sty.h2
                 )}
               >
                 <Trans__>{"Tampa's First Luxury Studio"}</Trans__>
@@ -220,64 +214,6 @@ function PlasmicHomepage__RenderFunc(props) {
                 </Trans__>
               </div>
             </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__disM2)}
-            >
-              <h2
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2___0Eah3
-                )}
-              >
-                <Trans__>
-                  {"Sign Up for Launch Information and Membership Promotions"}
-                </Trans__>
-              </h2>
-              <div className={classNames(projectcss.all, sty.freeBox__kvvjf)}>
-                <div className={classNames(projectcss.all, sty.freeBox__xsZiv)}>
-                  <TextInput
-                    data-plasmic-name={"textInput"}
-                    data-plasmic-override={overrides.textInput}
-                    className={classNames("__wab_instance", sty.textInput)}
-                    onChange={(...eventArgs) => {
-                      generateStateOnChangeProp($state, ["textInput", "value"])(
-                        (e => e.target?.value).apply(null, eventArgs)
-                      );
-                    }}
-                    placeholder={"Enter your Email  here"}
-                    value={
-                      generateStateValueProp($state, ["textInput", "value"]) ??
-                      ""
-                    }
-                  />
-
-                  <Button
-                    data-plasmic-name={"signUpButton"}
-                    data-plasmic-override={overrides.signUpButton}
-                    className={classNames("__wab_instance", sty.signUpButton)}
-                    color={"brGreen"}
-                    size={"compact"}
-                    submitsForm={true}
-                  >
-                    <div
-                      data-plasmic-name={"text"}
-                      data-plasmic-override={overrides.text}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text
-                      )}
-                    >
-                      <Trans__>{"Sign Up"}</Trans__>
-                    </div>
-                  </Button>
-                </div>
-              </div>
-            </Stack__>
           </section>
           <div className={classNames(projectcss.all, sty.freeBox__dg1Vm)}>
             <HalcyonFooter
@@ -304,31 +240,19 @@ const PlasmicDescendants = {
     "halcyonNavBar",
     "homeSection",
     "heroSection",
+    "h2",
     "loginFormPopup",
     "missionStatement",
-    "textInput",
-    "signUpButton",
-    "text",
     "halcyonFooter",
     "halcyonFooterBottom"
   ],
 
   halcyonNavBar: ["halcyonNavBar"],
   homeSection: ["homeSection"],
-  heroSection: [
-    "heroSection",
-    "loginFormPopup",
-    "missionStatement",
-    "textInput",
-    "signUpButton",
-    "text"
-  ],
-
+  heroSection: ["heroSection", "h2", "loginFormPopup", "missionStatement"],
+  h2: ["h2"],
   loginFormPopup: ["loginFormPopup"],
   missionStatement: ["missionStatement"],
-  textInput: ["textInput"],
-  signUpButton: ["signUpButton", "text"],
-  text: ["text"],
   halcyonFooter: ["halcyonFooter"],
   halcyonFooterBottom: ["halcyonFooterBottom"]
 };
@@ -368,11 +292,9 @@ export const PlasmicHomepage = Object.assign(
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
     homeSection: makeNodeComponent("homeSection"),
     heroSection: makeNodeComponent("heroSection"),
+    h2: makeNodeComponent("h2"),
     loginFormPopup: makeNodeComponent("loginFormPopup"),
     missionStatement: makeNodeComponent("missionStatement"),
-    textInput: makeNodeComponent("textInput"),
-    signUpButton: makeNodeComponent("signUpButton"),
-    text: makeNodeComponent("text"),
     halcyonFooter: makeNodeComponent("halcyonFooter"),
     halcyonFooterBottom: makeNodeComponent("halcyonFooterBottom"),
     // Metadata about props expected for PlasmicHomepage
