@@ -27,48 +27,36 @@
   max-width: 100%;
   position: relative;
 }
-.link__tcGUv {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-  padding: 0px;
-}
-.button__h4KOx:global(.__wab_instance) {
+.button__wuXsq:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-  width: 100%;
-  min-width: 0;
 }
-.svg__cpj38 {
+.svg__cOlmh {
   position: relative;
   object-fit: cover;
   width: auto;
   height: 1em;
 }
-.text__e1FRi {
-  font-size: 18px;
+.text__sfLhf {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--token-FLc3Q0URvh0f);
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none !important;
+  text-overflow: clip !important;
 }
-.svg___7ENhA {
+.svg___3X0Ch {
   position: relative;
   object-fit: cover;
   width: auto;
   height: 1em;
-}
-.marianaAccountCode:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: var(--token-FLc3Q0URvh0f);
-  min-width: 0;
-  min-height: 0;
 }
 .freeBox {
   display: flex;
@@ -81,6 +69,29 @@
   max-width: 100%;
   min-width: 0;
   padding: 0px;
+}
+.section {
+  display: grid;
+  position: relative;
+  align-content: flex-start;
+  justify-items: center;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%;
+  background: var(--token-FLc3Q0URvh0f);
+  min-width: 0;
+  min-height: 0;
+  grid-template-columns:
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
+}
+.section > * {
+  grid-column: 4;
 }
 .halcyonFooter:global(.__wab_instance) {
   max-width: 100%;

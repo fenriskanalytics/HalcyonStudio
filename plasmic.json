@@ -1267,7 +1267,7 @@
           "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
           "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicBuy.jsx",
           "importSpec": {
-            "modulePath": "../pages/memberships/buy.jsx"
+            "modulePath": "../pages/buy.jsx"
           },
           "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicBuy.module.css",
           "scheme": "blackbox",
@@ -1315,30 +1315,46 @@
           "componentType": "component"
         },
         {
-          "id": "FqTR-H4DBY2f",
-          "name": "LoginButton",
+          "id": "P_VWz6triYTO",
+          "name": "RegistrationPage",
           "type": "managed",
           "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
-          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicLoginButton.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicRegistrationPage.jsx",
           "importSpec": {
-            "modulePath": "LoginButton.jsx"
+            "modulePath": "../pages/new-page.jsx"
           },
-          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicLoginButton.module.css",
+          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicRegistrationPage.module.css",
           "scheme": "blackbox",
-          "componentType": "component"
+          "componentType": "page",
+          "path": "/new-page"
         },
         {
-          "id": "B45lS1hhx1Vs",
-          "name": "MarianaScheduleCode",
+          "id": "BidW3xPGyJ_s",
+          "name": "UserInfoPage",
           "type": "managed",
           "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
-          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicMarianaScheduleCode.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicUserInfoPage.jsx",
           "importSpec": {
-            "modulePath": "MarianaScheduleCode.jsx"
+            "modulePath": "../pages/new-page-2.jsx"
           },
-          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicMarianaScheduleCode.module.css",
+          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicUserInfoPage.module.css",
           "scheme": "blackbox",
-          "componentType": "component"
+          "componentType": "page",
+          "path": "/new-page-2"
+        },
+        {
+          "id": "g36MTc5kLKgr",
+          "name": "Button2",
+          "type": "managed",
+          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
+          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicButton2.jsx",
+          "importSpec": {
+            "modulePath": "Button2.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [
@@ -1486,6 +1502,11 @@
           "id": "dck6yM8AEIGO",
           "name": "LogosvgIcon",
           "moduleFilePath": "plasmic/copy_of_halcyon_studios/icons/PlasmicIcon__Logosvg.jsx"
+        },
+        {
+          "id": "kMEAFFFW7kqs",
+          "name": "Icon10Icon",
+          "moduleFilePath": "plasmic/copy_of_halcyon_studios/icons/PlasmicIcon__Icon10.jsx"
         }
       ],
       "images": [

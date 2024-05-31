@@ -130,12 +130,25 @@ function PlasmicHomepage__RenderFunc(props) {
             className={classNames("__wab_instance", sty.halcyonNavBar)}
           />
 
-          <HomeSection
-            data-plasmic-name={"homeSection"}
-            data-plasmic-override={overrides.homeSection}
-            className={classNames("__wab_instance", sty.homeSection)}
-          />
-
+          {(() => {
+            try {
+              return !$state.loginFormPopup.unblurPopUp;
+            } catch (e) {
+              if (
+                e instanceof TypeError ||
+                e?.plasmicType === "PlasmicUndefinedDataError"
+              ) {
+                return true;
+              }
+              throw e;
+            }
+          })() ? (
+            <HomeSection
+              data-plasmic-name={"homeSection"}
+              data-plasmic-override={overrides.homeSection}
+              className={classNames("__wab_instance", sty.homeSection)}
+            />
+          ) : null}
           <section
             data-plasmic-name={"heroSection"}
             data-plasmic-override={overrides.heroSection}
@@ -192,15 +205,17 @@ function PlasmicHomepage__RenderFunc(props) {
                 />
               ) : null}
               <div
+                data-plasmic-name={"missionStatement"}
+                data-plasmic-override={overrides.missionStatement}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__oMktG
+                  sty.missionStatement
                 )}
               >
                 <Trans__>
                   {
-                    "Yoga is a journey of self-discovery, a path to finding your focus, and a means of pushing personal limits. We offer a refined and authentic yoga experience, embracing the purity of its practice. Join us in the pursuit of inner balance, strength, and tranquility, where yoga is about reconnecting with yourself and finding your own path to well-being."
+                    "At Halcyon, we know that each of us humans are on our own healing journey and that movement is the medicine that will take us to our ultimate destination \u2014 peace of both body and mind. That is why our is aim is to bring a variety of movement styles to our community and allow for each individual to find their own chosen form of expression and to tap into their creativity and their breath as they refine the body and mind. Even in stillness,Halcyon has been designed to be a refuge from our modern day world with natural elements incorporated into our design choices that carry healing energies and frequencies members experience by just entering the space. We welcome you to leave the turbulent throes of the world at the door and calm your seas as a member of Halcyon Studio.\n"
                   }
                 </Trans__>
               </div>
@@ -249,10 +264,12 @@ function PlasmicHomepage__RenderFunc(props) {
                     submitsForm={true}
                   >
                     <div
+                      data-plasmic-name={"text"}
+                      data-plasmic-override={overrides.text}
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__xA7Z
+                        sty.text
                       )}
                     >
                       <Trans__>{"Sign Up"}</Trans__>
@@ -288,18 +305,30 @@ const PlasmicDescendants = {
     "homeSection",
     "heroSection",
     "loginFormPopup",
+    "missionStatement",
     "textInput",
     "signUpButton",
+    "text",
     "halcyonFooter",
     "halcyonFooterBottom"
   ],
 
   halcyonNavBar: ["halcyonNavBar"],
   homeSection: ["homeSection"],
-  heroSection: ["heroSection", "loginFormPopup", "textInput", "signUpButton"],
+  heroSection: [
+    "heroSection",
+    "loginFormPopup",
+    "missionStatement",
+    "textInput",
+    "signUpButton",
+    "text"
+  ],
+
   loginFormPopup: ["loginFormPopup"],
+  missionStatement: ["missionStatement"],
   textInput: ["textInput"],
-  signUpButton: ["signUpButton"],
+  signUpButton: ["signUpButton", "text"],
+  text: ["text"],
   halcyonFooter: ["halcyonFooter"],
   halcyonFooterBottom: ["halcyonFooterBottom"]
 };
@@ -340,8 +369,10 @@ export const PlasmicHomepage = Object.assign(
     homeSection: makeNodeComponent("homeSection"),
     heroSection: makeNodeComponent("heroSection"),
     loginFormPopup: makeNodeComponent("loginFormPopup"),
+    missionStatement: makeNodeComponent("missionStatement"),
     textInput: makeNodeComponent("textInput"),
     signUpButton: makeNodeComponent("signUpButton"),
+    text: makeNodeComponent("text"),
     halcyonFooter: makeNodeComponent("halcyonFooter"),
     halcyonFooterBottom: makeNodeComponent("halcyonFooterBottom"),
     // Metadata about props expected for PlasmicHomepage

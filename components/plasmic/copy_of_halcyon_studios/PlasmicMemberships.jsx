@@ -18,7 +18,6 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants,
-  hasVariant,
   useCurrentUser,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
@@ -34,6 +33,8 @@ import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plas
 import projectcss from "./plasmic.module.css"; // plasmic-import: 2p9VhVhxAWhB5Nusx9QUQ2/projectcss
 import sty from "./PlasmicMemberships.module.css"; // plasmic-import: bILD32tm80zd/css
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: j3whR53MQDz4/icon
+import Icon10Icon from "./icons/PlasmicIcon__Icon10"; // plasmic-import: kMEAFFFW7kqs/icon
+import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: 519ruFevp7bj/icon
 
 createPlasmicElementProxy;
 
@@ -106,233 +107,731 @@ function PlasmicMemberships__RenderFunc(props) {
             data-plasmic-override={overrides.section}
             className={classNames(projectcss.all, sty.section)}
           >
-            <div className={classNames(projectcss.all, sty.freeBox__qxZxl)}>
-              <div className={classNames(projectcss.all, sty.columns___8MPwv)}>
-                <div className={classNames(projectcss.all, sty.column__xRapW)}>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__x9LA3)}
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__by0Vo)}
+            >
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__kwgwN)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__ie677)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__cbf8Y)}
                   >
-                    <h1
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h1,
-                        projectcss.__wab_text,
-                        sty.h1___00WJw
-                      )}
-                    >
-                      <Trans__>
-                        {hasVariant(globalVariants, "screen", "mobile")
-                          ? "We started with humble beginnings"
-                          : "Halcyon Studios"}
-                      </Trans__>
-                    </h1>
-                    <h1
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h1,
-                        projectcss.__wab_text,
-                        sty.h1__htZi8
-                      )}
-                    >
-                      <Trans__>{"Where Tranquility Meets Exclusivity"}</Trans__>
-                    </h1>
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__beFeI
+                        sty.text__m6BSg
                       )}
                     >
-                      <Trans__>{"5 - 15 - 2024"}</Trans__>
+                      <Trans__>{"Halcyon Memberships"}</Trans__>
                     </div>
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.columns__eeAjV)}
-                    >
-                      <div
-                        className={classNames(projectcss.all, sty.column__aSyz)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__bE0
-                          )}
-                        >
-                          <h2
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h2,
-                              projectcss.__wab_text,
-                              sty.h2__sBsl2
-                            )}
-                          >
-                            <Trans__>{"32"}</Trans__>
-                          </h2>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__tPz1X
-                            )}
-                          >
-                            <Trans__>{"Days"}</Trans__>
-                          </div>
-                        </Stack__>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__zMndm
-                        )}
-                      >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__e6RdC
-                          )}
-                        >
-                          <h2
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h2,
-                              projectcss.__wab_text,
-                              sty.h2___5XClU
-                            )}
-                          >
-                            <Trans__>{"22"}</Trans__>
-                          </h2>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__zmk3
-                            )}
-                          >
-                            <Trans__>{"Hours"}</Trans__>
-                          </div>
-                        </Stack__>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__pmIpP
-                        )}
-                      >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__zxaBx
-                          )}
-                        >
-                          <h2
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h2,
-                              projectcss.__wab_text,
-                              sty.h2__codCh
-                            )}
-                          >
-                            <Trans__>{"16"}</Trans__>
-                          </h2>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__emSf
-                            )}
-                          >
-                            <Trans__>{"Mintutes"}</Trans__>
-                          </div>
-                        </Stack__>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column___2YJy
-                        )}
-                      >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__eSrIg
-                          )}
-                        >
-                          <h2
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h2,
-                              projectcss.__wab_text,
-                              sty.h2__hRx0K
-                            )}
-                          >
-                            <Trans__>{"32"}</Trans__>
-                          </h2>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__lyFeR
-                            )}
-                          >
-                            <Trans__>{"Sec"}</Trans__>
-                          </div>
-                        </Stack__>
-                      </div>
-                    </Stack__>
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__lsi8E
+                    )}
+                  >
+                    <Trans__>
+                      {
+                        "Nascetur nascetur ridiculus scelerisque adipiscing a nascetur varius sed eu a ad semper a est nec litora ante at orci rhoncus a varius auctor aliquam inceptos vestibulum ridiculus."
+                      }
+                    </Trans__>
+                  </div>
+                </Stack__>
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"columns"}
+                  data-plasmic-override={overrides.columns}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.columns)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.column___17WKr)}
+                  >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__j5Bq)}
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___7ToXw
+                      )}
                     >
-                      <Button
-                        data-plasmic-name={"button"}
-                        data-plasmic-override={overrides.button}
-                        className={classNames("__wab_instance", sty.button)}
-                        color={"brGreen"}
-                        endIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg___7ExrG
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        startIcon={
-                          <ChecksvgIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__phd9Z
-                            )}
-                            role={"img"}
-                          />
-                        }
-                        submitsForm={true}
+                      <Stack__
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__wXwSq
+                        )}
                       >
+                        <Stack__
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__fdjVs
+                          )}
+                        >
+                          <Stack__
+                            as={"div"}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__pNlk5
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__e7TSk
+                              )}
+                            >
+                              <Trans__>{"Full Voyage Memberships"}</Trans__>
+                            </div>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__zakFw
+                              )}
+                            >
+                              <Trans__>{"Unlimited Monthly Classes"}</Trans__>
+                            </div>
+                          </Stack__>
+                        </Stack__>
                         <div
                           className={classNames(
                             projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___2Uwpt
+                            sty.freeBox__x4Mm
                           )}
                         >
-                          <Trans__>{"Membership Request"}</Trans__>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__jEucW
+                            )}
+                          >
+                            <Trans__>{"Founding Member Rates:"}</Trans__>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__r9Gqv
+                            )}
+                          >
+                            <Trans__>
+                              {
+                                "$165 a month for life / Limited to first 150 members."
+                              }
+                            </Trans__>
+                          </div>
+                          <Stack__
+                            as={"div"}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__czGzz
+                            )}
+                          >
+                            <Stack__
+                              as={"div"}
+                              hasGap={true}
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__tjbM1
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__p8Mk8
+                                )}
+                              >
+                                <Icon10Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__isdkj
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                              {false ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__hhqbD
+                                  )}
+                                >
+                                  <Icon10Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__n7ZHb
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                              ) : null}
+                              <Stack__
+                                as={"div"}
+                                hasGap={true}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__nvy5T
+                                )}
+                              >
+                                {false ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__bLcZ
+                                    )}
+                                  >
+                                    <Trans__>{"Label"}</Trans__>
+                                  </div>
+                                ) : null}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text___1XbT
+                                  )}
+                                >
+                                  <Trans__>
+                                    {
+                                      "Guest accompanying Members: $25 Drop-In Fee (Space Dependent)"
+                                    }
+                                  </Trans__>
+                                </div>
+                              </Stack__>
+                            </Stack__>
+                            <Stack__
+                              as={"div"}
+                              hasGap={true}
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__gyh9Q
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__sFtoV
+                                )}
+                              >
+                                <Icon10Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__z53D
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                              {false ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__axzfh
+                                  )}
+                                >
+                                  <Icon10Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__xmx84
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                              ) : null}
+                              <Stack__
+                                as={"div"}
+                                hasGap={true}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__lgM0L
+                                )}
+                              >
+                                {false ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__edPdr
+                                    )}
+                                  >
+                                    <Trans__>{"Label"}</Trans__>
+                                  </div>
+                                ) : null}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__si2Ne
+                                  )}
+                                >
+                                  <Trans__>
+                                    {
+                                      "30% off workshops, pop-up classes & Merchandise"
+                                    }
+                                  </Trans__>
+                                </div>
+                              </Stack__>
+                            </Stack__>
+                          </Stack__>
                         </div>
-                      </Button>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__q1IlT
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__zjLq
+                            )}
+                          >
+                            <Trans__>{"Onboard Member Rates"}</Trans__>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__w2Lcd
+                            )}
+                          >
+                            <Trans__>
+                              {
+                                "$180 a month for 1-year with option to renew at onboard rate / Limited to 175 additional members.\n\u25cb $190 for a 3 month commitment\n\u25cb $205 for month to month"
+                              }
+                            </Trans__>
+                          </div>
+                          <Stack__
+                            as={"div"}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__x88Sc
+                            )}
+                          >
+                            <Stack__
+                              as={"div"}
+                              hasGap={true}
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__xwBlx
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox___6Nr0H
+                                )}
+                              >
+                                <Icon10Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__bkKe3
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                              {false ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__pyjw
+                                  )}
+                                >
+                                  <Icon10Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg___1E1G2
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                              ) : null}
+                              <Stack__
+                                as={"div"}
+                                hasGap={true}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__m0BxX
+                                )}
+                              >
+                                {false ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__qalzd
+                                    )}
+                                  >
+                                    <Trans__>{"Label"}</Trans__>
+                                  </div>
+                                ) : null}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__vxFdF
+                                  )}
+                                >
+                                  <Trans__>
+                                    {
+                                      "Guest accompanying Members: $25 Drop-In Fee (Space Dependent)"
+                                    }
+                                  </Trans__>
+                                </div>
+                              </Stack__>
+                            </Stack__>
+                            <Stack__
+                              as={"div"}
+                              hasGap={true}
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__iuGYm
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__xlIe8
+                                )}
+                              >
+                                <Icon10Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg___71He
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                              {false ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__rmmGp
+                                  )}
+                                >
+                                  <Icon10Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__dly25
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                              ) : null}
+                              <Stack__
+                                as={"div"}
+                                hasGap={true}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__tBuoY
+                                )}
+                              >
+                                {false ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__pqDwG
+                                    )}
+                                  >
+                                    <Trans__>{"Label"}</Trans__>
+                                  </div>
+                                ) : null}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__loxfB
+                                  )}
+                                >
+                                  <Trans__>
+                                    {
+                                      "20% off workshops, pop-up classes & Merchandise"
+                                    }
+                                  </Trans__>
+                                </div>
+                              </Stack__>
+                            </Stack__>
+                          </Stack__>
+                        </div>
+                        <Button
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button__thY7C
+                          )}
+                          endIcon={
+                            <Icon5Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg___5QByd
+                              )}
+                              role={"img"}
+                            />
+                          }
+                          startIcon={
+                            <ChecksvgIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg___2J4Dt
+                              )}
+                              role={"img"}
+                            />
+                          }
+                          submitsForm={true}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__hZoJn
+                            )}
+                          >
+                            <Trans__>{"Get started"}</Trans__>
+                          </div>
+                        </Button>
+                      </Stack__>
                     </div>
-                  </Stack__>
-                </div>
-              </div>
-            </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column___3JPy)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__qqPt5)}
+                    >
+                      <Stack__
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___8Dl3V
+                        )}
+                      >
+                        <Stack__
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___5H6X
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__g0Hc
+                            )}
+                          >
+                            <Trans__>{"Parted Sea Memberships"}</Trans__>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__gfPhY
+                            )}
+                          >
+                            <Trans__>{"Limited Monthly Classes"}</Trans__>
+                          </div>
+                        </Stack__>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__plvI
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__u01
+                            )}
+                          >
+                            <Trans__>{"Four Class Package"}</Trans__>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__bbUi
+                            )}
+                          >
+                            <Trans__>
+                              {
+                                "$100 for 4 classes per month. Month-to-Month Commitment "
+                              }
+                            </Trans__>
+                          </div>
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___9PxUy
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__jg1Lg
+                            )}
+                          >
+                            <Trans__>{"Eight Class Package"}</Trans__>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__xrX29
+                            )}
+                          >
+                            <Trans__>
+                              {
+                                "$160 for 8 classes per month. Month-to-Month Commitment "
+                              }
+                            </Trans__>
+                          </div>
+                          <Stack__
+                            as={"div"}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__gkTkN
+                            )}
+                          >
+                            <Stack__
+                              as={"div"}
+                              hasGap={true}
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__jrE8Z
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__osaCk
+                                )}
+                              >
+                                <Icon10Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg___47ZhF
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                              {false ? (
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__axdoh
+                                  )}
+                                >
+                                  <Icon10Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__mgr1L
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                              ) : null}
+                              <Stack__
+                                as={"div"}
+                                hasGap={true}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__fjmt2
+                                )}
+                              >
+                                {false ? (
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__b1Ax
+                                    )}
+                                  >
+                                    <Trans__>{"Label"}</Trans__>
+                                  </div>
+                                ) : null}
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.__wab_text,
+                                    sty.text__xaERk
+                                  )}
+                                >
+                                  <Trans__>
+                                    {
+                                      "Guest accompanying Members: $25 Drop-In Fee (Space Dependent)"
+                                    }
+                                  </Trans__>
+                                </div>
+                              </Stack__>
+                            </Stack__>
+                          </Stack__>
+                        </div>
+                        <Button
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button__ii9T
+                          )}
+                          endIcon={
+                            <Icon5Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__l52Hj
+                              )}
+                              role={"img"}
+                            />
+                          }
+                          startIcon={
+                            <ChecksvgIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__n4Qva
+                              )}
+                              role={"img"}
+                            />
+                          }
+                          submitsForm={true}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___4Oav7
+                            )}
+                          >
+                            <Trans__>{"Purchase Memberships"}</Trans__>
+                          </div>
+                        </Button>
+                      </Stack__>
+                    </div>
+                  </div>
+                </Stack__>
+              </Stack__>
+            </Stack__>
           </section>
           <div className={classNames(projectcss.all, sty.freeBox__msIhL)}>
             <HalcyonFooter
@@ -358,14 +857,14 @@ const PlasmicDescendants = {
     "root",
     "halcyonNavBar",
     "section",
-    "button",
+    "columns",
     "halcyonFooter",
     "halcyonFooterBottom"
   ],
 
   halcyonNavBar: ["halcyonNavBar"],
-  section: ["section", "button"],
-  button: ["button"],
+  section: ["section", "columns"],
+  columns: ["columns"],
   halcyonFooter: ["halcyonFooter"],
   halcyonFooterBottom: ["halcyonFooterBottom"]
 };
@@ -404,7 +903,7 @@ export const PlasmicMemberships = Object.assign(
     // Helper components rendering sub-elements
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
     section: makeNodeComponent("section"),
-    button: makeNodeComponent("button"),
+    columns: makeNodeComponent("columns"),
     halcyonFooter: makeNodeComponent("halcyonFooter"),
     halcyonFooterBottom: makeNodeComponent("halcyonFooterBottom"),
     // Metadata about props expected for PlasmicMemberships

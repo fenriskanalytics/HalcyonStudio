@@ -108,95 +108,110 @@ function PlasmicHomeSection__RenderFunc(props) {
           )
         })}
       >
-        <Stack__
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__pYU)}
+        <div
+          data-plasmic-name={"columns"}
+          data-plasmic-override={overrides.columns}
+          className={classNames(projectcss.all, sty.columns)}
         >
-          <h1
-            className={classNames(
-              projectcss.all,
-              projectcss.h1,
-              projectcss.__wab_text,
-              sty.h1__hqMo8
-            )}
-          >
-            <Trans__>{"Halcyon Studios"}</Trans__>
-          </h1>
-          <h1
-            className={classNames(
-              projectcss.all,
-              projectcss.h1,
-              projectcss.__wab_text,
-              sty.h1__jVRgb
-            )}
-          >
-            <Trans__>{"Where Tranquility Meets Exclusivity"}</Trans__>
-          </h1>
           <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text
-            )}
+            data-plasmic-name={"column"}
+            data-plasmic-override={overrides.column}
+            className={classNames(projectcss.all, sty.column)}
           >
-            <Trans__>{"Register for Our Grand Opening"}</Trans__>
-          </div>
-          <div className={classNames(projectcss.all, sty.freeBox__duvf)}>
-            <Button
-              data-plasmic-name={"registrationLinkButton"}
-              data-plasmic-override={overrides.registrationLinkButton}
-              className={classNames(
-                "__wab_instance",
-                sty.registrationLinkButton
-              )}
-              color={"green"}
-              onClick={async event => {
-                const $steps = {};
-                $steps["goToNewsletterRegistration"] = true
-                  ? (() => {
-                      const actionArgs = { destination: `/Announcements` };
-                      return (({ destination }) => {
-                        if (
-                          typeof destination === "string" &&
-                          destination.startsWith("#")
-                        ) {
-                          document
-                            .getElementById(destination.substr(1))
-                            .scrollIntoView({ behavior: "smooth" });
-                        } else {
-                          __nextRouter?.push(destination);
-                        }
-                      })?.apply(null, [actionArgs]);
-                    })()
-                  : undefined;
-                if (
-                  $steps["goToNewsletterRegistration"] != null &&
-                  typeof $steps["goToNewsletterRegistration"] === "object" &&
-                  typeof $steps["goToNewsletterRegistration"].then ===
-                    "function"
-                ) {
-                  $steps["goToNewsletterRegistration"] = await $steps[
-                    "goToNewsletterRegistration"
-                  ];
-                }
-              }}
-              size={"compact"}
-              submitsForm={true}
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__pYU)}
             >
-              <Trans__>{"Register Now"}</Trans__>
-            </Button>
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1__hqMo8
+                )}
+              >
+                <Trans__>{"Halcyon Studios"}</Trans__>
+              </h1>
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1__jVRgb
+                )}
+              >
+                <Trans__>{"Find Tranquility in Motion"}</Trans__>
+              </h1>
+              <div
+                data-plasmic-name={"text"}
+                data-plasmic-override={overrides.text}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text
+                )}
+              >
+                <Trans__>{"Register for Our Grand Opening"}</Trans__>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__duvf)}>
+                <Button
+                  data-plasmic-name={"registrationLinkButton"}
+                  data-plasmic-override={overrides.registrationLinkButton}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.registrationLinkButton
+                  )}
+                  color={"green"}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["goToNewsletterRegistration"] = true
+                      ? (() => {
+                          const actionArgs = { destination: `/Announcements` };
+                          return (({ destination }) => {
+                            if (
+                              typeof destination === "string" &&
+                              destination.startsWith("#")
+                            ) {
+                              document
+                                .getElementById(destination.substr(1))
+                                .scrollIntoView({ behavior: "smooth" });
+                            } else {
+                              __nextRouter?.push(destination);
+                            }
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      $steps["goToNewsletterRegistration"] != null &&
+                      typeof $steps["goToNewsletterRegistration"] ===
+                        "object" &&
+                      typeof $steps["goToNewsletterRegistration"].then ===
+                        "function"
+                    ) {
+                      $steps["goToNewsletterRegistration"] = await $steps[
+                        "goToNewsletterRegistration"
+                      ];
+                    }
+                  }}
+                  size={"compact"}
+                  submitsForm={true}
+                >
+                  <Trans__>{"Register Now"}</Trans__>
+                </Button>
+              </div>
+            </Stack__>
           </div>
-        </Stack__>
+        </div>
       </div>
     </section>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text", "registrationLinkButton"],
+  root: ["root", "columns", "column", "text", "registrationLinkButton"],
+  columns: ["columns", "column", "text", "registrationLinkButton"],
+  column: ["column", "text", "registrationLinkButton"],
   text: ["text"],
   registrationLinkButton: ["registrationLinkButton"]
 };
@@ -233,6 +248,8 @@ export const PlasmicHomeSection = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    columns: makeNodeComponent("columns"),
+    column: makeNodeComponent("column"),
     text: makeNodeComponent("text"),
     registrationLinkButton: makeNodeComponent("registrationLinkButton"),
     // Metadata about props expected for PlasmicHomeSection
