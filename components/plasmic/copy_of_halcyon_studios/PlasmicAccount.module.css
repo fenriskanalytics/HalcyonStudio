@@ -27,6 +27,16 @@
   max-width: 100%;
   position: relative;
 }
+.accountHtmlEmbed:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--token-FLc3Q0URvh0f);
+  min-width: 0;
+  min-height: 0;
+}
 .freeBox {
   display: flex;
   position: relative;
@@ -38,29 +48,6 @@
   max-width: 100%;
   min-width: 0;
   padding: 0px;
-}
-.section {
-  display: grid;
-  position: relative;
-  align-content: flex-start;
-  justify-items: center;
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  height: 100%;
-  background: var(--token-FLc3Q0URvh0f);
-  min-width: 0;
-  min-height: 0;
-  grid-template-columns:
-    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
-    min(
-      var(--plsmc-standard-width),
-      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
-    )
-    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
-}
-.section > * {
-  grid-column: 4;
 }
 .halcyonFooter:global(.__wab_instance) {
   max-width: 100%;

@@ -763,9 +763,8 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 100%;
+  width: auto;
   height: 80px;
-  min-width: 0;
   flex-shrink: 0;
 }
 .img__epAXh > picture > img {

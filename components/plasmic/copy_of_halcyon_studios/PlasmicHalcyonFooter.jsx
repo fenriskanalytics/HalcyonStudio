@@ -564,7 +564,7 @@ function PlasmicHalcyonFooter__RenderFunc(props) {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"100%"}
+                  displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/copy_of_halcyon_studios/images/_24Jpg.jpg",

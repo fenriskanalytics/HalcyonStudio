@@ -161,7 +161,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.h2
                 )}
               >
-                <Trans__>{"Tampa's First Luxury Studio"}</Trans__>
+                <Trans__>{"Our Mission"}</Trans__>
               </h2>
               {(() => {
                 try {
