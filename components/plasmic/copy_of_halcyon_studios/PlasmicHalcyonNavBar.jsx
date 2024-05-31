@@ -137,7 +137,7 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                   sty.membershipsLink
                 )}
                 component={Link}
-                href={`/buy`}
+                href={`/memberships/buy`}
                 platform={"nextjs"}
                 tabIndex={1}
               >

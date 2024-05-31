@@ -397,7 +397,7 @@ function PlasmicHalcyonFooter__RenderFunc(props) {
                 sty.membershipsPage
               )}
               component={Link}
-              href={`/buy`}
+              href={`/memberships/buy`}
               platform={"nextjs"}
             >
               <Trans__>{"Memberships"}</Trans__>
