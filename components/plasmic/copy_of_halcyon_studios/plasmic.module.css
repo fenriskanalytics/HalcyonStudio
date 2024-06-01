@@ -71,7 +71,10 @@
   );
 }
 
-.plasmic_default_styles {
+.plasmic_default_styles,
+.plasmic_default_styles:where(
+    .global_unnamedGlobalGroupOfVariants_unnamedVariant
+  ) {
   --mixin-TZkl82n9Kofx_font-family: "Montserrat", sans-serif;
   --mixin-TZkl82n9Kofx_font-size: 16px;
   --mixin-TZkl82n9Kofx_font-weight: 400;
@@ -167,7 +170,8 @@
   --mixin-q3GNggp228aF_white-space: pre-wrap;
 }
 
-.plasmic_mixins {
+.plasmic_mixins,
+.plasmic_mixins:where(.global_unnamedGlobalGroupOfVariants_unnamedVariant) {
   --mixin-FubF6myIdPo1_white-space: pre-wrap;
   --plasmic-mixin-menu-text_white-space: var(--mixin-FubF6myIdPo1_white-space);
   --mixin-hxzD8mQ1T5TW_white-space: pre-wrap;

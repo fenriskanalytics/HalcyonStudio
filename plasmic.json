@@ -1791,6 +1791,12 @@
         "name": "Screen",
         "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
         "contextFilePath": "plasmic/copy_of_halcyon_studios/PlasmicGlobalVariant__Screen.jsx"
+      },
+      {
+        "id": "bx84yjvMH6Tr",
+        "name": "UnnamedGlobalGroupOfVariants",
+        "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
+        "contextFilePath": "plasmic/copy_of_halcyon_studios/PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants.jsx"
       }
     ]
   },
