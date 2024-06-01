@@ -269,7 +269,7 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                     }
                   }}
                 >
-                  <Trans__>{"Signup"}</Trans__>
+                  <Trans__>{"Login"}</Trans__>
                 </div>
               </Stack__>
             </Stack__>

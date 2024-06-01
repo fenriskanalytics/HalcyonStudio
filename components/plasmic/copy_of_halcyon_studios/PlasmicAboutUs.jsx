@@ -140,7 +140,7 @@ function PlasmicAboutUs__RenderFunc(props) {
               >
                 <Trans__>
                   {hasVariant(globalVariants, "screen", "mobile")
-                    ? "Top Collections"
+                    ? "Our Mission"
                     : "Tampa's First Luxury Yoga Studio"}
                 </Trans__>
               </h2>
