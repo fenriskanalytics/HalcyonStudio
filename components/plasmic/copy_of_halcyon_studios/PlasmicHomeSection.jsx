@@ -131,7 +131,7 @@ function PlasmicHomeSection__RenderFunc(props) {
               sty.h1__jVRgb
             )}
           >
-            <Trans__>{"Where Tranquility Meets Exclusivity"}</Trans__>
+            <Trans__>{"Find Tranquility in Motion"}</Trans__>
           </h1>
           <div
             data-plasmic-name={"text"}

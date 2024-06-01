@@ -20,17 +20,11 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants,
-  hasVariant,
-  renderPlasmicSlot,
-  set as $stateSet,
   useCurrentUser,
-  useDollarState,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import Button from "../../Button"; // plasmic-import: EyzplKTGD_DF/component
 import { useScreenVariants as useScreenVariants_0QmF6MtAnaU } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: _0qmF6MTAnaU/globalVariant
-import { useUnnamedGlobalGroupOfVariants } from "./PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants"; // plasmic-import: wyqDOREeKIlt/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
@@ -41,7 +35,7 @@ createPlasmicElementProxy;
 
 export const PlasmicHalcyonNavBar__VariantProps = new Array();
 
-export const PlasmicHalcyonNavBar__ArgProps = new Array("authLink", "account");
+export const PlasmicHalcyonNavBar__ArgProps = new Array();
 
 const $$ = {};
 
@@ -55,16 +49,7 @@ function useNextRouter() {
 function PlasmicHalcyonNavBar__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $translator = usePlasmicTranslator?.();
-  const args = React.useMemo(
-    () =>
-      Object.assign(
-        {
-          account: `/account`
-        },
-        props.args
-      ),
-    [props.args]
-  );
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
     ...variants
@@ -74,27 +59,8 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = useCurrentUser?.() || {};
-  const stateSpecs = React.useMemo(
-    () => [
-      {
-        path: "variable",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      }
-    ],
-
-    [$props, $ctx, $refs]
-  );
-  const $state = useDollarState(stateSpecs, {
-    $props,
-    $ctx,
-    $queries: {},
-    $refs
-  });
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants_0QmF6MtAnaU(),
-    unnamedGlobalGroupOfVariants: useUnnamedGlobalGroupOfVariants()
+    screen: useScreenVariants_0QmF6MtAnaU()
   });
   return (
     <div
@@ -125,9 +91,9 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
             className={classNames(projectcss.all, sty.freeBox__ae4H5)}
           >
             <PlasmicLink__
-              data-plasmic-name={"home"}
-              data-plasmic-override={overrides.home}
-              className={classNames(projectcss.all, projectcss.a, sty.home)}
+              data-plasmic-name={"homeLink"}
+              data-plasmic-override={overrides.homeLink}
+              className={classNames(projectcss.all, projectcss.a, sty.homeLink)}
               component={Link}
               href={`/home`}
               platform={"nextjs"}
@@ -136,15 +102,8 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                 data-plasmic-name={"img"}
                 data-plasmic-override={overrides.img}
                 alt={""}
-                className={classNames(sty.img, {
-                  [sty.imgglobal_unnamedGlobalGroupOfVariants_unnamedVariant]:
-                    hasVariant(
-                      globalVariants,
-                      "unnamedGlobalGroupOfVariants",
-                      "unnamedVariant"
-                    )
-                })}
-                displayHeight={"100%"}
+                className={classNames(sty.img)}
+                displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
                 displayMinHeight={"0"}
@@ -175,43 +134,9 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                   sty.membershipsLink
                 )}
                 component={Link}
-                href={(() => {
-                  try {
-                    return ($state.variable =
-                      "/memberships/buy/?_mt=%2Fbuy%2F48717");
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return `/memberships/buy`;
-                    }
-                    throw e;
-                  }
-                })()}
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["runCode"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          customFunction: async () => {
-                            return undefined;
-                          }
-                        };
-                        return (({ customFunction }) => {
-                          return customFunction();
-                        })?.apply(null, [actionArgs]);
-                      })()
-                    : undefined;
-                  if (
-                    $steps["runCode"] != null &&
-                    typeof $steps["runCode"] === "object" &&
-                    typeof $steps["runCode"].then === "function"
-                  ) {
-                    $steps["runCode"] = await $steps["runCode"];
-                  }
-                }}
+                href={`/memberships/buy`}
                 platform={"nextjs"}
+                tabIndex={1}
               >
                 <div
                   className={classNames(
@@ -225,41 +150,29 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
               </Stack__>
               <Stack__
                 as={PlasmicLink__}
-                data-plasmic-name={"scheduleLink"}
-                data-plasmic-override={overrides.scheduleLink}
+                data-plasmic-name={"eventsLink"}
+                data-plasmic-override={overrides.eventsLink}
                 hasGap={true}
                 className={classNames(
                   projectcss.all,
                   projectcss.a,
-                  sty.scheduleLink
+                  sty.eventsLink
                 )}
                 component={Link}
-                href={(() => {
-                  try {
-                    return ($state.variable =
-                      "/schedule/?mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717");
-                  } catch (e) {
-                    if (
-                      e instanceof TypeError ||
-                      e?.plasmicType === "PlasmicUndefinedDataError"
-                    ) {
-                      return `/schedule`;
-                    }
-                    throw e;
-                  }
-                })()}
+                href={`/schedule`}
                 platform={"nextjs"}
+                tabIndex={2}
               >
                 <div
-                  data-plasmic-name={"scheduleText"}
-                  data-plasmic-override={overrides.scheduleText}
+                  data-plasmic-name={"eventsText"}
+                  data-plasmic-override={overrides.eventsText}
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.scheduleText
+                    sty.eventsText
                   )}
                 >
-                  <Trans__>{"Class Schedule"}</Trans__>
+                  <Trans__>{"Schedule"}</Trans__>
                 </div>
               </Stack__>
               <Stack__
@@ -273,7 +186,9 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                   sty.aboutUsLink
                 )}
                 component={Link}
+                href={`/about-us`}
                 platform={"nextjs"}
+                tabIndex={3}
               >
                 <div
                   className={classNames(
@@ -298,6 +213,7 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                 component={Link}
                 href={`/contact`}
                 platform={"nextjs"}
+                tabIndex={4}
               >
                 <div
                   className={classNames(
@@ -320,148 +236,20 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                   sty.loginLink
                 )}
                 component={Link}
-                href={
-                  hasVariant(globalVariants, "screen", "tablet")
-                    ? `/account`
-                    : `/account`
-                }
-                onClick={async event => {
-                  const $steps = {};
-                  $steps["updateVariable"] = true
-                    ? (() => {
-                        const actionArgs = {
-                          variable: {
-                            objRoot: $state,
-                            variablePath: ["variable"]
-                          },
-                          operation: 0
-                        };
-                        return (({
-                          variable,
-                          value,
-                          startIndex,
-                          deleteCount
-                        }) => {
-                          if (!variable) {
-                            return;
-                          }
-                          const { objRoot, variablePath } = variable;
-                          $stateSet(objRoot, variablePath, value);
-                          return value;
-                        })?.apply(null, [actionArgs]);
-                      })()
-                    : undefined;
-                  if (
-                    $steps["updateVariable"] != null &&
-                    typeof $steps["updateVariable"] === "object" &&
-                    typeof $steps["updateVariable"].then === "function"
-                  ) {
-                    $steps["updateVariable"] = await $steps["updateVariable"];
-                  }
-                }}
+                href={`/account`}
                 platform={"nextjs"}
+                tabIndex={4}
               >
                 <div
-                  data-plasmic-name={"loginText"}
-                  data-plasmic-override={overrides.loginText}
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.loginText
+                    sty.text__xAoM
                   )}
                 >
                   <Trans__>{"Login"}</Trans__>
                 </div>
               </Stack__>
-              {false
-                ? renderPlasmicSlot({
-                    defaultContents: (
-                      <PlasmicLink__
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          sty.link__arKQw
-                        )}
-                        component={Link}
-                        onClick={async event => {
-                          const $steps = {};
-                          $steps["goToAccount"] = true
-                            ? (() => {
-                                const actionArgs = { destination: `/account` };
-                                return (({ destination }) => {
-                                  if (
-                                    typeof destination === "string" &&
-                                    destination.startsWith("#")
-                                  ) {
-                                    document
-                                      .getElementById(destination.substr(1))
-                                      .scrollIntoView({ behavior: "smooth" });
-                                  } else {
-                                    __nextRouter?.push(destination);
-                                  }
-                                })?.apply(null, [actionArgs]);
-                              })()
-                            : undefined;
-                          if (
-                            $steps["goToAccount"] != null &&
-                            typeof $steps["goToAccount"] === "object" &&
-                            typeof $steps["goToAccount"].then === "function"
-                          ) {
-                            $steps["goToAccount"] = await $steps["goToAccount"];
-                          }
-                        }}
-                        platform={"nextjs"}
-                      >
-                        <Button
-                          className={classNames(
-                            "__wab_instance",
-                            sty.button__wf6JF
-                          )}
-                          color={"unnamedVariant"}
-                          onClick={async event => {
-                            const $steps = {};
-                            $steps["goToPage"] = true
-                              ? (() => {
-                                  const actionArgs = {};
-                                  return (({ destination }) => {
-                                    if (
-                                      typeof destination === "string" &&
-                                      destination.startsWith("#")
-                                    ) {
-                                      document
-                                        .getElementById(destination.substr(1))
-                                        .scrollIntoView({ behavior: "smooth" });
-                                    } else {
-                                      __nextRouter?.push(destination);
-                                    }
-                                  })?.apply(null, [actionArgs]);
-                                })()
-                              : undefined;
-                            if (
-                              $steps["goToPage"] != null &&
-                              typeof $steps["goToPage"] === "object" &&
-                              typeof $steps["goToPage"].then === "function"
-                            ) {
-                              $steps["goToPage"] = await $steps["goToPage"];
-                            }
-                          }}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___6O6Zp
-                            )}
-                          >
-                            <Trans__>{"Login"}</Trans__>
-                          </div>
-                        </Button>
-                      </PlasmicLink__>
-                    ),
-
-                    value: args.authLink
-                  })
-                : null}
             </Stack__>
           </Stack__>
         </Stack__>
@@ -473,26 +261,24 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "home",
+    "homeLink",
     "img",
     "membershipsLink",
-    "scheduleLink",
-    "scheduleText",
+    "eventsLink",
+    "eventsText",
     "aboutUsLink",
     "contactLink",
-    "loginLink",
-    "loginText"
+    "loginLink"
   ],
 
-  home: ["home", "img"],
+  homeLink: ["homeLink", "img"],
   img: ["img"],
   membershipsLink: ["membershipsLink"],
-  scheduleLink: ["scheduleLink", "scheduleText"],
-  scheduleText: ["scheduleText"],
+  eventsLink: ["eventsLink", "eventsText"],
+  eventsText: ["eventsText"],
   aboutUsLink: ["aboutUsLink"],
   contactLink: ["contactLink"],
-  loginLink: ["loginLink", "loginText"],
-  loginText: ["loginText"]
+  loginLink: ["loginLink"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -527,15 +313,14 @@ export const PlasmicHalcyonNavBar = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    home: makeNodeComponent("home"),
+    homeLink: makeNodeComponent("homeLink"),
     img: makeNodeComponent("img"),
     membershipsLink: makeNodeComponent("membershipsLink"),
-    scheduleLink: makeNodeComponent("scheduleLink"),
-    scheduleText: makeNodeComponent("scheduleText"),
+    eventsLink: makeNodeComponent("eventsLink"),
+    eventsText: makeNodeComponent("eventsText"),
     aboutUsLink: makeNodeComponent("aboutUsLink"),
     contactLink: makeNodeComponent("contactLink"),
     loginLink: makeNodeComponent("loginLink"),
-    loginText: makeNodeComponent("loginText"),
     // Metadata about props expected for PlasmicHalcyonNavBar
     internalVariantProps: PlasmicHalcyonNavBar__VariantProps,
     internalArgProps: PlasmicHalcyonNavBar__ArgProps

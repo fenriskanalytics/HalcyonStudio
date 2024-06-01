@@ -397,24 +397,25 @@ function PlasmicHalcyonFooter__RenderFunc(props) {
                 sty.membershipsPage
               )}
               component={Link}
-              href={`/Announcements`}
+              href={`/memberships/buy`}
               platform={"nextjs"}
             >
               <Trans__>{"Memberships"}</Trans__>
             </PlasmicLink__>
             <PlasmicLink__
-              data-plasmic-name={"eventsPage"}
-              data-plasmic-override={overrides.eventsPage}
+              data-plasmic-name={"schedulePage"}
+              data-plasmic-override={overrides.schedulePage}
               className={classNames(
                 projectcss.all,
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.eventsPage
+                sty.schedulePage
               )}
               component={Link}
+              href={`/schedule`}
               platform={"nextjs"}
             >
-              <Trans__>{"Events"}</Trans__>
+              <Trans__>{"Schedule"}</Trans__>
             </PlasmicLink__>
             <PlasmicLink__
               data-plasmic-name={"aboutUsPage"}
@@ -426,6 +427,7 @@ function PlasmicHalcyonFooter__RenderFunc(props) {
                 sty.aboutUsPage
               )}
               component={Link}
+              href={`/about-us`}
               platform={"nextjs"}
             >
               <Trans__>{"About Us"}</Trans__>
@@ -440,6 +442,7 @@ function PlasmicHalcyonFooter__RenderFunc(props) {
                 sty.contactPage
               )}
               component={Link}
+              href={`/contact`}
               platform={"nextjs"}
             >
               <Trans__>{"Contact"}</Trans__>
@@ -555,25 +558,6 @@ function PlasmicHalcyonFooter__RenderFunc(props) {
               <div className={classNames(projectcss.all, sty.column__m8FH5)}>
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img__aeOs1)}
-                  displayHeight={"80px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/copy_of_halcyon_studios/images/_28Jpg.jpg",
-                    fullWidth: 3840,
-                    fullHeight: 2160,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-              <div className={classNames(projectcss.all, sty.column__umbAg)}>
-                <PlasmicImg__
-                  alt={""}
                   className={classNames(sty.img__epAXh)}
                   displayHeight={"80px"}
                   displayMaxHeight={"none"}
@@ -584,6 +568,25 @@ function PlasmicHalcyonFooter__RenderFunc(props) {
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/copy_of_halcyon_studios/images/_24Jpg.jpg",
+                    fullWidth: 3840,
+                    fullHeight: 2160,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.column__umbAg)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__aeOs1)}
+                  displayHeight={"80px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/copy_of_halcyon_studios/images/_28Jpg.jpg",
                     fullWidth: 3840,
                     fullHeight: 2160,
                     aspectRatio: undefined
@@ -612,7 +615,7 @@ const PlasmicDescendants = {
     "twitterIcon",
     "homePage",
     "membershipsPage",
-    "eventsPage",
+    "schedulePage",
     "aboutUsPage",
     "contactPage",
     "privacyPolicyPage",
@@ -633,7 +636,7 @@ const PlasmicDescendants = {
     "twitterIcon",
     "homePage",
     "membershipsPage",
-    "eventsPage",
+    "schedulePage",
     "aboutUsPage",
     "contactPage",
     "privacyPolicyPage",
@@ -652,7 +655,7 @@ const PlasmicDescendants = {
   twitterIcon: ["twitterIcon"],
   homePage: ["homePage"],
   membershipsPage: ["membershipsPage"],
-  eventsPage: ["eventsPage"],
+  schedulePage: ["schedulePage"],
   aboutUsPage: ["aboutUsPage"],
   contactPage: ["contactPage"],
   privacyPolicyPage: ["privacyPolicyPage"],
@@ -704,7 +707,7 @@ export const PlasmicHalcyonFooter = Object.assign(
     twitterIcon: makeNodeComponent("twitterIcon"),
     homePage: makeNodeComponent("homePage"),
     membershipsPage: makeNodeComponent("membershipsPage"),
-    eventsPage: makeNodeComponent("eventsPage"),
+    schedulePage: makeNodeComponent("schedulePage"),
     aboutUsPage: makeNodeComponent("aboutUsPage"),
     contactPage: makeNodeComponent("contactPage"),
     privacyPolicyPage: makeNodeComponent("privacyPolicyPage"),

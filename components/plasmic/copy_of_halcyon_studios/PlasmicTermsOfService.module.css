@@ -27,39 +27,6 @@
 .halcyonNavBar:global(.__wab_instance) {
   position: relative;
 }
-.link___9UcG {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-  padding: 0px;
-}
-.button__j4R9L:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-  width: 100%;
-  min-width: 0;
-}
-.svg__fGdjU {
-  position: relative;
-  object-fit: cover;
-  width: auto;
-  height: 1em;
-}
-.text__thulQ {
-  font-size: 18px;
-}
-.svg__keOUc {
-  position: relative;
-  object-fit: cover;
-  width: auto;
-  height: 1em;
-}
 .pageBanner {
   display: flex;
   position: relative;

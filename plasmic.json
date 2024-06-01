@@ -1178,20 +1178,6 @@
           "path": "/memberships"
         },
         {
-          "id": "J9z0PWbHq357",
-          "name": "Events",
-          "type": "managed",
-          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
-          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicEvents.jsx",
-          "importSpec": {
-            "modulePath": "../pages/events.jsx"
-          },
-          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicEvents.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/events"
-        },
-        {
           "id": "WHvMDFyr8qi3",
           "name": "AboutUs",
           "type": "managed",
@@ -1315,30 +1301,18 @@
           "componentType": "component"
         },
         {
-          "id": "FqTR-H4DBY2f",
-          "name": "LoginButton",
+          "id": "g36MTc5kLKgr",
+          "name": "Button2",
           "type": "managed",
           "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
-          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicLoginButton.jsx",
+          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicButton2.jsx",
           "importSpec": {
-            "modulePath": "LoginButton.jsx"
+            "modulePath": "Button2.jsx"
           },
-          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicLoginButton.module.css",
+          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicButton2.module.css",
           "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "B45lS1hhx1Vs",
-          "name": "MarianaScheduleCode",
-          "type": "managed",
-          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
-          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicMarianaScheduleCode.jsx",
-          "importSpec": {
-            "modulePath": "MarianaScheduleCode.jsx"
-          },
-          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicMarianaScheduleCode.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [
@@ -1486,6 +1460,11 @@
           "id": "dck6yM8AEIGO",
           "name": "LogosvgIcon",
           "moduleFilePath": "plasmic/copy_of_halcyon_studios/icons/PlasmicIcon__Logosvg.jsx"
+        },
+        {
+          "id": "kMEAFFFW7kqs",
+          "name": "Icon10Icon",
+          "moduleFilePath": "plasmic/copy_of_halcyon_studios/icons/PlasmicIcon__Icon10.jsx"
         }
       ],
       "images": [

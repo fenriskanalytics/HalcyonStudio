@@ -40,7 +40,6 @@
   width: 100%;
   height: auto;
   max-width: 850px;
-  align-self: center;
   min-width: 0;
   padding: 0px 24px;
 }
@@ -64,34 +63,34 @@
 }
 .h1__hqMo8 {
   position: relative;
-  width: auto;
+  width: 100%;
   height: auto;
   max-width: 800px;
   color: var(--token-FLc3Q0URvh0f);
   text-align: center;
   white-space: pre;
   box-shadow: none;
-  align-self: stretch;
+  min-width: 0;
 }
 .h1__jVRgb {
   position: relative;
-  width: auto;
+  width: 100%;
   height: auto;
   max-width: 800px;
   color: var(--token-QZ9BjK-EaOkt);
   text-align: center;
   font-size: 44px;
-  align-self: stretch;
+  min-width: 0;
 }
 .text {
   position: relative;
-  width: auto;
+  width: 100%;
   height: auto;
-  max-width: 800px;
+  max-width: 600px;
   color: var(--token-QZ9BjK-EaOkt);
   text-align: center;
   font-size: 22px;
-  align-self: stretch;
+  min-width: 0;
 }
 .freeBox__duvf {
   display: flex;
@@ -103,15 +102,12 @@
   height: auto;
   max-width: 100%;
   margin-top: calc(0px + 20px) !important;
-  align-self: stretch;
   min-width: 0;
   padding: 0px;
 }
 .registrationLinkButton:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-  width: 100%;
-  min-width: 0;
 }
 .svg__fI7Oj {
   position: relative;

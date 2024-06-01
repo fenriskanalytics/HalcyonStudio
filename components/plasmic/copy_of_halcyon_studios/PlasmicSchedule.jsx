@@ -22,7 +22,7 @@ import {
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HalcyonNavBar from "../../HalcyonNavBar"; // plasmic-import: yxQmGgAy9hde/component
-import MarianaScheduleCode from "../../MarianaScheduleCode"; // plasmic-import: B45lS1hhx1Vs/component
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import HalcyonFooter from "../../HalcyonFooter"; // plasmic-import: 7Ks2sCBPZV9k/component
 import HalcyonFooterBottom from "../../HalcyonFooterBottom"; // plasmic-import: Mjl6P60oGLT_/component
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -112,10 +112,11 @@ function PlasmicSchedule__RenderFunc(props) {
             className={classNames("__wab_instance", sty.halcyonNavBar)}
           />
 
-          <MarianaScheduleCode
+          <Embed
             data-plasmic-name={"marianaScheduleCode"}
             data-plasmic-override={overrides.marianaScheduleCode}
             className={classNames("__wab_instance", sty.marianaScheduleCode)}
+            code={'<div data-mariana-integrations="/schedule/daily"></div>'}
           />
 
           <div

@@ -25,10 +25,8 @@ import {
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HalcyonNavBar from "../../HalcyonNavBar"; // plasmic-import: yxQmGgAy9hde/component
-import Button from "../../Button"; // plasmic-import: EyzplKTGD_DF/component
 import HomeSection from "../../HomeSection"; // plasmic-import: 9rGWqtPg4lLP/component
 import LoginFormPopup from "../../LoginFormPopup"; // plasmic-import: QZYU2P-IDkxx/component
-import TextInput from "../../TextInput"; // plasmic-import: 21hHWiV01rOa/component
 import HalcyonFooter from "../../HalcyonFooter"; // plasmic-import: 7Ks2sCBPZV9k/component
 import HalcyonFooterBottom from "../../HalcyonFooterBottom"; // plasmic-import: Mjl6P60oGLT_/component
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -67,12 +65,6 @@ function PlasmicHomepage__RenderFunc(props) {
   const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
-      {
-        path: "textInput.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      },
       {
         path: "loginFormPopup.plasmicAntd5FormValue",
         type: "private",
@@ -130,12 +122,25 @@ function PlasmicHomepage__RenderFunc(props) {
             className={classNames("__wab_instance", sty.halcyonNavBar)}
           />
 
-          <HomeSection
-            data-plasmic-name={"homeSection"}
-            data-plasmic-override={overrides.homeSection}
-            className={classNames("__wab_instance", sty.homeSection)}
-          />
-
+          {(() => {
+            try {
+              return !$state.loginFormPopup.unblurPopUp;
+            } catch (e) {
+              if (
+                e instanceof TypeError ||
+                e?.plasmicType === "PlasmicUndefinedDataError"
+              ) {
+                return true;
+              }
+              throw e;
+            }
+          })() ? (
+            <HomeSection
+              data-plasmic-name={"homeSection"}
+              data-plasmic-override={overrides.homeSection}
+              className={classNames("__wab_instance", sty.homeSection)}
+            />
+          ) : null}
           <section
             data-plasmic-name={"heroSection"}
             data-plasmic-override={overrides.heroSection}
@@ -147,14 +152,16 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames(projectcss.all, sty.freeBox__hYleL)}
             >
               <h2
+                data-plasmic-name={"h2"}
+                data-plasmic-override={overrides.h2}
                 className={classNames(
                   projectcss.all,
                   projectcss.h2,
                   projectcss.__wab_text,
-                  sty.h2__roV9D
+                  sty.h2
                 )}
               >
-                <Trans__>{"Tampa's First Luxury Studio"}</Trans__>
+                <Trans__>{"Our Mission"}</Trans__>
               </h2>
               {(() => {
                 try {
@@ -192,73 +199,19 @@ function PlasmicHomepage__RenderFunc(props) {
                 />
               ) : null}
               <div
+                data-plasmic-name={"missionStatement"}
+                data-plasmic-override={overrides.missionStatement}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__oMktG
+                  sty.missionStatement
                 )}
               >
                 <Trans__>
                   {
-                    "Yoga is a journey of self-discovery, a path to finding your focus, and a means of pushing personal limits. We offer a refined and authentic yoga experience, embracing the purity of its practice. Join us in the pursuit of inner balance, strength, and tranquility, where yoga is about reconnecting with yourself and finding your own path to well-being."
+                    "At Halcyon, we know that each of us humans are on our own healing journey and that movement is the medicine that will take us to our ultimate destination \u2014 peace of both body and mind. That is why our is aim is to bring a variety of movement styles to our community and allow for each individual to find their own chosen form of expression and to tap into their creativity and their breath as they refine the body and mind. Even in stillness,Halcyon has been designed to be a refuge from our modern day world with natural elements incorporated into our design choices that carry healing energies and frequencies members experience by just entering the space. We welcome you to leave the turbulent throes of the world at the door and calm your seas as a member of Halcyon Studio.\n"
                   }
                 </Trans__>
-              </div>
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__disM2)}
-            >
-              <h2
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2___0Eah3
-                )}
-              >
-                <Trans__>
-                  {"Sign Up for Launch Information and Membership Promotions"}
-                </Trans__>
-              </h2>
-              <div className={classNames(projectcss.all, sty.freeBox__kvvjf)}>
-                <div className={classNames(projectcss.all, sty.freeBox__xsZiv)}>
-                  <TextInput
-                    data-plasmic-name={"textInput"}
-                    data-plasmic-override={overrides.textInput}
-                    className={classNames("__wab_instance", sty.textInput)}
-                    onChange={(...eventArgs) => {
-                      generateStateOnChangeProp($state, ["textInput", "value"])(
-                        (e => e.target?.value).apply(null, eventArgs)
-                      );
-                    }}
-                    placeholder={"Enter your Email  here"}
-                    value={
-                      generateStateValueProp($state, ["textInput", "value"]) ??
-                      ""
-                    }
-                  />
-
-                  <Button
-                    data-plasmic-name={"signUpButton"}
-                    data-plasmic-override={overrides.signUpButton}
-                    className={classNames("__wab_instance", sty.signUpButton)}
-                    color={"brGreen"}
-                    size={"compact"}
-                    submitsForm={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__xA7Z
-                      )}
-                    >
-                      <Trans__>{"Sign Up"}</Trans__>
-                    </div>
-                  </Button>
-                </div>
               </div>
             </Stack__>
           </section>
@@ -287,19 +240,19 @@ const PlasmicDescendants = {
     "halcyonNavBar",
     "homeSection",
     "heroSection",
+    "h2",
     "loginFormPopup",
-    "textInput",
-    "signUpButton",
+    "missionStatement",
     "halcyonFooter",
     "halcyonFooterBottom"
   ],
 
   halcyonNavBar: ["halcyonNavBar"],
   homeSection: ["homeSection"],
-  heroSection: ["heroSection", "loginFormPopup", "textInput", "signUpButton"],
+  heroSection: ["heroSection", "h2", "loginFormPopup", "missionStatement"],
+  h2: ["h2"],
   loginFormPopup: ["loginFormPopup"],
-  textInput: ["textInput"],
-  signUpButton: ["signUpButton"],
+  missionStatement: ["missionStatement"],
   halcyonFooter: ["halcyonFooter"],
   halcyonFooterBottom: ["halcyonFooterBottom"]
 };
@@ -339,9 +292,9 @@ export const PlasmicHomepage = Object.assign(
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
     homeSection: makeNodeComponent("homeSection"),
     heroSection: makeNodeComponent("heroSection"),
+    h2: makeNodeComponent("h2"),
     loginFormPopup: makeNodeComponent("loginFormPopup"),
-    textInput: makeNodeComponent("textInput"),
-    signUpButton: makeNodeComponent("signUpButton"),
+    missionStatement: makeNodeComponent("missionStatement"),
     halcyonFooter: makeNodeComponent("halcyonFooter"),
     halcyonFooterBottom: makeNodeComponent("halcyonFooterBottom"),
     // Metadata about props expected for PlasmicHomepage

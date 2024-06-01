@@ -94,9 +94,9 @@ function PlasmicAccount__RenderFunc(props) {
           />
 
           <Embed
-            data-plasmic-name={"marianaAccountCode"}
-            data-plasmic-override={overrides.marianaAccountCode}
-            className={classNames("__wab_instance", sty.marianaAccountCode)}
+            data-plasmic-name={"accountHtmlEmbed"}
+            data-plasmic-override={overrides.accountHtmlEmbed}
+            className={classNames("__wab_instance", sty.accountHtmlEmbed)}
             code={'<div data-mariana-integrations="/account"></div>'}
           />
 
@@ -127,14 +127,14 @@ const PlasmicDescendants = {
   root: [
     "root",
     "halcyonNavBar",
-    "marianaAccountCode",
+    "accountHtmlEmbed",
     "freeBox",
     "halcyonFooter",
     "halcyonFooterBottom"
   ],
 
   halcyonNavBar: ["halcyonNavBar"],
-  marianaAccountCode: ["marianaAccountCode"],
+  accountHtmlEmbed: ["accountHtmlEmbed"],
   freeBox: ["freeBox", "halcyonFooter", "halcyonFooterBottom"],
   halcyonFooter: ["halcyonFooter"],
   halcyonFooterBottom: ["halcyonFooterBottom"]
@@ -173,7 +173,7 @@ export const PlasmicAccount = Object.assign(
   {
     // Helper components rendering sub-elements
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
-    marianaAccountCode: makeNodeComponent("marianaAccountCode"),
+    accountHtmlEmbed: makeNodeComponent("accountHtmlEmbed"),
     freeBox: makeNodeComponent("freeBox"),
     halcyonFooter: makeNodeComponent("halcyonFooter"),
     halcyonFooterBottom: makeNodeComponent("halcyonFooterBottom"),

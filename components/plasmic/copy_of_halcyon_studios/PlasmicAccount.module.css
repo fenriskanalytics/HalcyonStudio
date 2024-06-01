@@ -27,40 +27,7 @@
   max-width: 100%;
   position: relative;
 }
-.link__tcGUv {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-  padding: 0px;
-}
-.button__h4KOx:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-  width: 100%;
-  min-width: 0;
-}
-.svg__cpj38 {
-  position: relative;
-  object-fit: cover;
-  width: auto;
-  height: 1em;
-}
-.text__e1FRi {
-  font-size: 18px;
-}
-.svg___7ENhA {
-  position: relative;
-  object-fit: cover;
-  width: auto;
-  height: 1em;
-}
-.marianaAccountCode:global(.__wab_instance) {
+.accountHtmlEmbed:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
