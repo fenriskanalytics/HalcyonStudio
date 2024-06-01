@@ -91,6 +91,11 @@ function PlasmicHomeSection__RenderFunc(props) {
         plasmic_plasmic_rich_components_css.plasmic_tokens,
         sty.root,
         {
+          [sty.rootblurVariant_unnamedVariant2]: hasVariant(
+            $state,
+            "blurVariant",
+            "unnamedVariant2"
+          ),
           [sty.rootblurVariant_unnamedVariant]: hasVariant(
             $state,
             "blurVariant",
