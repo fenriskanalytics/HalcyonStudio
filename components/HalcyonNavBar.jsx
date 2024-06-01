@@ -12,10 +12,9 @@ function HalcyonNavBar_(props, ref) {
           'data-mariana-logged-out-text': 'Login',
           'data-mariana-logged-in-text': 'Account',
           href: '/account',
-          // Add any additional event listeners or props as needed
           onClick: (e) => {
-            console.log("Login link clicked");
-            // Add any custom logic here
+            e.preventDefault(); // Prevent the default link behavior
+            window.location.href = 'https://www.halcyonstudio.us/account/';
           }
         }
       }}
