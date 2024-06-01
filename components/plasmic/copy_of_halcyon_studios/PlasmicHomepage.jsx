@@ -139,6 +139,28 @@ function PlasmicHomepage__RenderFunc(props) {
               data-plasmic-name={"homeSection"}
               data-plasmic-override={overrides.homeSection}
               className={classNames("__wab_instance", sty.homeSection)}
+              hrefRedirect={async event => {
+                const $steps = {};
+                $steps["runCode"] = true
+                  ? (() => {
+                      const actionArgs = {
+                        customFunction: async () => {
+                          return undefined;
+                        }
+                      };
+                      return (({ customFunction }) => {
+                        return customFunction();
+                      })?.apply(null, [actionArgs]);
+                    })()
+                  : undefined;
+                if (
+                  $steps["runCode"] != null &&
+                  typeof $steps["runCode"] === "object" &&
+                  typeof $steps["runCode"].then === "function"
+                ) {
+                  $steps["runCode"] = await $steps["runCode"];
+                }
+              }}
             />
           ) : null}
           <section

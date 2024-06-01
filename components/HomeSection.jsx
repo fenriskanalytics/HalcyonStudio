@@ -6,7 +6,7 @@ function HomeSection_(props, ref) {
     <PlasmicHomeSection
       root={{ ref }}
       {...props}
-      registrationButton={{
+      registrationLink={{
         props: {
           onClick: (e) => {
             e.preventDefault(); // Prevent the default link behavior

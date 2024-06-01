@@ -9,8 +9,10 @@
 // Plasmic Project: 2p9VhVhxAWhB5Nusx9QUQ2
 // Component: 9rGWqtPg4lLP
 import * as React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import {
+  PlasmicLink as PlasmicLink__,
   Stack as Stack__,
   Trans as Trans__,
   classNames,
@@ -33,7 +35,7 @@ createPlasmicElementProxy;
 
 export const PlasmicHomeSection__VariantProps = new Array("blurVariant");
 
-export const PlasmicHomeSection__ArgProps = new Array();
+export const PlasmicHomeSection__ArgProps = new Array("hrefRedirect");
 
 const $$ = {};
 
@@ -150,46 +152,29 @@ function PlasmicHomeSection__RenderFunc(props) {
             <Trans__>{"Register for Our Grand Opening"}</Trans__>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__duvf)}>
-            <Button
-              data-plasmic-name={"registrationButton"}
-              data-plasmic-override={overrides.registrationButton}
-              className={classNames("__wab_instance", sty.registrationButton)}
-              color={"green"}
-              onClick={async event => {
-                const $steps = {};
-                $steps["goToNewsletterRegistration"] = true
-                  ? (() => {
-                      const actionArgs = { destination: `/Announcements` };
-                      return (({ destination }) => {
-                        if (
-                          typeof destination === "string" &&
-                          destination.startsWith("#")
-                        ) {
-                          document
-                            .getElementById(destination.substr(1))
-                            .scrollIntoView({ behavior: "smooth" });
-                        } else {
-                          __nextRouter?.push(destination);
-                        }
-                      })?.apply(null, [actionArgs]);
-                    })()
-                  : undefined;
-                if (
-                  $steps["goToNewsletterRegistration"] != null &&
-                  typeof $steps["goToNewsletterRegistration"] === "object" &&
-                  typeof $steps["goToNewsletterRegistration"].then ===
-                    "function"
-                ) {
-                  $steps["goToNewsletterRegistration"] = await $steps[
-                    "goToNewsletterRegistration"
-                  ];
-                }
-              }}
-              size={"compact"}
-              submitsForm={true}
+            <PlasmicLink__
+              data-plasmic-name={"registrationLink"}
+              data-plasmic-override={overrides.registrationLink}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.registrationLink
+              )}
+              component={Link}
+              platform={"nextjs"}
             >
-              <Trans__>{"Register Now"}</Trans__>
-            </Button>
+              <Button
+                data-plasmic-name={"registrationButton"}
+                data-plasmic-override={overrides.registrationButton}
+                className={classNames("__wab_instance", sty.registrationButton)}
+                color={"green"}
+                onClick={args.hrefRedirect}
+                size={"compact"}
+                submitsForm={true}
+              >
+                <Trans__>{"Register Now"}</Trans__>
+              </Button>
+            </PlasmicLink__>
           </div>
         </Stack__>
       </div>
@@ -198,8 +183,9 @@ function PlasmicHomeSection__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text", "registrationButton"],
+  root: ["root", "text", "registrationLink", "registrationButton"],
   text: ["text"],
+  registrationLink: ["registrationLink", "registrationButton"],
   registrationButton: ["registrationButton"]
 };
 
@@ -236,6 +222,7 @@ export const PlasmicHomeSection = Object.assign(
   {
     // Helper components rendering sub-elements
     text: makeNodeComponent("text"),
+    registrationLink: makeNodeComponent("registrationLink"),
     registrationButton: makeNodeComponent("registrationButton"),
     // Metadata about props expected for PlasmicHomeSection
     internalVariantProps: PlasmicHomeSection__VariantProps,

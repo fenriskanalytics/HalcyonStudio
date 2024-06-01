@@ -119,6 +119,18 @@
   min-width: 0;
   padding: 0px;
 }
+.registrationLink {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  color: #ffffff00;
+  padding: 8px;
+}
 .registrationButton:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
