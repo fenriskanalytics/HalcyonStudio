@@ -8,10 +8,8 @@ function HomeSection_(props, ref) {
       {...props}
       registrationButton={{
         props: {
-          href: 'https://www.halcyonstudio.us/account/',
           onClick: (e) => {
             e.preventDefault(); // Prevent the default link behavior
-            console.log('Redirecting to account page');
             window.location.href = 'https://www.halcyonstudio.us/account/';
           }
         }
