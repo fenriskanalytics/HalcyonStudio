@@ -68,7 +68,7 @@
   max-width: 800px;
   color: var(--token-FLc3Q0URvh0f);
   text-align: center;
-  white-space: pre;
+  white-space: pre-wrap;
   box-shadow: none;
   min-width: 0;
 }
