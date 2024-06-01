@@ -18,6 +18,22 @@ function HalcyonNavBar_(props, ref) {
           }
         }
       }}
+      membershipsLink={{
+        props: {
+          onClick: (e) => {
+            e.preventDefault(); // Prevent the default link behavior
+            window.location.href = 'https://www.halcyonstudio.us/memberships/buy/';
+          }
+        }
+      }}
+      eventsLink={{
+        props: {
+          onClick: (e) => {
+            e.preventDefault(); // Prevent the default link behavior
+            window.location.href = 'https://www.halcyonstudio.us/schedule/';
+          }
+        }
+      }}
     />
   );
 }
