@@ -151,12 +151,9 @@ function PlasmicHomeSection__RenderFunc(props) {
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__duvf)}>
             <Button
-              data-plasmic-name={"registrationLinkButton"}
-              data-plasmic-override={overrides.registrationLinkButton}
-              className={classNames(
-                "__wab_instance",
-                sty.registrationLinkButton
-              )}
+              data-plasmic-name={"registrationButton"}
+              data-plasmic-override={overrides.registrationButton}
+              className={classNames("__wab_instance", sty.registrationButton)}
               color={"green"}
               onClick={async event => {
                 const $steps = {};
@@ -201,9 +198,9 @@ function PlasmicHomeSection__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text", "registrationLinkButton"],
+  root: ["root", "text", "registrationButton"],
   text: ["text"],
-  registrationLinkButton: ["registrationLinkButton"]
+  registrationButton: ["registrationButton"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -239,7 +236,7 @@ export const PlasmicHomeSection = Object.assign(
   {
     // Helper components rendering sub-elements
     text: makeNodeComponent("text"),
-    registrationLinkButton: makeNodeComponent("registrationLinkButton"),
+    registrationButton: makeNodeComponent("registrationButton"),
     // Metadata about props expected for PlasmicHomeSection
     internalVariantProps: PlasmicHomeSection__VariantProps,
     internalArgProps: PlasmicHomeSection__ArgProps
