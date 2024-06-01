@@ -50,7 +50,7 @@
   min-width: 0;
   padding: 32px;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .freeBox__qpfk0 {
     display: flex;
     width: 100%;
@@ -101,7 +101,7 @@
 .columns > :global(.__wab_flex-container) > :nth-child(2n + 2) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .columns {
     width: 100%;
     height: auto;
@@ -113,7 +113,7 @@
     padding: 8px;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .columns > :global(.__wab_flex-container) {
     flex-direction: row;
     flex-wrap: wrap-reverse;
@@ -126,7 +126,7 @@
     height: calc(100% + 12px);
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .columns > :global(.__wab_flex-container) > *,
   .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
   .columns > :global(.__wab_flex-container) > picture > img,
@@ -139,7 +139,7 @@
     margin-top: 12px;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .columns > :global(.__wab_flex-container) > :nth-child(1n + 1) {
     width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
   }
@@ -190,7 +190,7 @@
   > img {
   margin-top: 16px;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .freeBox___2QYsf {
     position: relative;
     left: auto;
@@ -207,7 +207,7 @@
     border-left: 8px solid #f4efeb;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .freeBox___2QYsf > :global(.__wab_flex-container) {
     flex-direction: column;
     justify-content: center;
@@ -219,7 +219,7 @@
     height: calc(100% + 16px);
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .freeBox___2QYsf > :global(.__wab_flex-container) > *,
   .freeBox___2QYsf > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
   .freeBox___2QYsf > :global(.__wab_flex-container) > picture > img,
@@ -288,14 +288,14 @@
 .img > picture > img {
   object-fit: cover;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .img {
     position: relative;
     object-fit: cover;
     max-width: 100%;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .img > picture > img {
     object-fit: cover;
   }
@@ -317,7 +317,7 @@
   min-width: 0;
   padding: 4.17em 15px 3.33em;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .mainSection {
     margin-top: calc(0px + 0px) !important;
     padding: 3em 15px 1.5em;
@@ -391,7 +391,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .h4___0B4Sq {
     font-size: 32px;
     position: relative;
@@ -434,7 +434,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .text__wyhSz {
     margin-top: calc(0px + 10px) !important;
   }
@@ -493,7 +493,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .h4__iRn3Z {
     font-size: 32px;
     position: relative;
@@ -536,7 +536,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .text__tlUrH {
     margin-top: calc(0px + 10px) !important;
   }
@@ -595,7 +595,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .h4__aNcC2 {
     font-size: 32px;
     position: relative;
@@ -638,7 +638,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .text__rPia {
     margin-top: calc(0px + 10px) !important;
   }
@@ -697,7 +697,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .h4__iZSjQ {
     font-size: 32px;
     position: relative;
@@ -778,7 +778,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .h4__s0Mjz {
     font-size: 32px;
     position: relative;
@@ -859,7 +859,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .h4__yf2O2 {
     font-size: 32px;
     position: relative;
@@ -940,7 +940,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .h4__iLeW0 {
     font-size: 32px;
     position: relative;
@@ -1021,7 +1021,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .h4__ugesy {
     font-size: 32px;
     position: relative;
@@ -1102,7 +1102,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .h4__lrRxs {
     font-size: 32px;
     position: relative;

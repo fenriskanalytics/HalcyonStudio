@@ -96,7 +96,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .h2__z7FyG {
     font-size: 35px;
   }
@@ -181,7 +181,7 @@
   text-overflow: clip;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .h2__s7GG {
     font-size: 35px;
   }

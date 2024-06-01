@@ -92,7 +92,7 @@
   margin-bottom: 8px;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .h2 {
     font-size: 36px;
     margin-top: calc(4px + 16px) !important;
@@ -114,7 +114,7 @@
   margin-bottom: 12px;
   min-width: 0;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .missionStatement {
     font-size: 14px;
   }

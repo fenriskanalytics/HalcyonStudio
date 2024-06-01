@@ -56,7 +56,7 @@
   > img {
   margin-left: 16px;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .freeBox__nsrX {
     padding: 32px;
   }
@@ -86,13 +86,13 @@
   > img {
   margin-left: 16px;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .freeBox__ae4H5 {
     display: flex;
     flex-direction: column;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .freeBox__ae4H5 > :global(.__wab_flex-container) {
     flex-direction: column;
     align-items: center;
@@ -102,7 +102,7 @@
     height: calc(100% + 16px);
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .freeBox__ae4H5 > :global(.__wab_flex-container) > *,
   .freeBox__ae4H5 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
   .freeBox__ae4H5 > :global(.__wab_flex-container) > picture > img,
@@ -158,7 +158,7 @@
   > img {
   margin-left: 8px;
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .freeBox__bCdB > :global(.__wab_flex-container) {
     flex-wrap: wrap;
     justify-content: center;
@@ -166,7 +166,7 @@
     height: calc(100% + 8px);
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .freeBox__bCdB > :global(.__wab_flex-container) > *,
   .freeBox__bCdB > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
   .freeBox__bCdB > :global(.__wab_flex-container) > picture > img,
@@ -229,7 +229,7 @@
   text-overflow: clip;
   padding-bottom: 0px;
 }
-@media (max-width: 834px) {
+@media (max-width: 1440px) {
   .text__kb7Ub {
     font-size: 14px;
   }
@@ -282,7 +282,7 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
-@media (max-width: 834px) {
+@media (max-width: 1440px) {
   .eventsText {
     font-size: 14px;
   }
@@ -335,7 +335,7 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
-@media (max-width: 834px) {
+@media (max-width: 1440px) {
   .text__w1Ppb {
     font-size: 14px;
   }
@@ -390,7 +390,7 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
-@media (max-width: 834px) {
+@media (max-width: 1440px) {
   .text__k7AaU {
     font-size: 14px;
   }
@@ -445,7 +445,7 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
-@media (max-width: 834px) {
+@media (max-width: 1440px) {
   .text__xAoM {
     font-size: 14px;
   }
