@@ -1313,6 +1313,32 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "xhQwHY9Bkb2M",
+          "name": "Card",
+          "type": "managed",
+          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
+          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicCard.jsx",
+          "importSpec": {
+            "modulePath": "Card.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "zLDzQ49_JXqf",
+          "name": "Alert",
+          "type": "managed",
+          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
+          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicAlert.jsx",
+          "importSpec": {
+            "modulePath": "Alert.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicAlert.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1465,6 +1491,11 @@
           "id": "kMEAFFFW7kqs",
           "name": "Icon10Icon",
           "moduleFilePath": "plasmic/copy_of_halcyon_studios/icons/PlasmicIcon__Icon10.jsx"
+        },
+        {
+          "id": "yKGpUY2EOId4",
+          "name": "Icon11Icon",
+          "moduleFilePath": "plasmic/copy_of_halcyon_studios/icons/PlasmicIcon__Icon11.jsx"
         }
       ],
       "images": [

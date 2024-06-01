@@ -22,6 +22,8 @@ import {
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HalcyonNavBar from "../../HalcyonNavBar"; // plasmic-import: yxQmGgAy9hde/component
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
+import Card from "../../Card"; // plasmic-import: xhQwHY9Bkb2M/component
+import { Iframe } from "@plasmicpkgs/plasmic-basic-components";
 import HalcyonFooter from "../../HalcyonFooter"; // plasmic-import: 7Ks2sCBPZV9k/component
 import HalcyonFooterBottom from "../../HalcyonFooterBottom"; // plasmic-import: Mjl6P60oGLT_/component
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -109,6 +111,28 @@ function PlasmicBuy__RenderFunc(props) {
             code={args.code}
           />
 
+          <section
+            data-plasmic-name={"section"}
+            data-plasmic-override={overrides.section}
+            className={classNames(projectcss.all, sty.section)}
+          >
+            <Card
+              data-plasmic-name={"card"}
+              data-plasmic-override={overrides.card}
+              className={classNames("__wab_instance", sty.card)}
+              unnamedGroupOfVariants2={"unnamedVariant"}
+            >
+              <Iframe
+                data-plasmic-name={"buyIframe"}
+                data-plasmic-override={overrides.buyIframe}
+                className={classNames("__wab_instance", sty.buyIframe)}
+                preview={true}
+                src={
+                  "https://halcyonstudio.marianaiframes.com/iframe/buy/48717"
+                }
+              />
+            </Card>
+          </section>
           <div
             data-plasmic-name={"freeBox"}
             data-plasmic-override={overrides.freeBox}
@@ -137,6 +161,9 @@ const PlasmicDescendants = {
     "root",
     "halcyonNavBar",
     "marianaBuyCode",
+    "section",
+    "card",
+    "buyIframe",
     "freeBox",
     "halcyonFooter",
     "halcyonFooterBottom"
@@ -144,6 +171,9 @@ const PlasmicDescendants = {
 
   halcyonNavBar: ["halcyonNavBar"],
   marianaBuyCode: ["marianaBuyCode"],
+  section: ["section", "card", "buyIframe"],
+  card: ["card", "buyIframe"],
+  buyIframe: ["buyIframe"],
   freeBox: ["freeBox", "halcyonFooter", "halcyonFooterBottom"],
   halcyonFooter: ["halcyonFooter"],
   halcyonFooterBottom: ["halcyonFooterBottom"]
@@ -183,6 +213,9 @@ export const PlasmicBuy = Object.assign(
     // Helper components rendering sub-elements
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
     marianaBuyCode: makeNodeComponent("marianaBuyCode"),
+    section: makeNodeComponent("section"),
+    card: makeNodeComponent("card"),
+    buyIframe: makeNodeComponent("buyIframe"),
     freeBox: makeNodeComponent("freeBox"),
     halcyonFooter: makeNodeComponent("halcyonFooter"),
     halcyonFooterBottom: makeNodeComponent("halcyonFooterBottom"),

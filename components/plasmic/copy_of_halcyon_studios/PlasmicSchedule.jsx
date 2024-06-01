@@ -23,6 +23,8 @@ import {
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HalcyonNavBar from "../../HalcyonNavBar"; // plasmic-import: yxQmGgAy9hde/component
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
+import Card from "../../Card"; // plasmic-import: xhQwHY9Bkb2M/component
+import { Iframe } from "@plasmicpkgs/plasmic-basic-components";
 import HalcyonFooter from "../../HalcyonFooter"; // plasmic-import: 7Ks2sCBPZV9k/component
 import HalcyonFooterBottom from "../../HalcyonFooterBottom"; // plasmic-import: Mjl6P60oGLT_/component
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -119,6 +121,28 @@ function PlasmicSchedule__RenderFunc(props) {
             code={'<div data-mariana-integrations="/schedule/daily"></div>'}
           />
 
+          <section
+            data-plasmic-name={"section"}
+            data-plasmic-override={overrides.section}
+            className={classNames(projectcss.all, sty.section)}
+          >
+            <Card
+              data-plasmic-name={"card"}
+              data-plasmic-override={overrides.card}
+              className={classNames("__wab_instance", sty.card)}
+              unnamedGroupOfVariants2={"unnamedVariant"}
+            >
+              <Iframe
+                data-plasmic-name={"scheduleIframe"}
+                data-plasmic-override={overrides.scheduleIframe}
+                className={classNames("__wab_instance", sty.scheduleIframe)}
+                preview={true}
+                src={
+                  "https://halcyonstudio.marianaiframes.com/iframe/schedule/daily/48541?locations=48717"
+                }
+              />
+            </Card>
+          </section>
           <div
             data-plasmic-name={"freeBox"}
             data-plasmic-override={overrides.freeBox}
@@ -147,6 +171,9 @@ const PlasmicDescendants = {
     "root",
     "halcyonNavBar",
     "marianaScheduleCode",
+    "section",
+    "card",
+    "scheduleIframe",
     "freeBox",
     "halcyonFooter",
     "halcyonFooterBottom"
@@ -154,6 +181,9 @@ const PlasmicDescendants = {
 
   halcyonNavBar: ["halcyonNavBar"],
   marianaScheduleCode: ["marianaScheduleCode"],
+  section: ["section", "card", "scheduleIframe"],
+  card: ["card", "scheduleIframe"],
+  scheduleIframe: ["scheduleIframe"],
   freeBox: ["freeBox", "halcyonFooter", "halcyonFooterBottom"],
   halcyonFooter: ["halcyonFooter"],
   halcyonFooterBottom: ["halcyonFooterBottom"]
@@ -193,6 +223,9 @@ export const PlasmicSchedule = Object.assign(
     // Helper components rendering sub-elements
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
     marianaScheduleCode: makeNodeComponent("marianaScheduleCode"),
+    section: makeNodeComponent("section"),
+    card: makeNodeComponent("card"),
+    scheduleIframe: makeNodeComponent("scheduleIframe"),
     freeBox: makeNodeComponent("freeBox"),
     halcyonFooter: makeNodeComponent("halcyonFooter"),
     halcyonFooterBottom: makeNodeComponent("halcyonFooterBottom"),
