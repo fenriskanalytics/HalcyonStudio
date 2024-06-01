@@ -8,6 +8,8 @@ import { PlasmicMemberships } from "../components/plasmic/copy_of_halcyon_studio
 import { useRouter } from "next/router";
 
 function Memberships() {
+  const router = useRouter();
+
   // Use PlasmicMemberships to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
@@ -28,9 +30,9 @@ function Memberships() {
     <UnnamedGlobalGroupOfVariantsContext.Provider value={undefined}>
       <GlobalContextsProvider>
         <PageParamsProvider__
-          route={useRouter()?.pathname}
-          params={useRouter()?.query}
-          query={useRouter()?.query}
+          route={router.pathname}
+          params={router.query}
+          query={router.query}
         >
           <PlasmicMemberships />
         </PageParamsProvider__>
