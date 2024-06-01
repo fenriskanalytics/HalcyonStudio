@@ -34,7 +34,7 @@ createPlasmicElementProxy;
 
 export const PlasmicBuy__VariantProps = new Array();
 
-export const PlasmicBuy__ArgProps = new Array();
+export const PlasmicBuy__ArgProps = new Array("code");
 
 const $$ = {};
 
@@ -48,7 +48,16 @@ function useNextRouter() {
 function PlasmicBuy__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $translator = usePlasmicTranslator?.();
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          code: '<div data-mariana-integrations="/buy"></div>'
+        },
+        props.args
+      ),
+    [props.args]
+  );
   const $props = {
     ...args,
     ...variants
@@ -97,7 +106,7 @@ function PlasmicBuy__RenderFunc(props) {
             data-plasmic-name={"marianaBuyCode"}
             data-plasmic-override={overrides.marianaBuyCode}
             className={classNames("__wab_instance", sty.marianaBuyCode)}
-            code={'<div data-mariana-integrations="/buy"></div>'}
+            code={args.code}
           />
 
           <div

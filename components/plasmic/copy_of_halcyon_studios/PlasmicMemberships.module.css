@@ -131,7 +131,7 @@
   font-size: 48px;
   font-weight: 500;
   font-style: normal;
-  color: var(--token-jgohepLVeKvh);
+  color: var(--token-FLc3Q0URvh0f);
   text-align: left;
   text-transform: none;
   line-height: 1;
@@ -146,22 +146,6 @@
   .text__m6BSg {
     text-align: center;
   }
-}
-.text__lsi8E {
-  font-size: 20px;
-  color: var(--token-FLc3Q0URvh0f);
-  text-align: center;
-  line-height: 28px;
-  height: auto;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: normal;
-  white-space: pre-wrap;
-  user-select: text;
-  text-decoration-line: none;
-  text-overflow: clip;
 }
 .columns {
   display: flex;
@@ -261,6 +245,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  background: var(--token-FLc3Q0URvh0f);
   padding: 32px;
 }
 .freeBox__wXwSq > :global(.__wab_flex-container) {
@@ -996,7 +981,7 @@
   position: relative;
   flex-direction: column;
   width: 100%;
-  background: #ffffff;
+  background: var(--token-FLc3Q0URvh0f);
   height: 100%;
   min-width: 0;
   min-height: 0;
@@ -1007,6 +992,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  background: var(--token-FLc3Q0URvh0f);
   padding: 32px;
 }
 .freeBox___8Dl3V > :global(.__wab_flex-container) {

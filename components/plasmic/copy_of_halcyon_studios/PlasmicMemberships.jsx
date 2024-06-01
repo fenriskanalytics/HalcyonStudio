@@ -135,19 +135,6 @@ function PlasmicMemberships__RenderFunc(props) {
                       <Trans__>{"Halcyon Memberships"}</Trans__>
                     </div>
                   </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__lsi8E
-                    )}
-                  >
-                    <Trans__>
-                      {
-                        "Nascetur nascetur ridiculus scelerisque adipiscing a nascetur varius sed eu a ad semper a est nec litora ante at orci rhoncus a varius auctor aliquam inceptos vestibulum ridiculus."
-                      }
-                    </Trans__>
-                  </div>
                 </Stack__>
                 <Stack__
                   as={"div"}
