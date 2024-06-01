@@ -246,8 +246,30 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.text__xAoM
                   )}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["runCode"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            customFunction: async () => {
+                              return `'<a data-mariana-auth-link href="/account"></a>'`;
+                            }
+                          };
+                          return (({ customFunction }) => {
+                            return customFunction();
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      $steps["runCode"] != null &&
+                      typeof $steps["runCode"] === "object" &&
+                      typeof $steps["runCode"].then === "function"
+                    ) {
+                      $steps["runCode"] = await $steps["runCode"];
+                    }
+                  }}
                 >
-                  <Trans__>{"Login"}</Trans__>
+                  <Trans__>{"Signup"}</Trans__>
                 </div>
               </Stack__>
             </Stack__>
