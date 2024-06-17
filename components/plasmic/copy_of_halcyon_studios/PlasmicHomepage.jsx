@@ -24,7 +24,7 @@ import {
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HalcyonNavBar from "../../HalcyonNavBar"; // plasmic-import: yxQmGgAy9hde/component
-import HomeSection2 from "../../HomeSection2"; // plasmic-import: M0IYPZJH3OXM/component
+import HomeSectionCountdown from "../../HomeSectionCountdown"; // plasmic-import: M0IYPZJH3OXM/component
 import LoginFormPopup from "../../LoginFormPopup"; // plasmic-import: QZYU2P-IDkxx/component
 import HalcyonFooter from "../../HalcyonFooter"; // plasmic-import: 7Ks2sCBPZV9k/component
 import HalcyonFooterBottom from "../../HalcyonFooterBottom"; // plasmic-import: Mjl6P60oGLT_/component
@@ -120,25 +120,12 @@ function PlasmicHomepage__RenderFunc(props) {
             className={classNames("__wab_instance", sty.halcyonNavBar)}
           />
 
-          {(() => {
-            try {
-              return !$state.loginFormPopup.unblurPopUp;
-            } catch (e) {
-              if (
-                e instanceof TypeError ||
-                e?.plasmicType === "PlasmicUndefinedDataError"
-              ) {
-                return true;
-              }
-              throw e;
-            }
-          })() ? (
-            <HomeSection
-              data-plasmic-name={"homeSection"}
-              data-plasmic-override={overrides.homeSection}
-              className={classNames("__wab_instance", sty.homeSection)}
-            />
-          ) : null}
+          <HomeSectionCountdown
+            data-plasmic-name={"homeSectionCountdown"}
+            data-plasmic-override={overrides.homeSectionCountdown}
+            className={classNames("__wab_instance", sty.homeSectionCountdown)}
+          />
+
           <section
             data-plasmic-name={"heroSection"}
             data-plasmic-override={overrides.heroSection}
@@ -236,7 +223,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "halcyonNavBar",
-    "homeSection2",
+    "homeSectionCountdown",
     "heroSection",
     "h2",
     "loginFormPopup",
@@ -246,7 +233,7 @@ const PlasmicDescendants = {
   ],
 
   halcyonNavBar: ["halcyonNavBar"],
-  homeSection2: ["homeSection2"],
+  homeSectionCountdown: ["homeSectionCountdown"],
   heroSection: ["heroSection", "h2", "loginFormPopup", "missionStatement"],
   h2: ["h2"],
   loginFormPopup: ["loginFormPopup"],
@@ -288,7 +275,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
-    homeSection2: makeNodeComponent("homeSection2"),
+    homeSectionCountdown: makeNodeComponent("homeSectionCountdown"),
     heroSection: makeNodeComponent("heroSection"),
     h2: makeNodeComponent("h2"),
     loginFormPopup: makeNodeComponent("loginFormPopup"),

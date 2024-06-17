@@ -1341,19 +1341,6 @@
           "componentType": "component"
         },
         {
-          "id": "M0IYPZJH3OXM",
-          "name": "HomeSection2",
-          "type": "managed",
-          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
-          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicHomeSection2.jsx",
-          "importSpec": {
-            "modulePath": "HomeSection2.jsx"
-          },
-          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicHomeSection2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "s3nn5Qn_GLJE",
           "name": "CountdownNumber",
           "type": "managed",
@@ -1376,6 +1363,19 @@
             "modulePath": "Countdown.jsx"
           },
           "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicCountdown.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "M0IYPZJH3OXM",
+          "name": "HomeSectionCountdown",
+          "type": "managed",
+          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
+          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicHomeSectionCountdown.jsx",
+          "importSpec": {
+            "modulePath": "HomeSectionCountdown.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicHomeSectionCountdown.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
