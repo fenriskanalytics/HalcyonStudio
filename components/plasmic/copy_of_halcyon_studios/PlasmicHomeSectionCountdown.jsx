@@ -34,7 +34,7 @@ import sty from "./PlasmicHomeSectionCountdown.module.css"; // plasmic-import: M
 createPlasmicElementProxy;
 
 export const PlasmicHomeSectionCountdown__VariantProps = new Array(
-  "blurVariant"
+  "blurVariant2"
 );
 
 export const PlasmicHomeSectionCountdown__ArgProps = new Array("hrefRedirect");
@@ -63,10 +63,10 @@ function PlasmicHomeSectionCountdown__RenderFunc(props) {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "blurVariant",
+        path: "blurVariant2",
         type: "private",
         variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.blurVariant
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.blurVariant2
       }
     ],
 
@@ -94,14 +94,14 @@ function PlasmicHomeSectionCountdown__RenderFunc(props) {
         plasmic_plasmic_rich_components_css.plasmic_tokens,
         sty.root,
         {
-          [sty.rootblurVariant_unnamedVariant2]: hasVariant(
+          [sty.rootblurVariant2_unnamedVariant2]: hasVariant(
             $state,
-            "blurVariant",
+            "blurVariant2",
             "unnamedVariant2"
           ),
-          [sty.rootblurVariant_unnamedVariant]: hasVariant(
+          [sty.rootblurVariant2_unnamedVariant]: hasVariant(
             $state,
-            "blurVariant",
+            "blurVariant2",
             "unnamedVariant"
           )
         }
@@ -109,9 +109,9 @@ function PlasmicHomeSectionCountdown__RenderFunc(props) {
     >
       <div
         className={classNames(projectcss.all, sty.freeBox___9Snyu, {
-          [sty.freeBoxblurVariant_unnamedVariant___9Snyu8B2FP]: hasVariant(
+          [sty.freeBoxblurVariant2_unnamedVariant___9Snyu8B2FP]: hasVariant(
             $state,
-            "blurVariant",
+            "blurVariant2",
             "unnamedVariant"
           )
         })}
@@ -135,6 +135,22 @@ function PlasmicHomeSectionCountdown__RenderFunc(props) {
             data-plasmic-name={"countdown"}
             data-plasmic-override={overrides.countdown}
             className={classNames("__wab_instance", sty.countdown)}
+            targetTimeUtc={(() => {
+              try {
+                return (() => {
+                  const targetTime = "07/29/2024 7:00am EST";
+                  return targetTime;
+                })();
+              } catch (e) {
+                if (
+                  e instanceof TypeError ||
+                  e?.plasmicType === "PlasmicUndefinedDataError"
+                ) {
+                  return undefined;
+                }
+                throw e;
+              }
+            })()}
           />
 
           <h1

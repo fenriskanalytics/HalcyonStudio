@@ -16,6 +16,8 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
+  get as $stateGet,
+  set as $stateSet,
   useDollarState,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
@@ -68,6 +70,12 @@ function PlasmicCountdown__RenderFunc(props) {
     () => [
       {
         path: "remainingSeconds",
+        type: "private",
+        variableType: "number",
+        initFunc: ({ $props, $state, $queries, $ctx }) => 0
+      },
+      {
+        path: "remainingMinutes",
         type: "private",
         variableType: "number",
         initFunc: ({ $props, $state, $queries, $ctx }) => 0
@@ -304,6 +312,68 @@ function PlasmicCountdown__RenderFunc(props) {
         className={classNames("__wab_instance", sty.timer)}
         intervalSeconds={1}
         isRunning={true}
+        onTick={async () => {
+          const $steps = {};
+          $steps["updateRemainingSeconds"] = true
+            ? (() => {
+                const actionArgs = {
+                  variable: {
+                    objRoot: $state,
+                    variablePath: ["remainingSeconds"]
+                  },
+                  operation: 2,
+                  value: $state.remainingSeconds
+                };
+                return (({ variable, value, startIndex, deleteCount }) => {
+                  if (!variable) {
+                    return;
+                  }
+                  const { objRoot, variablePath } = variable;
+                  const oldValue = $stateGet(objRoot, variablePath);
+                  $stateSet(objRoot, variablePath, oldValue + 1);
+                  return oldValue + 1;
+                })?.apply(null, [actionArgs]);
+              })()
+            : undefined;
+          if (
+            $steps["updateRemainingSeconds"] != null &&
+            typeof $steps["updateRemainingSeconds"] === "object" &&
+            typeof $steps["updateRemainingSeconds"].then === "function"
+          ) {
+            $steps["updateRemainingSeconds"] = await $steps[
+              "updateRemainingSeconds"
+            ];
+          }
+          $steps["updateRemainingSeconds2"] = true
+            ? (() => {
+                const actionArgs = {
+                  variable: {
+                    objRoot: $state,
+                    variablePath: ["remainingMinutes"]
+                  },
+                  operation: 2
+                };
+                return (({ variable, value, startIndex, deleteCount }) => {
+                  if (!variable) {
+                    return;
+                  }
+                  const { objRoot, variablePath } = variable;
+                  const oldValue = $stateGet(objRoot, variablePath);
+                  $stateSet(objRoot, variablePath, oldValue + 1);
+                  return oldValue + 1;
+                })?.apply(null, [actionArgs]);
+              })()
+            : undefined;
+          if (
+            $steps["updateRemainingSeconds2"] != null &&
+            typeof $steps["updateRemainingSeconds2"] === "object" &&
+            typeof $steps["updateRemainingSeconds2"].then === "function"
+          ) {
+            $steps["updateRemainingSeconds2"] = await $steps[
+              "updateRemainingSeconds2"
+            ];
+          }
+        }}
         runWhileEditing={true}
       />
     </div>
