@@ -120,12 +120,25 @@ function PlasmicHomepage__RenderFunc(props) {
             className={classNames("__wab_instance", sty.halcyonNavBar)}
           />
 
-          <HomeSection2
-            data-plasmic-name={"homeSection2"}
-            data-plasmic-override={overrides.homeSection2}
-            className={classNames("__wab_instance", sty.homeSection2)}
-          />
-
+          {(() => {
+            try {
+              return !$state.loginFormPopup.unblurPopUp;
+            } catch (e) {
+              if (
+                e instanceof TypeError ||
+                e?.plasmicType === "PlasmicUndefinedDataError"
+              ) {
+                return true;
+              }
+              throw e;
+            }
+          })() ? (
+            <HomeSection
+              data-plasmic-name={"homeSection"}
+              data-plasmic-override={overrides.homeSection}
+              className={classNames("__wab_instance", sty.homeSection)}
+            />
+          ) : null}
           <section
             data-plasmic-name={"heroSection"}
             data-plasmic-override={overrides.heroSection}
