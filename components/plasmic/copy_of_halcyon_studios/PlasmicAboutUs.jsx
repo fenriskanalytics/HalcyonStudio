@@ -21,7 +21,6 @@ import {
   generateStateOnChangeProp,
   generateStateValueProp,
   hasVariant,
-  useCurrentUser,
   useDollarState,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
@@ -67,7 +66,6 @@ function PlasmicAboutUs__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -140,7 +138,7 @@ function PlasmicAboutUs__RenderFunc(props) {
               >
                 <Trans__>
                   {hasVariant(globalVariants, "screen", "mobile")
-                    ? "Top Collections"
+                    ? "Our Mission"
                     : "Tampa's First Luxury Yoga Studio"}
                 </Trans__>
               </h2>

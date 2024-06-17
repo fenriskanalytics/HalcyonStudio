@@ -20,7 +20,6 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants,
   hasVariant,
-  useCurrentUser,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
@@ -62,7 +61,6 @@ function PlasmicTermsOfService__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_0QmF6MtAnaU()
   });

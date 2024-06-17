@@ -22,7 +22,6 @@ import {
   get as $stateGet,
   initializeCodeComponentStates,
   set as $stateSet,
-  useCurrentUser,
   useDollarState,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
@@ -73,7 +72,6 @@ function PlasmicLoginFormPopup__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {

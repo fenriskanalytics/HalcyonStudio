@@ -21,7 +21,6 @@ import {
   generateStateOnChangeProp,
   generateStateValueProp,
   hasVariant,
-  useCurrentUser,
   useDollarState,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
@@ -67,7 +66,6 @@ function PlasmicContact__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {

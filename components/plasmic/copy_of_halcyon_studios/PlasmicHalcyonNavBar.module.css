@@ -124,6 +124,7 @@
   width: auto;
   height: auto;
   max-width: 100%;
+  color: var(--token-FLc3Q0URvh0f);
   padding: 0px;
 }
 .img {
@@ -186,7 +187,7 @@
   display: flex;
   flex-direction: row;
   cursor: pointer;
-  color: var(--token-smWFv2ThVX1L);
+  color: var(--token-FLc3Q0URvh0f);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   -webkit-transition-property: all;
@@ -216,7 +217,7 @@
 .text__kb7Ub {
   font-weight: 400;
   color: var(--token-FLc3Q0URvh0f);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -242,7 +243,7 @@
   display: flex;
   flex-direction: row;
   cursor: pointer;
-  color: var(--token-smWFv2ThVX1L);
+  color: var(--token-FLc3Q0URvh0f);
   -webkit-transition-property: all;
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 0.5s;
@@ -270,7 +271,7 @@
 .eventsText {
   font-weight: 400;
   color: var(--token-FLc3Q0URvh0f);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -295,7 +296,7 @@
   display: flex;
   flex-direction: row;
   cursor: pointer;
-  color: var(--token-smWFv2ThVX1L);
+  color: var(--token-FLc3Q0URvh0f);
   -webkit-transition-property: all;
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 0.5s;
@@ -323,7 +324,7 @@
 .text__w1Ppb {
   font-weight: 400;
   color: var(--token-FLc3Q0URvh0f);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -351,7 +352,7 @@
   padding-right: 16px;
   padding-bottom: 0px;
   padding-left: 0px;
-  color: var(--token-smWFv2ThVX1L);
+  color: var(--token-FLc3Q0URvh0f);
   -webkit-transition-property: all;
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 0.5s;
@@ -378,7 +379,7 @@
 .text__k7AaU {
   font-weight: 400;
   color: var(--token-FLc3Q0URvh0f);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -406,7 +407,7 @@
   padding-right: 16px;
   padding-bottom: 0px;
   padding-left: 0px;
-  color: var(--token-smWFv2ThVX1L);
+  color: var(--token-FLc3Q0URvh0f);
   -webkit-transition-property: all;
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 0.5s;
@@ -433,7 +434,7 @@
 .text__xAoM {
   font-weight: 400;
   color: var(--token-FLc3Q0URvh0f);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;

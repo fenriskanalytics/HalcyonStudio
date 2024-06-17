@@ -19,13 +19,12 @@ import {
   deriveRenderOpts,
   generateStateOnChangeProp,
   generateStateValueProp,
-  useCurrentUser,
   useDollarState,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HalcyonNavBar from "../../HalcyonNavBar"; // plasmic-import: yxQmGgAy9hde/component
-import HomeSection from "../../HomeSection"; // plasmic-import: 9rGWqtPg4lLP/component
+import HomeSection2 from "../../HomeSection2"; // plasmic-import: M0IYPZJH3OXM/component
 import LoginFormPopup from "../../LoginFormPopup"; // plasmic-import: QZYU2P-IDkxx/component
 import HalcyonFooter from "../../HalcyonFooter"; // plasmic-import: 7Ks2sCBPZV9k/component
 import HalcyonFooterBottom from "../../HalcyonFooterBottom"; // plasmic-import: Mjl6P60oGLT_/component
@@ -62,7 +61,6 @@ function PlasmicHomepage__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -122,25 +120,12 @@ function PlasmicHomepage__RenderFunc(props) {
             className={classNames("__wab_instance", sty.halcyonNavBar)}
           />
 
-          {(() => {
-            try {
-              return !$state.loginFormPopup.unblurPopUp;
-            } catch (e) {
-              if (
-                e instanceof TypeError ||
-                e?.plasmicType === "PlasmicUndefinedDataError"
-              ) {
-                return true;
-              }
-              throw e;
-            }
-          })() ? (
-            <HomeSection
-              data-plasmic-name={"homeSection"}
-              data-plasmic-override={overrides.homeSection}
-              className={classNames("__wab_instance", sty.homeSection)}
-            />
-          ) : null}
+          <HomeSection2
+            data-plasmic-name={"homeSection2"}
+            data-plasmic-override={overrides.homeSection2}
+            className={classNames("__wab_instance", sty.homeSection2)}
+          />
+
           <section
             data-plasmic-name={"heroSection"}
             data-plasmic-override={overrides.heroSection}
@@ -238,7 +223,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "halcyonNavBar",
-    "homeSection",
+    "homeSection2",
     "heroSection",
     "h2",
     "loginFormPopup",
@@ -248,7 +233,7 @@ const PlasmicDescendants = {
   ],
 
   halcyonNavBar: ["halcyonNavBar"],
-  homeSection: ["homeSection"],
+  homeSection2: ["homeSection2"],
   heroSection: ["heroSection", "h2", "loginFormPopup", "missionStatement"],
   h2: ["h2"],
   loginFormPopup: ["loginFormPopup"],
@@ -290,7 +275,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
-    homeSection: makeNodeComponent("homeSection"),
+    homeSection2: makeNodeComponent("homeSection2"),
     heroSection: makeNodeComponent("heroSection"),
     h2: makeNodeComponent("h2"),
     loginFormPopup: makeNodeComponent("loginFormPopup"),

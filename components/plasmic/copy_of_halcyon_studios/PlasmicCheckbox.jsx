@@ -19,7 +19,6 @@ import {
   deriveRenderOpts,
   hasVariant,
   renderPlasmicSlot,
-  useCurrentUser,
   useDollarState,
   usePlasmicTranslator,
   useTrigger
@@ -74,7 +73,6 @@ function PlasmicCheckbox__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {

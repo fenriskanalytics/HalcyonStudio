@@ -20,7 +20,6 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants,
-  useCurrentUser,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
@@ -58,7 +57,6 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_0QmF6MtAnaU()
   });
@@ -246,6 +244,28 @@ function PlasmicHalcyonNavBar__RenderFunc(props) {
                     projectcss.__wab_text,
                     sty.text__xAoM
                   )}
+                  onClick={async event => {
+                    const $steps = {};
+                    $steps["runCode"] = true
+                      ? (() => {
+                          const actionArgs = {
+                            customFunction: async () => {
+                              return `'<a data-mariana-auth-link href="/account"></a>'`;
+                            }
+                          };
+                          return (({ customFunction }) => {
+                            return customFunction();
+                          })?.apply(null, [actionArgs]);
+                        })()
+                      : undefined;
+                    if (
+                      $steps["runCode"] != null &&
+                      typeof $steps["runCode"] === "object" &&
+                      typeof $steps["runCode"].then === "function"
+                    ) {
+                      $steps["runCode"] = await $steps["runCode"];
+                    }
+                  }}
                 >
                   <Trans__>{"Login"}</Trans__>
                 </div>

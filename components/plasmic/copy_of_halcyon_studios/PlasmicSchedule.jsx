@@ -16,7 +16,6 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  useCurrentUser,
   useDollarState,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
@@ -60,7 +59,6 @@ function PlasmicSchedule__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {

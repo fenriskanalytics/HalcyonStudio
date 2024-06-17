@@ -18,7 +18,6 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   renderPlasmicSlot,
-  useCurrentUser,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
@@ -55,7 +54,6 @@ function PlasmicProduct__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   return (
     <div
       data-plasmic-name={"root"}

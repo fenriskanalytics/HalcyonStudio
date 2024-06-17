@@ -26,7 +26,6 @@ import {
   hasVariant,
   initializeCodeComponentStates,
   set as $stateSet,
-  useCurrentUser,
   useDollarState,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
@@ -83,7 +82,6 @@ function PlasmicNewsletterRegistration__RenderFunc(props) {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const $globalActions = useGlobalActions?.();
-  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {

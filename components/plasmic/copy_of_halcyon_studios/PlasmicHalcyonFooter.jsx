@@ -24,7 +24,6 @@ import {
   generateStateValueProp,
   get as $stateGet,
   set as $stateSet,
-  useCurrentUser,
   useDollarState,
   usePlasmicTranslator
 } from "@plasmicapp/react-web";
@@ -79,7 +78,6 @@ function PlasmicHalcyonFooter__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
