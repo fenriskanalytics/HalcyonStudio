@@ -37,7 +37,9 @@ export const PlasmicHomeSectionCountdown__VariantProps = new Array(
   "blurVariant2"
 );
 
-export const PlasmicHomeSectionCountdown__ArgProps = new Array("hrefRedirect");
+export const PlasmicHomeSectionCountdown__ArgProps = new Array(
+  "registerRedirect"
+);
 
 const $$ = {};
 
@@ -51,7 +53,16 @@ function useNextRouter() {
 function PlasmicHomeSectionCountdown__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const $translator = usePlasmicTranslator?.();
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          registerRedirect: `/account`
+        },
+        props.args
+      ),
+    [props.args]
+  );
   const $props = {
     ...args,
     ...variants
@@ -184,6 +195,36 @@ function PlasmicHomeSectionCountdown__RenderFunc(props) {
                 sty.registrationLink
               )}
               component={Link}
+              href={`/account`}
+              onClick={async event => {
+                const $steps = {};
+                $steps["updateStateVariable"] = true
+                  ? (() => {
+                      const actionArgs = {};
+                      return (({
+                        variable,
+                        value,
+                        startIndex,
+                        deleteCount
+                      }) => {
+                        if (!variable) {
+                          return;
+                        }
+                        const { objRoot, variablePath } = variable;
+                        undefined;
+                      })?.apply(null, [actionArgs]);
+                    })()
+                  : undefined;
+                if (
+                  $steps["updateStateVariable"] != null &&
+                  typeof $steps["updateStateVariable"] === "object" &&
+                  typeof $steps["updateStateVariable"].then === "function"
+                ) {
+                  $steps["updateStateVariable"] = await $steps[
+                    "updateStateVariable"
+                  ];
+                }
+              }}
               platform={"nextjs"}
             >
               <Button
@@ -191,7 +232,6 @@ function PlasmicHomeSectionCountdown__RenderFunc(props) {
                 data-plasmic-override={overrides.registrationButton}
                 className={classNames("__wab_instance", sty.registrationButton)}
                 color={"green"}
-                onClick={args.hrefRedirect}
                 size={"compact"}
                 submitsForm={true}
               >
