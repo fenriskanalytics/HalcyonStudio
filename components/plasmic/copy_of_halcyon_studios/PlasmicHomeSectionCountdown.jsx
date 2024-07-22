@@ -149,7 +149,7 @@ function PlasmicHomeSectionCountdown__RenderFunc(props) {
             targetTimeUtc={(() => {
               try {
                 return (() => {
-                  const targetTime = "07/29/2024 7:00am EST";
+                  const targetTime = "08/10/2024 7:00am EST";
                   return targetTime;
                 })();
               } catch (e) {

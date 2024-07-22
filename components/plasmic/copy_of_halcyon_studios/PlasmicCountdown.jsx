@@ -128,7 +128,7 @@ function PlasmicCountdown__RenderFunc(props) {
                 {(() => {
                   try {
                     return (() => {
-                      const targetDate = new Date("2024-07-29");
+                      const targetDate = new Date("2024-08-10");
                       const currentDate = new Date();
                       const timeDifference =
                         targetDate.getTime() - currentDate.getTime();
@@ -181,7 +181,7 @@ function PlasmicCountdown__RenderFunc(props) {
                       currentTime.setHours(19, 9, 0, 0);
                       const targetTime = new Date(currentTime);
                       targetTime.setDate(targetTime.getDate() + 1);
-                      targetTime.setHours(8, 0, 0, 0);
+                      targetTime.setHours(5, 0, 0, 0);
                       let remainingSeconds = Math.floor(
                         (targetTime.getTime() - currentTime.getTime()) / 1000
                       );
