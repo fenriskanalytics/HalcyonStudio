@@ -975,17 +975,27 @@
         {
           "type": "renderModule",
           "assetId": "kbhbrRoSxPvc",
-          "checksum": "d7d0bbd20fe87ad336b5bf15368dcbc8"
+          "checksum": "770074fa8a8e9504decf5f41670a88b1"
         },
         {
           "type": "cssRules",
           "assetId": "kbhbrRoSxPvc",
-          "checksum": "d7d0bbd20fe87ad336b5bf15368dcbc8"
+          "checksum": "770074fa8a8e9504decf5f41670a88b1"
         },
         {
           "assetId": "2p9VhVhxAWhB5Nusx9QUQ2",
           "type": "projectCss",
           "checksum": "a1bf4ca16b0e06245b93ab815745dc66"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "itzkRTaKiGMa",
+          "checksum": "0d9aad409294d58f6dcd14aacee54c25"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "itzkRTaKiGMa",
+          "checksum": "0d9aad409294d58f6dcd14aacee54c25"
         }
       ],
       "codegenVersion": "0.0.1"

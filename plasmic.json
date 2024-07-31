@@ -1378,6 +1378,19 @@
           "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicHomeSectionCountdown.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "itzkRTaKiGMa",
+          "name": "Countdown2",
+          "type": "managed",
+          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
+          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicCountdown2.jsx",
+          "importSpec": {
+            "modulePath": "Countdown2.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicCountdown2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
