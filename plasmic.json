@@ -1391,20 +1391,6 @@
           "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicCountdown2.module.css",
           "scheme": "blackbox",
           "componentType": "component"
-        },
-        {
-          "id": "YOdGVKb8s1jo",
-          "name": "NewPage",
-          "type": "managed",
-          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
-          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicNewPage.jsx",
-          "importSpec": {
-            "modulePath": "../pages/new-page.jsx"
-          },
-          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicNewPage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/new-page"
         }
       ],
       "icons": [
