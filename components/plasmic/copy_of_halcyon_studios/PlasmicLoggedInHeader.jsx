@@ -222,7 +222,17 @@ function PlasmicLoggedInHeader__RenderFunc(props) {
               />
             }
             submitsForm={true}
-          />
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___5E3Lt
+              )}
+            >
+              <Trans__>{"Button"}</Trans__>
+            </div>
+          </Button>
         </Stack__>
       </Stack__>
     </Stack__>

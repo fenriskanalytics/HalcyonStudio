@@ -171,13 +171,13 @@ function PlasmicTermsOfService__RenderFunc(props) {
                     src={
                       hasVariant(globalVariants, "screen", "mobile")
                         ? {
-                            src: "/plasmic/copy_of_halcyon_studios/images/image8.jpg",
-                            fullWidth: 1920,
-                            fullHeight: 1280,
+                            src: "/plasmic/copy_of_halcyon_studios/images/halcyonZoomedAngleViewjpg.jpg",
+                            fullWidth: 3840,
+                            fullHeight: 2160,
                             aspectRatio: undefined
                           }
                         : {
-                            src: "/plasmic/copy_of_halcyon_studios/images/halcyonAngleViewjpg.jpg",
+                            src: "/plasmic/copy_of_halcyon_studios/images/halcyonZoomedAngleViewjpg.jpg",
                             fullWidth: 3840,
                             fullHeight: 2160,
                             aspectRatio: undefined
