@@ -98,6 +98,26 @@ function PlasmicCard__RenderFunc(props) {
         plasmic_plasmic_rich_components_css.plasmic_tokens,
         sty.root,
         {
+          [sty.rootunnamedGroupOfVariants2_unnamedVariant2]: hasVariant(
+            $state,
+            "unnamedGroupOfVariants2",
+            "unnamedVariant2"
+          ),
+          [sty.rootunnamedGroupOfVariants2_unnamedVariant3]: hasVariant(
+            $state,
+            "unnamedGroupOfVariants2",
+            "unnamedVariant3"
+          ),
+          [sty.rootunnamedGroupOfVariants2_unnamedVariant4]: hasVariant(
+            $state,
+            "unnamedGroupOfVariants2",
+            "unnamedVariant4"
+          ),
+          [sty.rootunnamedGroupOfVariants2_unnamedVariant5]: hasVariant(
+            $state,
+            "unnamedGroupOfVariants2",
+            "unnamedVariant5"
+          ),
           [sty.rootunnamedGroupOfVariants2_unnamedVariant]: hasVariant(
             $state,
             "unnamedGroupOfVariants2",
@@ -111,6 +131,16 @@ function PlasmicCard__RenderFunc(props) {
         data-plasmic-override={overrides.header}
         className={classNames(projectcss.all, sty.header, {
           [sty.headernoTitle]: hasVariant($state, "noTitle", "noTitle"),
+          [sty.headerunnamedGroupOfVariants2_unnamedVariant2]: hasVariant(
+            $state,
+            "unnamedGroupOfVariants2",
+            "unnamedVariant2"
+          ),
+          [sty.headerunnamedGroupOfVariants2_unnamedVariant3]: hasVariant(
+            $state,
+            "unnamedGroupOfVariants2",
+            "unnamedVariant3"
+          ),
           [sty.headerunnamedGroupOfVariants2_unnamedVariant]: hasVariant(
             $state,
             "unnamedGroupOfVariants2",
@@ -137,6 +167,11 @@ function PlasmicCard__RenderFunc(props) {
         data-plasmic-override={overrides.body}
         className={classNames(projectcss.all, sty.body, {
           [sty.bodynoTitle]: hasVariant($state, "noTitle", "noTitle"),
+          [sty.bodyunnamedGroupOfVariants2_unnamedVariant3]: hasVariant(
+            $state,
+            "unnamedGroupOfVariants2",
+            "unnamedVariant3"
+          ),
           [sty.bodyunnamedGroupOfVariants2_unnamedVariant]: hasVariant(
             $state,
             "unnamedGroupOfVariants2",

@@ -1391,6 +1391,20 @@
           "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicCountdown2.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "YOdGVKb8s1jo",
+          "name": "NewPage",
+          "type": "managed",
+          "projectId": "2p9VhVhxAWhB5Nusx9QUQ2",
+          "renderModuleFilePath": "plasmic/copy_of_halcyon_studios/PlasmicNewPage.jsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_halcyon_studios/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/new-page"
         }
       ],
       "icons": [
@@ -1845,6 +1859,26 @@
           "id": "0voqhkLCR9iI",
           "name": "Logo-HalcyonBRGreen.svg",
           "filePath": "../public/plasmic/copy_of_halcyon_studios/images/logoHalcyonBrGreensvg.svg"
+        },
+        {
+          "id": "FYkGr3L_kNB1",
+          "name": "IMG_1826.jpg",
+          "filePath": "../public/plasmic/copy_of_halcyon_studios/images/img1826Jpg.jpg"
+        },
+        {
+          "id": "OyQUP7hAeAFH",
+          "name": "paula bio.jpg",
+          "filePath": "../public/plasmic/copy_of_halcyon_studios/images/paulaBiojpg.jpg"
+        },
+        {
+          "id": "vxHcFYXgGKQC",
+          "name": "paula bio 2.jpg",
+          "filePath": "../public/plasmic/copy_of_halcyon_studios/images/paulaBio2Jpg.jpg"
+        },
+        {
+          "id": "YSq-wA2RIlqx",
+          "name": "Facetune_17-07-2024-00-12-23.jpg",
+          "filePath": "../public/plasmic/copy_of_halcyon_studios/images/facetune17072024001223Jpg.jpg"
         }
       ],
       "indirect": false,

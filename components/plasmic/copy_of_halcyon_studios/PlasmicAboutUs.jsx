@@ -12,6 +12,7 @@ import * as React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import {
+  PlasmicImg as PlasmicImg__,
   Stack as Stack__,
   Trans as Trans__,
   classNames,
@@ -26,6 +27,7 @@ import {
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HalcyonNavBar from "../../HalcyonNavBar"; // plasmic-import: yxQmGgAy9hde/component
+import Card from "../../Card"; // plasmic-import: xhQwHY9Bkb2M/component
 import TextInput from "../../TextInput"; // plasmic-import: 21hHWiV01rOa/component
 import Button from "../../Button"; // plasmic-import: EyzplKTGD_DF/component
 import HalcyonFooter from "../../HalcyonFooter"; // plasmic-import: 7Ks2sCBPZV9k/component
@@ -123,41 +125,219 @@ function PlasmicAboutUs__RenderFunc(props) {
           />
 
           <section className={classNames(projectcss.all, sty.section__mz2HD)}>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__xdmph)}
-            >
+            <div className={classNames(projectcss.all, sty.columns__l7UM4)}>
+              <div className={classNames(projectcss.all, sty.column__n5Dt6)}>
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__qsH3R)}
+                >
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__zR3Ra
+                    )}
+                  >
+                    <Trans__>
+                      {hasVariant(globalVariants, "screen", "mobile")
+                        ? "Our Mission"
+                        : "The Halcyon Studio Story"}
+                    </Trans__>
+                  </h2>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__stxdV
+                    )}
+                  >
+                    <Trans__>
+                      {
+                        "The inspiration behind creating Halcyon Studio stems from my belief that all forms of movement can be profoundly healing, both physically and mentally. My goal is to offer a variety of classes to help you discover what makes you feel good and supports your well-being. My own healing journey has been transformative, and just a year ago, I never imagined I\u2019d be creating this space. Life can change in an instant, turning everything upside down, but it's crucial to get back up and continue striving for oneself. After facing several personal challenges, I found solace in movement, and support in my husband, family, and friends. Halcyon Studio came to life with these concepts as its core.\n\nWhen choosing the name, I wanted it to reflect something significant and aligned with the studio's purpose. That\u2019s why I chose \u201cHalcyon,\u201d a word that embodies the peace and tranquility I hope to bring to your life. Our focus is on movement and wellness, and we\u2019re continually looking to expand what we offer to support you on your journey. My primary intention is for you to walk through our doors, leave your worries behind, and dedicate time to caring for yourself\u2014moving in the way that feels right for you."
+                      }
+                    </Trans__>
+                  </div>
+                </Stack__>
+              </div>
+              <div className={classNames(projectcss.all, sty.column__h18HY)}>
+                <div className={classNames(projectcss.all, sty.freeBox__evB1H)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__j0Bca)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/copy_of_halcyon_studios/images/paulaBio2Jpg.jpg",
+                      fullWidth: 1665,
+                      fullHeight: 1733,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className={classNames(projectcss.all, sty.section___1G5OT)}>
+            <section className={classNames(projectcss.all, sty.section__b0Kkg)}>
               <h2
                 className={classNames(
                   projectcss.all,
                   projectcss.h2,
                   projectcss.__wab_text,
-                  sty.h2__z7FyG
+                  sty.h2__bI5Q
                 )}
               >
                 <Trans__>
                   {hasVariant(globalVariants, "screen", "mobile")
                     ? "Our Mission"
-                    : "Tampa's First Luxury Yoga Studio"}
+                    : "Meet the Team"}
                 </Trans__>
               </h2>
-              <div
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__nau0I)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"100%"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/copy_of_halcyon_studios/images/facetune17072024001223Jpg.jpg",
+                  fullWidth: 6141,
+                  fullHeight: 4096,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <div className={classNames(projectcss.all, sty.columns__qBRf8)}>
+                <div className={classNames(projectcss.all, sty.column___7RKa)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__zJzCp)}
+                  >
+                    <Card
+                      className={classNames("__wab_instance", sty.card__wTs18)}
+                      title={
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__hMqn3)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"100%"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/copy_of_halcyon_studios/images/paulaBiojpg.jpg",
+                            fullWidth: 1348,
+                            fullHeight: 1585,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      }
+                      unnamedGroupOfVariants2={"unnamedVariant5"}
+                    />
+                  </div>
+                </div>
+                <div className={classNames(projectcss.all, sty.column__d1U)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__tPvu3)}
+                  >
+                    <Card
+                      className={classNames("__wab_instance", sty.card__q8T9A)}
+                      title={
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__uhxts)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"100%"}
+                          loading={"lazy"}
+                        />
+                      }
+                      unnamedGroupOfVariants2={"unnamedVariant4"}
+                    />
+                  </div>
+                </div>
+                <div className={classNames(projectcss.all, sty.column__x4CFs)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__qcMK)}
+                  >
+                    <Card
+                      className={classNames("__wab_instance", sty.card__jwPkK)}
+                      title={
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img___5BOk)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"100%"}
+                          loading={"lazy"}
+                        />
+                      }
+                      unnamedGroupOfVariants2={"unnamedVariant3"}
+                    />
+                  </div>
+                </div>
+                <div className={classNames(projectcss.all, sty.column__cUoLp)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__aRzHp)}
+                  >
+                    <Card
+                      className={classNames("__wab_instance", sty.card__nmfoZ)}
+                      title={
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img___30Qfl)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"100%"}
+                          loading={"lazy"}
+                        />
+                      }
+                      unnamedGroupOfVariants2={"unnamedVariant2"}
+                    />
+                  </div>
+                </div>
+                <div
+                  className={classNames(projectcss.all, sty.column__hSidv)}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.column__vskj5)}
+                />
+              </div>
+              <h1
+                data-plasmic-name={"h1"}
+                data-plasmic-override={overrides.h1}
                 className={classNames(
                   projectcss.all,
+                  projectcss.h1,
                   projectcss.__wab_text,
-                  sty.text__vyL9W
+                  sty.h1
                 )}
               >
-                <Trans__>
-                  {
-                    "Yoga is a journey of self-discovery, a path to finding your focus, and a means of pushing personal limits. We offer a refined and authentic yoga experience, embracing the purity of its practice. Join us in the pursuit of inner balance, strength, and tranquility, where yoga is about reconnecting with yourself and finding your own path to well-being."
-                  }
-                </Trans__>
-              </div>
-            </Stack__>
-          </section>
-          <section className={classNames(projectcss.all, sty.section___1G5OT)}>
+                <Trans__>{"Individual Teacher Bios Coming Soon"}</Trans__>
+              </h1>
+            </section>
             <Stack__
               as={"div"}
               hasGap={true}
@@ -261,6 +441,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "halcyonNavBar",
+    "h1",
     "textInput",
     "button",
     "halcyonFooter",
@@ -268,6 +449,7 @@ const PlasmicDescendants = {
   ],
 
   halcyonNavBar: ["halcyonNavBar"],
+  h1: ["h1"],
   textInput: ["textInput"],
   button: ["button"],
   halcyonFooter: ["halcyonFooter"],
@@ -307,6 +489,7 @@ export const PlasmicAboutUs = Object.assign(
   {
     // Helper components rendering sub-elements
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
+    h1: makeNodeComponent("h1"),
     textInput: makeNodeComponent("textInput"),
     button: makeNodeComponent("button"),
     halcyonFooter: makeNodeComponent("halcyonFooter"),
