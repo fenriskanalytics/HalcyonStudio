@@ -27,6 +27,7 @@ import {
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HalcyonNavBar from "../../HalcyonNavBar"; // plasmic-import: yxQmGgAy9hde/component
+import AboutUsSection from "../../AboutUsSection"; // plasmic-import: H0Hexcqt6Sa7/component
 import Card from "../../Card"; // plasmic-import: xhQwHY9Bkb2M/component
 import TextInput from "../../TextInput"; // plasmic-import: 21hHWiV01rOa/component
 import Button from "../../Button"; // plasmic-import: EyzplKTGD_DF/component
@@ -124,66 +125,12 @@ function PlasmicAboutUs__RenderFunc(props) {
             className={classNames("__wab_instance", sty.halcyonNavBar)}
           />
 
-          <section className={classNames(projectcss.all, sty.section__mz2HD)}>
-            <div className={classNames(projectcss.all, sty.columns__l7UM4)}>
-              <div className={classNames(projectcss.all, sty.column__n5Dt6)}>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__qsH3R)}
-                >
-                  <h2
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h2,
-                      projectcss.__wab_text,
-                      sty.h2__zR3Ra
-                    )}
-                  >
-                    <Trans__>
-                      {hasVariant(globalVariants, "screen", "mobile")
-                        ? "Our Mission"
-                        : "The Halcyon Studio Story"}
-                    </Trans__>
-                  </h2>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__stxdV
-                    )}
-                  >
-                    <Trans__>
-                      {
-                        "The inspiration behind creating Halcyon Studio stems from my belief that all forms of movement can be profoundly healing, both physically and mentally. My goal is to offer a variety of classes to help you discover what makes you feel good and supports your well-being. My own healing journey has been transformative, and just a year ago, I never imagined I\u2019d be creating this space. Life can change in an instant, turning everything upside down, but it's crucial to get back up and continue striving for oneself. After facing several personal challenges, I found solace in movement, and support in my husband, family, and friends. Halcyon Studio came to life with these concepts as its core.\n\nWhen choosing the name, I wanted it to reflect something significant and aligned with the studio's purpose. That\u2019s why I chose \u201cHalcyon,\u201d a word that embodies the peace and tranquility I hope to bring to your life. Our focus is on movement and wellness, and we\u2019re continually looking to expand what we offer to support you on your journey. My primary intention is for you to walk through our doors, leave your worries behind, and dedicate time to caring for yourself\u2014moving in the way that feels right for you."
-                      }
-                    </Trans__>
-                  </div>
-                </Stack__>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__h18HY)}>
-                <div className={classNames(projectcss.all, sty.freeBox__evB1H)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__j0Bca)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/copy_of_halcyon_studios/images/paulaBio2Jpg.jpg",
-                      fullWidth: 1665,
-                      fullHeight: 1733,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
+          <AboutUsSection
+            data-plasmic-name={"aboutUsSection"}
+            data-plasmic-override={overrides.aboutUsSection}
+            className={classNames("__wab_instance", sty.aboutUsSection)}
+          />
+
           <section className={classNames(projectcss.all, sty.section___1G5OT)}>
             <section className={classNames(projectcss.all, sty.section__b0Kkg)}>
               <h2
@@ -218,7 +165,11 @@ function PlasmicAboutUs__RenderFunc(props) {
                 }}
               />
 
-              <div className={classNames(projectcss.all, sty.columns__qBRf8)}>
+              <div
+                data-plasmic-name={"columns"}
+                data-plasmic-override={overrides.columns}
+                className={classNames(projectcss.all, sty.columns)}
+              >
                 <div className={classNames(projectcss.all, sty.column___7RKa)}>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__zJzCp)}
@@ -407,10 +358,12 @@ function PlasmicAboutUs__RenderFunc(props) {
                     submitsForm={true}
                   >
                     <div
+                      data-plasmic-name={"text"}
+                      data-plasmic-override={overrides.text}
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__n4Yx8
+                        sty.text
                       )}
                     >
                       <Trans__>{"Submit"}</Trans__>
@@ -441,17 +394,23 @@ const PlasmicDescendants = {
   root: [
     "root",
     "halcyonNavBar",
+    "aboutUsSection",
+    "columns",
     "h1",
     "textInput",
     "button",
+    "text",
     "halcyonFooter",
     "halcyonFooterBottom"
   ],
 
   halcyonNavBar: ["halcyonNavBar"],
+  aboutUsSection: ["aboutUsSection"],
+  columns: ["columns"],
   h1: ["h1"],
   textInput: ["textInput"],
-  button: ["button"],
+  button: ["button", "text"],
+  text: ["text"],
   halcyonFooter: ["halcyonFooter"],
   halcyonFooterBottom: ["halcyonFooterBottom"]
 };
@@ -489,9 +448,12 @@ export const PlasmicAboutUs = Object.assign(
   {
     // Helper components rendering sub-elements
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
+    aboutUsSection: makeNodeComponent("aboutUsSection"),
+    columns: makeNodeComponent("columns"),
     h1: makeNodeComponent("h1"),
     textInput: makeNodeComponent("textInput"),
     button: makeNodeComponent("button"),
+    text: makeNodeComponent("text"),
     halcyonFooter: makeNodeComponent("halcyonFooter"),
     halcyonFooterBottom: makeNodeComponent("halcyonFooterBottom"),
     // Metadata about props expected for PlasmicAboutUs
