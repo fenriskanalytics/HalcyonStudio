@@ -152,7 +152,9 @@ function PlasmicAboutUsSection__RenderFunc(props) {
               )}
             >
               <Trans__>
-                {hasVariant(globalVariants, "screen", "tablet")
+                {hasVariant(globalVariants, "screen", "mobile")
+                  ? "Paula Schoeppler, Owner & Founder\nof Halcyon Studios"
+                  : hasVariant(globalVariants, "screen", "tablet")
                   ? "Paula Schoeppler \nOwner & Founder of Halcyon Studios"
                   : "Paula Schoeppler \nOwner / Founder Halcyon Studios"}
               </Trans__>

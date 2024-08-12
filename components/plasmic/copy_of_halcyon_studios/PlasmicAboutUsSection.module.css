@@ -223,5 +223,6 @@
 @media (max-width: 440px) {
   .text__vcmB5 {
     font-size: 20px;
+    padding-bottom: 0px;
   }
 }
