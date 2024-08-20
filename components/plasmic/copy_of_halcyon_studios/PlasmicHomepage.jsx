@@ -24,7 +24,7 @@ import {
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import HalcyonNavBar from "../../HalcyonNavBar"; // plasmic-import: yxQmGgAy9hde/component
-import HomeSectionCountdown from "../../HomeSectionCountdown"; // plasmic-import: M0IYPZJH3OXM/component
+import HomeSection from "../../HomeSection"; // plasmic-import: 9rGWqtPg4lLP/component
 import LoginFormPopup from "../../LoginFormPopup"; // plasmic-import: QZYU2P-IDkxx/component
 import HalcyonFooter from "../../HalcyonFooter"; // plasmic-import: 7Ks2sCBPZV9k/component
 import HalcyonFooterBottom from "../../HalcyonFooterBottom"; // plasmic-import: Mjl6P60oGLT_/component
@@ -120,10 +120,10 @@ function PlasmicHomepage__RenderFunc(props) {
             className={classNames("__wab_instance", sty.halcyonNavBar)}
           />
 
-          <HomeSectionCountdown
-            data-plasmic-name={"homeSectionCountdown"}
-            data-plasmic-override={overrides.homeSectionCountdown}
-            className={classNames("__wab_instance", sty.homeSectionCountdown)}
+          <HomeSection
+            data-plasmic-name={"homeSection"}
+            data-plasmic-override={overrides.homeSection}
+            className={classNames("__wab_instance", sty.homeSection)}
           />
 
           <section
@@ -223,7 +223,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "halcyonNavBar",
-    "homeSectionCountdown",
+    "homeSection",
     "heroSection",
     "h2",
     "loginFormPopup",
@@ -233,7 +233,7 @@ const PlasmicDescendants = {
   ],
 
   halcyonNavBar: ["halcyonNavBar"],
-  homeSectionCountdown: ["homeSectionCountdown"],
+  homeSection: ["homeSection"],
   heroSection: ["heroSection", "h2", "loginFormPopup", "missionStatement"],
   h2: ["h2"],
   loginFormPopup: ["loginFormPopup"],
@@ -275,7 +275,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     halcyonNavBar: makeNodeComponent("halcyonNavBar"),
-    homeSectionCountdown: makeNodeComponent("homeSectionCountdown"),
+    homeSection: makeNodeComponent("homeSection"),
     heroSection: makeNodeComponent("heroSection"),
     h2: makeNodeComponent("h2"),
     loginFormPopup: makeNodeComponent("loginFormPopup"),

@@ -147,7 +147,7 @@ function PlasmicHomeSection__RenderFunc(props) {
               sty.text
             )}
           >
-            <Trans__>{"Register for Our Grand Opening"}</Trans__>
+            <Trans__>{"Founders Rate Membership Now Open"}</Trans__>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__duvf)}>
             <PlasmicLink__
